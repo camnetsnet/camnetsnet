@@ -1,0 +1,65 @@
+{{ $item := .item }}
+{{ $index := .index }}
+{{ $color := .color }}
+{{ $image := cond $item.Params.image $item.Params.image "none" }}
+
+<div class="w-slide">
+    
+    {{ if ge $item.Date.Unix now.Unix }}
+    <a href="{{ $item.RelPermalink }}/?index={{ $index }}&source={{ $image }}&status=ACTIVE"
+        class="event-people-wrapper past w-inline-block">
+        {{ else }}
+        <a href="{{ $item.RelPermalink }}/?index={{ $index }}&source={{ $image }}&status=PAST"
+            class="event-people-wrapper past w-inline-block">
+            {{ end }}
+
+            {{ $isImportant := $item.Params.important }}
+            {{ $isFuture := ge $item.Date.Unix now.Unix }}
+            {{ $bgColor := cond $isFuture $color.background $color.main }}
+            {{ $mainColor := cond $isFuture $color.main $color.background }}
+            {{ $dataType := cond $isImportant "adj" "graph" }}
+            {{ $iconVariant := cond $isFuture "light" "dark" }}
+
+            {{ if $item.Params.image }}
+            <div class="event-thumbnail">
+                <img src="/images/events/{{ $item.Params.image }}.png" loading="lazy" alt="" class="member-image">
+            </div>
+            {{ else }}
+            <div class="glyph event-thumbnail" style="background-color: {{ $bgColor }}" data-type="{{ $dataType }}"
+                data-color="{{ $mainColor }}" data-bg="{{ $bgColor }}">
+                {{ $item.Title }}
+            </div>
+            {{ end }}
+
+            {{/*  {{ if $item.Params.cambridge }}
+            <div style="margin: 12px; padding: 0px; position: absolute;">
+                <img src="/images/logos/{{ $iconVariant }}/icon_{{ $color.name }}.svg" loading="lazy"
+                    style="width: 20px;">
+            </div>
+            {{ end }}  */}}
+
+            <div class="vertical-wrapper padded">
+                <div class="caption-wrapper"
+                    style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="caption">{{ $item.Date.Format "02 January 2006" }}</div>
+                    {{ if ge $item.Date.Unix now.Unix }}
+                    <div class="dot {{ $color.name }}"></div>
+                    {{ else }}
+                    <div class="dot grey"></div>
+                    {{ end }}
+                </div>
+                <div class="horizontal-line"></div>
+                {{ if $item.Params.important }}
+                <h2 class="h6"
+                    style="font-family: Martianmono Variablefont Wdth Wght, Arial, sans-serif; font-weight: 300; text-transform: uppercase;">
+                    {{ $item.Title }}</h2>
+                <p class="p-short">{{ $item.Params.description }}</p>
+                {{ else }}
+                <h2 class="h6">{{ $item.Title }}</h2>
+                <div class="caption">{{ $item.Params.speaker }}</div>
+                {{ end }}
+                <div class="text-link button {{ $color.name }}"
+                    id="w-node-c9109f55-7eff-bfee-4b23-4bcc04f8fa1a-fe3ea3f4" style="">VIEW →</div>
+            </div>
+        </a>
+</div>

@@ -1,0 +1,116 @@
+backend:
+  name: test-repo
+  login: true
+  site_domain: https://camnetnet.github.io/camnetnet
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+
+logo:
+  src: /images/logos/light/icon_orange.svg
+  show_in_header: true
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "seminar"
+    label: "Seminars"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}:Seminar:{{slug}}"
+    fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: false}
+      - { label: "Pin", name: "pin", widget: "boolean", default: false}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Abstract", name: "abstract", widget: "text" }
+      - { label: "Speaker", name: "speaker", widget: "object", fields: [
+          { label: "Honorific", name: "honorific", widget: "select", options: ["", "Dr.", "Prof."] },
+          { label: "First Name(s)", name: "first_name", widget: "string" },
+          { label: "Last Name(s)", name: "last_name", widget: "string" },
+          { label: "Main affiliation", name: "affiliation", widget: "list"}
+        ] }
+      - { label: "Date", name: "start_date", widget: "datetime", date_format: "YYYY.MM.DD", time_format: false }
+      - { label: "Start time", name: "start_time", widget: "datetime", time_format: "HH:mm", date_format: false}
+      - { label: "End time", name: "end_time", widget: "datetime", time_format: "HH:mm", date_format: false}
+      - { label: "Watch link", name: "link", widget: "string", required: false }
+      - { label: "Physical location", name: "location", widget: "list", required: false }
+      - label: "Custom image"
+        name: "image"
+        widget: "file"
+        allow_multiple: false
+        media_library:
+          config:
+            multiple: false
+            allow_types: ['image/png']
+        required: false
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}:Event:{{slug}}"
+    fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: false}
+      - { label: "Pin", name: "pin", widget: "boolean", default: false}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Brief description", name: "description", widget: "text" }
+      - { label: "Date", name: "start_date", widget: "datetime", date_format: "YYYY.MM.DD", time_format: false }
+      - { label: "Start time", name: "start_time", widget: "datetime", time_format: "HH:mm", date_format: false}
+      - { label: "End time", name: "end_time", widget: "datetime", time_format: "HH:mm", date_format: false}
+      - { label: "Physical location", name: "location", widget: "list" }
+      - label: "Sponsors"
+        name: "sponsors"
+        widget: "select"
+        multiple: true
+        options:
+            file: "data/sponsors/groups.yml"
+            label_field: "Name"
+            value_field: "name"     
+      - label: "Keynote Speakers"
+        name: "keynote_speakers"
+        widget: "list"
+        fields:
+            - { label: "Honorific", name: "honorific", widget: "select", options: ["", "Dr.", "Prof."] }
+            - { label: "First Name(s)", name: "first_name", widget: "string" }
+            - { label: "Last Name(s)", name: "last_name", widget: "string" }
+            - { label: "Main affiliation", name: "affiliation", widget: "list" }
+
+      - { label: "Main content", name: "content", widget: "markdown", modes: [ "raw" ] }
+      - label: "Custom image"
+        name: "image"
+        widget: "file"
+        allow_multiple: false
+        media_library:
+          config:
+            multiple: false
+            allow_types: ['image/png']
+        required: false
+
+  - name: "resources"
+    label: "Resources"
+    folder: "data/resources"
+    extension: "yaml"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tag", name: "tag", widget: "select", options: ["Software", "Learning", "Places"] }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Description", name: "desc", widget: "text" }
+
+  - name: "members"
+    label: "Members"
+    folder: "data/members"
+    extension: "yaml"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Honorific", name: "title", widget: "select", options: ["", "Dr.", "Prof."] }
+      - { label: "Tag", name: "tag", widget: "select", options: ["Software", "Learning", "Places"] }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Description", name: "desc", widget: "text" }

@@ -1,0 +1,87 @@
+<section class="section">
+  <div class="container centered _0" style="max-width: 1000px;">
+    <div class="vertical-wrapper tall light-wrapper" style="min-height: calc(100vh - 150px); " id="background">
+      <div class="vertical-wrapper">
+
+        {{/* <div style="display: grid; grid-template-columns: 0.2fr 0.8fr; column-gap: 20px; row-gap: 5px;">
+          <div class="glyph" id="main_glyph" style="background-color: transparent" data-type="graph" data-color="black"
+            data-bg="transparent">E</div>
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd80e-14312913" class="vertical-wrapper tall event">
+            <h1 class="h5 short lined">{{ .Title }}</h1>
+
+          </div>
+
+        </div> */}}
+
+        <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd80e-14312913" class="vertical-wrapper tall event"
+          style="padding-bottom: 20px">
+          <h1 class="h5 short lined">{{ .Title }}</h1>
+
+        </div>
+
+        {{/* <div class="horizontal-line" style="margin-bottom: 2%"></div> */}}
+        <div class="detail-grid">
+
+          {{ if .Params.speaker }}
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd81e-14312913" class="caption small ">Speaker</div>
+          {{ partial "splitter.html" .Params.speaker }}
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd822-14312913" class="caption small ">Affiliation</div>
+          {{ partial "splitter.html" .Params.affiliation }}
+          {{ end }}
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd812-14312913" class="caption small ">Date</div>
+          <div class="caption">{{ .Date.Format "02 January 2006" }}</div>
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd816-14312913" class="caption small ">Time</div>
+          <div class="caption">{{ index .Params.time 0 }} - {{ index .Params.time 1 }}</div>
+          {{ if .Params.location }}
+          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df59a-a984b33e" class="caption small">Location</div>
+          {{ partial "splitter.html" .Params.location }}
+          {{ end }}
+          {{ if .Params.link }}
+          <div id="w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f" class="caption small">Watch</div>
+          <a href="{{ .Params.link }}" style="width: fit-content; display: block; margin: 0px;"
+            class="nav-link text-link button neutral w-nav-link w--current">LINK →</a>
+          {{ end }}
+
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="vertical-wrapper centered">
+        <h2 id="w-node-_34c7b209-18b2-8d74-0d67-33f983fb7a4b-14312913" class="h6">Abstract</h2>
+        <p id="w-node-_88a39da7-0b53-44a6-8beb-635bcc5195fa-14312913" class="p-short ish">{{ .Content }}</p>
+        {{ if .Params.slides }}
+        <a id="w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913" href={{ .Params.slides }}
+          class="text-link button purple">SLIDES ↓</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const index = params.get('index');
+  const mod = index % 3 + 0
+  const colorMap = ["orange", "purple", "green"];
+  const color = colorMap[mod];
+
+  if (color) {
+    const bgVar = `--${color}-dark-100`;
+    const colorVar = `--${color}-100`;
+    const colorBack = `--${color}-020`;
+
+    const rootStyles = getComputedStyle(document.documentElement);
+    const bgValue = rootStyles.getPropertyValue(bgVar).trim();
+    const colorValue = rootStyles.getPropertyValue(colorVar).trim();
+    const colorBackValue = rootStyles.getPropertyValue(colorBack).trim();
+
+    const glyph = document.getElementById("main_glyph");
+    const background_bit = document.getElementById("background");
+    { {/*  background_bit.style.borderColor = colorBackValue;  */ } }
+    { {/*  glyph.style.backgroundColor = bgValue;  */ } }
+
+    glyph.dataset.color = colorValue;
+    { {/*  glyph.dataset.bg = bgValue;  */ } }
+
+    const button = document.getElementById("w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e");
+    button.className = `text-link button ${color}`;
+  }
+</script>

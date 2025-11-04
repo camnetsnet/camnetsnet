@@ -1,0 +1,1 @@
+Information successfully registered.

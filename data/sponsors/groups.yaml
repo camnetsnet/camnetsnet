@@ -1,0 +1,19 @@
+- name: Trinity College Cambridge
+  tag: trinity
+  link: https://www.trin.cam.ac.uk/
+
+- name: The Alan Turing Insitute
+  tag: turing
+  link: https://www.turing.ac.uk/c
+
+- name: Cambridge University Press
+  tag: cup
+  link: https://www.cambridgebookshop.co.uk/
+
+- name: Sainsbury Laboratory
+  tag: sainsbury
+  link: https://www.slcu.cam.ac.uk/
+
+- name: University of Cambridge
+  tag: cambridge
+  link: https://www.cam.ac.uk/

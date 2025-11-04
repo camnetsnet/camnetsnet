@@ -1,0 +1,164 @@
+<style>
+  /* Overlay tint initially visible */
+  .img-tint {
+    transition: opacity 0.3s ease;
+  }
+
+  /* Remove tint on hover */
+  .event-thumbnail:hover .img-tint {
+    opacity: 0;
+  }
+</style>
+<section class="section dark">
+  <div class="container event">
+    {{ $events := .Site.GetPage "section" "events" }}
+    {{ $numEvents := len $events.Pages }}
+    {{ $count := len $events.Pages }}
+    <div class="_2-grid">
+
+      <div id="event-display">
+        <div id="main_glyph" class="glyph event-thumbnail big ger" data-type="adj">{{ .Title }}</div>
+      </div>
+
+      <div id="w-node-_7e404c44-e8f6-9782-33dc-87433961863a-a984b33e" class="vertical-wrapper tall event">
+        <h2 class="h4 short mono">{{ .Title }}</h2>
+        <div class="detail-grid">
+          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df592-a984b33e" class="caption small white">Date</div>
+          <div class="caption">{{ .Date.Format "02 January 2006" }}</div>
+          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df596-a984b33e" class="caption small white">Time</div>
+          <div class="caption">{{ index .Params.time 0 }} - {{ index .Params.time 1 }}</div>
+          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df59a-a984b33e" class="caption small white">Location</div>
+          {{ partial "splitter.html" .Params.location }}
+        </div>
+        <p class="p-short">{{ .Params.description }}</p>
+        {{ if ge .Params.date.Unix now.Unix }}
+        <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button">
+          Register →</div>
+        {{ else }}
+        <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button grey">Registration
+          closed</div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ if .Params.sponsors }}
+<section class="section grey">
+  <div class="container" style="margin-top: -10px; margin-bottom: -10px;">
+    <div class="horizontal-wrapper" style="justify-content: center;">
+      <p class="caption">Sponsored by:</p>
+      {{ $ctx := . }}
+      {{ range .Params.sponsors }}
+      {{ $tag := . }}
+      {{ range where $ctx.Site.Data.sponsors.groups "tag" $tag }}
+      <div class="caption">
+        <a href={{ .link }}>
+          <img src="/images/sponsors/{{ $tag }}.png" loading="lazy" alt="{{ .name }}" class="sponsor-logo">
+        </a>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<section class="section">
+  <div class="container">
+    <div class="vertical-wrapper tall">
+      {{ if .Params.keynotes }}
+      <h2 class="h3 h4">Keynote Speakers</h2>
+      <div class="_5-grid">
+
+        {{ range $person := .Params.keynotes }}
+        <div id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f6a-a984b33e" class="event-people-wrapper">
+
+          {{/* {{ if .image }}
+          <img src="/images/keynotes/{{ .image }}.png" loading="lazy" alt="" class="member-image">
+          {{ else }}
+          <div class="glyph event-thumbnail" style="background-color: transparent" data-type="graph" data-color={{
+            $color.main }} data-bg="transparent">{{ .name }}</div>
+          {{ end}} */}}
+
+          <div class="vertical-wrapper padded speaker">
+            <h2 class="h6" style="padding-top: 20px">{{ .title }} {{ .name }}</h2>
+            <div class="horizontal-line"></div>
+            <div class="vertical-wrapper short">
+              <div class="caption small">Affiliation</div>
+
+              <p id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f72-a984b33e">{{ .affiliation }}</p>
+            </div>
+            <div class="vertical-wrapper short" style="display: flex; align-items: center;">
+
+              {{ if .slides }}
+              <a id="w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b10-41133170" href={{ .slides }}
+                class="text-link button neutral w-button">SLIDES ↓</a>
+              {{ end }}
+            </div>
+            {{/* <div id="w-node-f21b3267-23da-33b5-beba-395da1408633-a984b33e" class="text-link button neutral">
+              MORE INFO →</div> */}}
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+      {{ end }}
+      <section class="section">
+        <div class="container _0" style="max-width: 1000px;">
+          {{ .Content }}
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const index = params.get('index');
+  const source = params.get('source');
+  const status = params.get('status');
+
+  const mod = index % 3;
+  const colorMap = ["orange", "purple", "green"];
+  const color = colorMap[mod];
+
+  const display = document.getElementById("event-display");
+  const glyph = document.getElementById("main_glyph");
+  const button = document.getElementById("w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e");
+
+
+  if (color) {
+    const rootStyles = getComputedStyle(document.documentElement);
+    const bgValue = rootStyles.getPropertyValue(`--${color}-100`).trim();
+    const colorValue = rootStyles.getPropertyValue(`--${color}-dark-100`).trim();
+
+    if (source != "none") {
+      display.innerHTML = `<div id="main_image" class="event-thumbnail">
+    <img src="/images/events/${source}.png" loading="lazy" alt="{{ .Title }}" class="member-image">
+  </div>`;
+
+      const imgDiv = document.getElementById("main_image");
+      imgDiv.style.border = `0px solid ${bgValue}`;
+      imgDiv.style.position = "relative";
+
+      const overlay = document.createElement("div");
+      overlay.className = "img-tint"; 
+      overlay.style.position = "absolute";
+      overlay.style.top = 0;
+      overlay.style.left = 0;
+      overlay.style.width = "100%";
+      overlay.style.height = "100%";
+      {{/*  overlay.style.backgroundColor = bgValue + "50";  */}}
+      overlay.style.pointerEvents = "none";
+      overlay.style.borderRadius = "inherit";
+
+      imgDiv.appendChild(overlay);
+    } else {
+      glyph.style.backgroundColor = status === "ACTIVE" ? colorValue : bgValue;
+      glyph.dataset.color = status === "ACTIVE" ? bgValue : colorValue;
+      glyph.dataset.bg = status === "ACTIVE" ? colorValue : bgValue;
+    }
+
+    if (button) {
+      button.className = status === "ACTIVE" ? `text-link button ${color}` : "text-link button grey";
+    }
+  }
+</script>

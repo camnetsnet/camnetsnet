@@ -1,0 +1,209 @@
+- honorific: "Dr."
+  name: "Samuel Ortega"
+  affiliation: "Massachusetts Institute of Technology"
+  position: "Postdoctoral Fellow"
+  email: "sortega@mit.edu"
+  tags: ["machine learning", "computational neuroscience", "data science"]
+
+- honorific: "Prof."
+  name: "Ayumi Tanaka"
+  affiliation: "University of Tokyo"
+  position: "Associate Professor"
+  email: "atanaka@u-tokyo.ac.jp"
+  tags: ["biophysics", "neural modeling", "complex systems"]
+
+- honorific: "Dr."
+  name: "Michael Chen"
+  affiliation: "Stanford University"
+  position: "Assistant Professor"
+  email: "mchen@stanford.edu"
+  tags: ["cognitive science", "artificial intelligence", "psychology"]
+
+- honorific: "Dr."
+  name: "Elena Rossi"
+  affiliation: "ETH Zurich"
+  position: "Senior Research Scientist"
+  email: "elena.rossi@ethz.ch"
+  tags: ["network science", "dynamical systems", "computational biology"]
+
+- honorific: "Prof."
+  name: "David Klein"
+  affiliation: "Harvard University"
+  position: "Professor"
+  email: "dklein@harvard.edu"
+  tags: ["statistical physics", "neural networks", "theoretical neuroscience"]
+
+- honorific: "Dr."
+  name: "Sofia Martínez"
+  affiliation: "University of Buenos Aires"
+  position: "Research Associate"
+  email: "smartinez@uba.ar"
+  tags: ["bioinformatics", "genetics", "data visualization"]
+
+- honorific: "Dr."
+  name: "Karim Al-Mansouri"
+  affiliation: "King Abdullah University of Science and Technology"
+  position: "Research Fellow"
+  email: "kalmansouri@kaust.edu.sa"
+  tags: ["signal processing", "computational modeling", "brain imaging"]
+
+- honorific: "Dr."
+  name: "Lila Nandakumar"
+  affiliation: "Indian Institute of Science"
+  position: "Postdoctoral Researcher"
+  email: "lilan@iisc.ac.in"
+  tags: ["mathematical biology", "neurodynamics", "systems neuroscience"]
+
+- honorific: "Prof."
+  name: "James O’Neill"
+  affiliation: "Trinity College Dublin"
+  position: "Chair of Theoretical Physics"
+  email: "joneill@tcd.ie"
+  tags: ["quantum systems", "statistical mechanics", "computational methods"]
+
+- honorific: "Dr."
+  name: "Clara Dupont"
+  affiliation: "Sorbonne University"
+  position: "Lecturer"
+  email: "cdupont@sorbonne.fr"
+  tags: ["network neuroscience", "graph theory", "brain connectivity"]
+
+- honorific: "Dr."
+  name: "Samuel Ortega"
+  affiliation: "Massachusetts Institute of Technology"
+  position: "Postdoctoral Fellow"
+  email: "sortega@mit.edu"
+  tags: ["machine learning", "computational neuroscience", "data science"]
+
+- honorific: "Prof."
+  name: "Ayumi Tanaka"
+  affiliation: "University of Tokyo"
+  position: "Associate Professor"
+  email: "atanaka@u-tokyo.ac.jp"
+  tags: ["biophysics", "neural modeling", "complex systems"]
+
+- honorific: "Dr."
+  name: "Michael Chen"
+  affiliation: "Stanford University"
+  position: "Assistant Professor"
+  email: "mchen@stanford.edu"
+  tags: ["cognitive science", "artificial intelligence", "psychology"]
+
+- honorific: "Dr."
+  name: "Elena Rossi"
+  affiliation: "ETH Zurich"
+  position: "Senior Research Scientist"
+  email: "elena.rossi@ethz.ch"
+  tags: ["network science", "dynamical systems", "computational biology"]
+
+- honorific: "Prof."
+  name: "David Klein"
+  affiliation: "Harvard University"
+  position: "Professor"
+  email: "dklein@harvard.edu"
+  tags: ["statistical physics", "neural networks", "theoretical neuroscience"]
+
+- honorific: "Dr."
+  name: "Sofia Martínez"
+  affiliation: "University of Buenos Aires"
+  position: "Research Associate"
+  email: "smartinez@uba.ar"
+  tags: ["bioinformatics", "genetics", "data visualization"]
+
+- honorific: "Dr."
+  name: "Karim Al-Mansouri"
+  affiliation: "King Abdullah University of Science and Technology"
+  position: "Research Fellow"
+  email: "kalmansouri@kaust.edu.sa"
+  tags: ["signal processing", "computational modeling", "brain imaging"]
+
+- honorific: "Dr."
+  name: "Lila Nandakumar"
+  affiliation: "Indian Institute of Science"
+  position: "Postdoctoral Researcher"
+  email: "lilan@iisc.ac.in"
+  tags: ["mathematical biology", "neurodynamics", "systems neuroscience"]
+
+- honorific: "Prof."
+  name: "James O’Neill"
+  affiliation: "Trinity College Dublin"
+  position: "Chair of Theoretical Physics"
+  email: "joneill@tcd.ie"
+  tags: ["quantum systems", "statistical mechanics", "computational methods"]
+
+- honorific: "Dr."
+  name: "Clara Dupont"
+  affiliation: "Sorbonne University"
+  position: "Lecturer"
+  email: "cdupont@sorbonne.fr"
+  tags: ["network neuroscience", "graph theory", "brain connectivity"]
+
+- honorific: "Dr."
+  name: "Samuel Ortega"
+  affiliation: "Massachusetts Institute of Technology"
+  position: "Postdoctoral Fellow"
+  email: "sortega@mit.edu"
+  tags: ["machine learning", "computational neuroscience", "data science"]
+
+- honorific: "Prof."
+  name: "Ayumi Tanaka"
+  affiliation: "University of Tokyo"
+  position: "Associate Professor"
+  email: "atanaka@u-tokyo.ac.jp"
+  tags: ["biophysics", "neural modeling", "complex systems"]
+
+- honorific: "Dr."
+  name: "Michael Chen"
+  affiliation: "Stanford University"
+  position: "Assistant Professor"
+  email: "mchen@stanford.edu"
+  tags: ["cognitive science", "artificial intelligence", "psychology"]
+
+- honorific: "Dr."
+  name: "Elena Rossi"
+  affiliation: "ETH Zurich"
+  position: "Senior Research Scientist"
+  email: "elena.rossi@ethz.ch"
+  tags: ["network science", "dynamical systems", "computational biology"]
+
+- honorific: "Prof."
+  name: "David Klein"
+  affiliation: "Harvard University"
+  position: "Professor"
+  email: "dklein@harvard.edu"
+  tags: ["statistical physics", "neural networks", "theoretical neuroscience"]
+
+- honorific: "Dr."
+  name: "Sofia Martínez"
+  affiliation: "University of Buenos Aires"
+  position: "Research Associate"
+  email: "smartinez@uba.ar"
+  tags: ["bioinformatics", "genetics", "data visualization"]
+
+- honorific: "Dr."
+  name: "Karim Al-Mansouri"
+  affiliation: "King Abdullah University of Science and Technology"
+  position: "Research Fellow"
+  email: "kalmansouri@kaust.edu.sa"
+  tags: ["signal processing", "computational modeling", "brain imaging"]
+
+- honorific: "Dr."
+  name: "Lila Nandakumar"
+  affiliation: "Indian Institute of Science"
+  position: "Postdoctoral Researcher"
+  email: "lilan@iisc.ac.in"
+  tags: ["mathematical biology", "neurodynamics", "systems neuroscience"]
+
+- honorific: "Prof."
+  name: "James O’Neill"
+  affiliation: "Trinity College Dublin"
+  position: "Chair of Theoretical Physics"
+  email: "joneill@tcd.ie"
+  tags: ["quantum systems", "statistical mechanics", "computational methods"]
+
+- honorific: "Dr."
+  name: "Clara Dupont"
+  affiliation: "Sorbonne University"
+  position: "Lecturer"
+  email: "cdupont@sorbonne.fr"
+  tags: ["network neuroscience", "graph theory", "brain connectivity"]

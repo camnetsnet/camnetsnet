@@ -1,0 +1,13 @@
+{{- $tag := lower . -}}
+
+{{- $color := dict "main" "var(--grey-100)" "background" "var(--grey-010)" "name" "black" -}}
+
+{{- if eq $tag "software" -}}
+  {{- $color = dict "main" "var(--orange-100)" "background" "var(--orange-dark-100)" "name" "orange" -}}
+{{- else if eq $tag "learning" -}}
+  {{- $color = dict "main" "var(--purple-100)" "background" "var(--purple-dark-100)" "name" "purple" -}}
+{{- else if eq $tag "places" -}}
+  {{- $color = dict "main" "var(--green-100)" "background" "var(--green-dark-100)" "name" "green" -}}
+{{- end -}}
+
+{{- return $color -}}

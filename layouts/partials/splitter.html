@@ -1,0 +1,12 @@
+<div class="caption">
+    {{ $aff := . }}
+    {{ if $aff }}
+    {{ if (reflect.IsSlice $aff) }}
+    {{ range $aff }}
+    <div class="caption">{{ . }}</div>
+    {{ end }}
+    {{ else }}
+    <div class="caption">{{ $aff }}</div>
+    {{ end }}
+    {{ end }}
+</div>
