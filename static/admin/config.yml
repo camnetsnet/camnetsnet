@@ -1,6 +1,9 @@
 backend:
-  name: test-repo
+  name: github
+  repo: camnetnet/camnetnet
+  branch: main
   login: true
+  base_url: https://sveltia-cms-auth.joebacchusgeorge.workers.dev
   site_domain: https://camnetnet.github.io/camnetnet
   commit_messages:
     create: Create {{collection}} “{{slug}}”

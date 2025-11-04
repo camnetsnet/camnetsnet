@@ -6,10 +6,10 @@
 <div class="w-slide">
     
     {{ if ge $item.Date.Unix now.Unix }}
-    <a href="{{ $item.RelPermalink }}/?index={{ $index }}&source={{ $image }}&status=ACTIVE"
+    <a href="{{ "{{ $item.RelPermalink }}/?index={{ $index }}&source={{ $image }}&status=ACTIVE" | relURL }}"
         class="event-people-wrapper past w-inline-block">
         {{ else }}
-        <a href="{{ $item.RelPermalink }}/?index={{ $index }}&source={{ $image }}&status=PAST"
+        <a href="{{ "{{ $item.RelPermalink }}/?index={{ $index }}&source={{ $image }}&status=PAST" | relURL }}"
             class="event-people-wrapper past w-inline-block">
             {{ end }}
 
@@ -22,7 +22,7 @@
 
             {{ if $item.Params.image }}
             <div class="event-thumbnail">
-                <img src="/images/events/{{ $item.Params.image }}.png" loading="lazy" alt="" class="member-image">
+                <img src="{{ "/images/events/{{ $item.Params.image }}.png" | relURL }}" loading="lazy" alt="" class="member-image">
             </div>
             {{ else }}
             <div class="glyph event-thumbnail" style="background-color: {{ $bgColor }}" data-type="{{ $dataType }}"

@@ -53,7 +53,8 @@
       {{ range where $ctx.Site.Data.sponsors.groups "tag" $tag }}
       <div class="caption">
         <a href={{ .link }}>
-          <img src="/images/sponsors/{{ $tag }}.png" loading="lazy" alt="{{ .name }}" class="sponsor-logo">
+          <img src="{{ " /images/sponsors/{{ $tag }}.png" | relURL }}" loading="lazy" alt="{{ .name }}"
+            class="sponsor-logo">
         </a>
       </div>
       {{ end }}
@@ -130,23 +131,26 @@
     const bgValue = rootStyles.getPropertyValue(`--${color}-100`).trim();
     const colorValue = rootStyles.getPropertyValue(`--${color}-dark-100`).trim();
 
+    const base = "{{ " / " | relURL }}";
+
     if (source != "none") {
       display.innerHTML = `<div id="main_image" class="event-thumbnail">
-    <img src="/images/events/${source}.png" loading="lazy" alt="{{ .Title }}" class="member-image">
+    <img src="${base}images/events/${source}.png" loading="lazy" alt="${title}" class="member-image">
   </div>`;
+
 
       const imgDiv = document.getElementById("main_image");
       imgDiv.style.border = `0px solid ${bgValue}`;
       imgDiv.style.position = "relative";
 
       const overlay = document.createElement("div");
-      overlay.className = "img-tint"; 
+      overlay.className = "img-tint";
       overlay.style.position = "absolute";
       overlay.style.top = 0;
       overlay.style.left = 0;
       overlay.style.width = "100%";
       overlay.style.height = "100%";
-      {{/*  overlay.style.backgroundColor = bgValue + "50";  */}}
+      { {/*  overlay.style.backgroundColor = bgValue + "50";  */ } }
       overlay.style.pointerEvents = "none";
       overlay.style.borderRadius = "inherit";
 

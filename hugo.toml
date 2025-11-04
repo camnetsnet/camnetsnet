@@ -2,3 +2,7 @@ baseURL = 'https://camnetnet.github.io/camnetnet'
 languageCode = 'en-us'
 title = 'Cambridge Networks Network'
 buildFuture = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
