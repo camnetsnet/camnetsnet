@@ -45,7 +45,7 @@
 {{ if .Params.sponsors }}
 <section class="section grey">
   <div class="container" style="margin-top: -10px; margin-bottom: -10px;">
-    <div class="horizontal-wrapper" style="justify-content: center;">
+    <div class="horizontal-wrapper sponsors" style="justify-content: center;">
       <p class="caption">Sponsored by:</p>
       {{ $ctx := . }}
       {{ range .Params.sponsors }}
@@ -74,7 +74,7 @@
         <div id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f6a-a984b33e" class="event-people-wrapper">
 
           {{/* {{ if .image }}
-          <img src="/images/keynotes/{{ .image }}.png" loading="lazy" alt="" class="member-image">
+          <img src="/images/keynotes/{{ .image }}.png" loading="lazy" alt="" class="event-image">
           {{ else }}
           <div class="glyph event-thumbnail" style="background-color: transparent" data-type="graph" data-color={{
             $color.main }} data-bg="transparent">{{ .name }}</div>
@@ -135,7 +135,7 @@
 
     if (source != "none") {
       display.innerHTML = `<div id="main_image" class="event-thumbnail">
-    <img src="${baseURL}images/events/${source}.png" loading="lazy" alt="${source}" class="member-image">
+    <img src="${baseURL}images/events/${source}.png" loading="lazy" alt="${source}" class="event-image">
   </div>`;
 
 

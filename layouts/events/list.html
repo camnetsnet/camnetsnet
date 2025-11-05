@@ -113,7 +113,7 @@
                 {{ if $item.Params.image }}
                 <div class="event-thumbnail">
                   <img src={{ printf "images/events/%s.png" $item.Params.image | absURL }} loading="lazy" alt=""
-                    class="member-image">
+                    class="event-image">
                 </div>
                 {{ else }}
                 <div class="glyph event-thumbnail" style="background-color: {{ $bgColor }}" data-type="{{ $dataType }}"
@@ -265,6 +265,9 @@
         return { el: $el, visible: true };
       }).get();
 
+      // Track current page
+      let currentPage = 1;
+
       // Items per page based on screen width
       function getItemsPerPage() {
         const width = $(window).width();
@@ -280,37 +283,34 @@
 
       // Add filler cards to complete the current page
       function addFillers(itemsOnPage, itemsOnCurrentPage) {
+        clearFillers();
         const remainder = itemsOnCurrentPage % itemsOnPage;
         if (remainder === 0) return;
 
         const fillersNeeded = itemsOnPage - remainder;
         for (let i = 0; i < fillersNeeded; i++) {
           const filler = $(`
-      <div class="event-card filler">
-        <div class="w-slide">
-          <a class="event-people-wrapper past w-inline-block" style="background-color:var(--grey-000);">
-            <div class="glyph event-thumbnail" 
-                 style="background-color: var(--grey-000);" 
-                 data-type="graph" 
-                 data-color=transparent
-                 data-bg=var(--grey-000)
-                 data-char="Filler">
-            </div> 
-            <div class="vertical-wrapper padded" style="background-color:var(--grey-000);">
-              
-            </div>
-          </a>
+        <div class="event-card filler">
+          <div class="w-slide">
+            <a class="event-people-wrapper past w-inline-block" style="background-color:var(--grey-000);">
+              <div class="glyph event-thumbnail" 
+                   style="background-color: var(--grey-000);" 
+                   data-type="graph" 
+                   data-color=transparent
+                   data-bg=var(--grey-000)
+                   data-char="Filler">
+              </div> 
+              <div class="vertical-wrapper padded" style="background-color:var(--grey-000);"></div>
+            </a>
+          </div>
         </div>
-      </div>
-    `);
-
+      `);
           $list.append(filler);
         }
       }
 
       // Render visible items for a page
       function renderPage(page, itemsPerPage) {
-        clearFillers();
         const visibleItems = eventData.filter(item => item.visible);
         const start = (page - 1) * itemsPerPage;
         const end = page * itemsPerPage;
@@ -346,6 +346,9 @@
         $noResults.hide();
         $pagination.show();
 
+        // Save current page before destroying
+        const savedPage = currentPage;
+
         $pagination.pagination('destroy');
         $pagination.pagination({
           items: total,
@@ -357,16 +360,25 @@
           prevText: "←",
           nextText: "→",
           onPageClick: function (page) {
+            currentPage = page;
             renderPage(page, itemsPerPage);
           }
         });
 
-        renderPage(1, itemsPerPage);
+        // Render saved page or fallback to last page if out of range
+        const totalPages = Math.ceil(total / itemsPerPage);
+        renderPage(Math.min(savedPage, totalPages), itemsPerPage);
       }
+
+      // Debounced resize to avoid jumping to page 1
+      let resizeTimeout;
+      $(window).on('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => setupPagination(), 200);
+      });
 
       // Initialize
       setupPagination();
-      $(window).on('resize', () => setupPagination());
     });
   </script>
 </body>

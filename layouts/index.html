@@ -125,7 +125,7 @@
                 {{ if $item.Params.image }}
                 <div class="event-thumbnail">
                   <img src={{ printf "images/events/%s.png" $item.Params.image | absURL }} loading="lazy" alt=""
-                    class="member-image">
+                    class="event-image">
                 </div>
                 {{ else }}
                 <div class="glyph event-thumbnail" style="background-color: {{ $color.background }}" data-type="adj"
@@ -153,7 +153,7 @@
               {{ end }}
               {{ end }}
 
-              <div id="w-node-_40fb2f68-7e6b-6b44-0388-2285743335ae-fe3ea3f3" class="horizontal-wrapper"
+              <div id="w-node-_40fb2f68-7e6b-6b44-0388-2285743335ae-fe3ea3f3" class="horizontal-wrapper sponsors"
                 style="justify-content: left;">
                 <p class="caption">Sponsored by:</p>
                 {{ $ctx := . }}

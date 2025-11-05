@@ -92,13 +92,12 @@
               {{/* {{ $color := index $colors (mod $index (len $colors)) }} */}}
               {{ $emailUser := index (split $person.email "@") 0 }}
               {{ $picture := printf "%s.jpg" (lower $emailUser) }}
-              <div id="w-node-e8af09b7-12d8-34d6-9626-da0d0c34638f-244b0c19" class="event-people-wrapper">
-
+              <div id="w-node-e8af09b7-12d8-34d6-9626-da0d0c34638f-244b0c19" class="event-people-wrapper people">
 
                 <img src={{ printf "images/organisers/%s" $picture | absURL}} loading="lazy" alt=""
                   class="member-image">
-
-                <div class="vertical-wrapper padded">
+                  
+                <div class="vertical-wrapper padded people">
                   <h2 class="h6">{{.honorific}} {{ .name }}</h2>
                   <div class="horizontal-line"></div>
                   <div class="vertical-wrapper short">
