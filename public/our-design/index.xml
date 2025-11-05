@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cambridge Networks Network</title>
-    <link>https://camnetnet.github.io/camnetnet/our-design/</link>
+    <link>http://localhost:1313/camnetnet/our-design/</link>
     <description>Recent content on Cambridge Networks Network</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://camnetnet.github.io/camnetnet/our-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/camnetnet/our-design/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

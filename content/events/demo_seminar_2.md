@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Silly beans now demo
 abstract: Something
 speaker: Joe Bacchus George

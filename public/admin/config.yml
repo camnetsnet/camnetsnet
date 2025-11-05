@@ -4,12 +4,12 @@ backend:
   branch: main
   login: true
   base_url: https://sveltia-cms-auth.joebacchusgeorge.workers.dev
-  site_domain: https://camnetnet.github.io/camnetnet
+  site_domain: https://camnetnet.github.io/camnetnet/
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
     delete: Delete {{collection}} “{{slug}}”
-    uploadMedia: Upload “{{path}}”
+    uploadMedia: Upload “{{path}}”e
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
 

@@ -15,6 +15,8 @@
 }
 
 :root {
+  --down-image: url("https://camnetnet.github.io/camnetnet/images/down.svg");
+
   --white-000: #eee;
   --white-020: #eeeeee33;
 
@@ -1044,7 +1046,7 @@ blockquote {
   font-weight: 300;
   line-height: 140%;
 
-  background-image: url("/images/down.svg");
+  background-image: var(--down-image); /* ✅ works */
   background-repeat: no-repeat;
   background-position: right 8px center;
   background-size: 8px;
