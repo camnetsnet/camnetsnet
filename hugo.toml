@@ -1,6 +1,6 @@
-baseURL = 'https://camnetnet.github.io/camnetnet/'
+baseURL = 'https://camnetsnet.github.io/camnetsnet/'
 languageCode = 'en-us'
-title = 'Cambridge Networks Network'
+title = 'Complex Networks at Cambridge'
 buildFuture = true
 
 [caches]
