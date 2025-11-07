@@ -4,7 +4,7 @@ draft: false
 pin: false
 registration: ''
 title: Cambridge Networks Day 2019
-description: The sixth annual meeting on complex networks, including a diverse set of talks by invited speakers highlighting interesting new directions in the field of complex networks.
+description: The sixth annual meeting on complex networks, including a diverse set of talks from our invited keynote speakers.
 date: 2019-08-29
 start_time: 09:30
 end_time: 17:10
