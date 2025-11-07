@@ -3,6 +3,8 @@
 <html data-wf-page="68dd9ee202318045e1ee0168" data-wf-site="68dd93bd36ad2b04fe3ea3f5">
 
 <head>
+  <script src={{ absURL "js/load.js" }}></script>
+
   <meta charset="utf-8">
   <title>Resources</title>
   <meta content="Resources" property="og:title">
@@ -114,22 +116,29 @@
           </div>
           <div class="_3-grid even" id="shuffle-list">
 
-            {{ range $resource := .Site.Data.resources.items }}
-            {{ $color := partial "tags.html" $resource.tag }}
-            <a id="w-node-_05c17aaa-7644-c4c6-c4a3-a70e8cbfc276-e1ee0168" href={{ .link }}
+            {{ $resourceFiles := readDir "data/resources" }}
+            {{ range $file := $resourceFiles }}
+            {{ if or (strings.HasSuffix $file.Name "yml") (strings.HasSuffix $file.Name "yaml") }}
+            {{ $resource := readFile (printf "data/resources/%s" $file.Name) | transform.Unmarshal }}
+
+            {{ $color := partial "tags.html" (index $resource "tag") }}
+            <a id="w-node-_05c17aaa-7644-c4c6-c4a3-a70e8cbfc276-e1ee0168" href="{{ index $resource " link" }}"
               class="resource-wrapper {{ $color.name }} w-inline-block">
               <div class="horizontal-wrapper tight er">
                 <div class="dot {{ $color.name }}"></div>
-                <div class="caption">{{ .tag }}</div>
+                <div class="caption">{{ index $resource "tag" }}</div>
               </div>
               <div class="horizontal-line"></div>
               <div class="vertical-wrapper">
-                <h2 class="h5">{{ .title }}</h2>
-                <p>{{ .desc }}</p>
+                <h2 class="h5">{{ index $resource "title" }}</h2>
+                <p>{{ index $resource "desc" }}</p>
               </div>
               <div id="w-node-b43399cc-2e06-5652-240c-33ff6773f913-e1ee0168" class="text-link button {{ $color.name }}">
-                LINK →</div>
+                LINK →
+              </div>
             </a>
+
+            {{ end }}
             {{ end }}
 
           </div>
@@ -192,7 +201,6 @@
     crossorigin="anonymous"></script>
   <script src={{ absURL "js/webflow.js" }} type="text/javascript"></script>
   <script src={{ absURL "js/alphabet.js" }}></script>
-  <script src={{ absURL "js/load.js" }}></script>
   <script type="text/javascript" src={{ absURL "js/pagination.js" }}></script>
 
   <script>

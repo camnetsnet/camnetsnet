@@ -1,0 +1,12 @@
+<div>
+  {{ $aff := . }}
+  {{ if $aff }}
+    {{ if reflect.IsSlice $aff }}
+      {{ range $aff }}
+        <div>{{ . }}</div>
+      {{ end }}
+    {{ else }}
+      <div>{{ $aff }}</div>
+    {{ end }}
+  {{ end }}
+</div>

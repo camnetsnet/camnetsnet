@@ -26,14 +26,18 @@
           <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df592-a984b33e" class="caption small white">Date</div>
           <div class="caption">{{ .Date.Format "02 January 2006" }}</div>
           <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df596-a984b33e" class="caption small white">Time</div>
-          <div class="caption">{{ index .Params.time 0 }} - {{ index .Params.time 1 }}</div>
+          <div class="caption">{{ .Params.start_time }} - {{ .Params.end_time }}</div>
           <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df59a-a984b33e" class="caption small white">Location</div>
           {{ partial "splitter.html" .Params.location }}
         </div>
         <p class="p-short">{{ .Params.description }}</p>
         {{ if ge .Params.date.Unix now.Unix }}
+        {{ if .Params.registration }}
         <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button">
           Register →</div>
+        {{ else }}
+
+        {{ end }}
         {{ else }}
         <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button grey">Registration
           closed</div>
@@ -44,16 +48,17 @@
 </section>
 {{ if .Params.sponsors }}
 <section class="section grey">
+
   <div class="container" style="margin-top: -10px; margin-bottom: -10px;">
-    <div class="horizontal-wrapper sponsors" style="justify-content: center;">
+    <div class="horizontal-wrapper sponsors"
+      style="justify-content: left;">
       <p class="caption">Sponsored by:</p>
-      {{ $ctx := . }}
       {{ range .Params.sponsors }}
-      {{ $tag := . }}
-      {{ range where $ctx.Site.Data.sponsors.groups "tag" $tag }}
+      {{ $sponsor := index site.Data.sponsors . }}
+      {{ if $sponsor }}
       <div class="caption">
-        <a href={{ .link }}>
-          <img src={{ printf "images/sponsors/%s.png" $tag | absURL }} loading="lazy" alt="{{ .name }}"
+        <a href="{{ $sponsor.link }}">
+          <img src={{ $sponsor.logo | strings.TrimPrefix "/" | absURL }} loading="lazy" alt="{{ $sponsor.name }}"
             class="sponsor-logo">
         </a>
       </div>
@@ -61,6 +66,7 @@
       {{ end }}
     </div>
   </div>
+
 </section>
 {{ end }}
 <section class="section">
@@ -70,7 +76,7 @@
       <h2 class="h3 h4">Keynote Speakers</h2>
       <div class="_5-grid">
 
-        {{ range $person := .Params.keynotes }}
+        {{ range $person := .Params.keynote_speakers }}
         <div id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f6a-a984b33e" class="event-people-wrapper">
 
           {{/* {{ if .image }}
@@ -81,12 +87,14 @@
           {{ end}} */}}
 
           <div class="vertical-wrapper padded speaker">
-            <h2 class="h6" style="padding-top: 20px">{{ .title }} {{ .name }}</h2>
+            {{ $speaker := $person }}
+            {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
+            <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>
             <div class="horizontal-line"></div>
             <div class="vertical-wrapper short">
               <div class="caption small">Affiliation</div>
 
-              <p id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f72-a984b33e">{{ .affiliation }}</p>
+              <p id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f72-a984b33e">{{ partial "splitter.html" .affiliation }}</p>
             </div>
             <div class="vertical-wrapper short" style="display: flex; align-items: center;">
 

@@ -4,10 +4,9 @@
 {{ $image := cond $item.Params.image $item.Params.image "none" }}
 
 <div class="w-slide">
-    
+
     {{ if ge $item.Date.Unix now.Unix }}
     <a href={{ printf "%s?index=%d&source=%s&status=ACTIVE" ($item.RelPermalink | absURL) $index $image }}
-    
         class="event-people-wrapper past w-inline-block">
         {{ else }}
         <a href={{ printf "%s?index=%d&source=%s&status=PAST" ($item.RelPermalink | absURL) $index $image }}
@@ -23,21 +22,22 @@
 
             {{ if $item.Params.image }}
             <div class="event-thumbnail">
-                <img src={{ printf "images/events/%s.png" $item.Params.image | absURL }} loading="lazy" alt="" class="event-image">
+                <img src={{ printf "images/events/%s.png" $item.Params.image | absURL }} loading="lazy" alt=""
+                    class="event-image">
             </div>
             {{ else }}
             <div class="glyph event-thumbnail" style="background-color: {{ $bgColor }}" data-type="{{ $dataType }}"
                 data-color="{{ $mainColor }}" data-bg="{{ $bgColor }}" data-char="{{ $item.Title }}">
-            
+
             </div>
             {{ end }}
 
-            {{/*  {{ if $item.Params.cambridge }}
+            {{/* {{ if $item.Params.cambridge }}
             <div style="margin: 12px; padding: 0px; position: absolute;">
                 <img src="/images/logos/{{ $iconVariant }}/icon_{{ $color.name }}.svg" loading="lazy"
                     style="width: 20px;">
             </div>
-            {{ end }}  */}}
+            {{ end }} */}}
 
             <div class="vertical-wrapper padded">
                 <div class="caption-wrapper"
@@ -57,7 +57,9 @@
                 <p class="p-short">{{ $item.Params.description }}</p>
                 {{ else }}
                 <h2 class="h6">{{ $item.Title }}</h2>
-                <div class="caption">{{ $item.Params.speaker }}</div>
+                {{ $speaker := $item.Params.speaker }}
+                {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
+                <div class="caption">{{ $speaker_full }}</div>
                 {{ end }}
                 <div class="text-link button {{ $color.name }}"
                     id="w-node-c9109f55-7eff-bfee-4b23-4bcc04f8fa1a-fe3ea3f4" style="">VIEW →</div>

@@ -3,6 +3,8 @@
 <html data-wf-page="68dda330230c1f68244b0c19" data-wf-site="68dd93bd36ad2b04fe3ea3f5">
 
 <head>
+  <script src={{ absURL "js/load.js" }}></script>
+
   <meta charset="utf-8">
   <title>People</title>
   <meta content="People" property="og:title">
@@ -86,37 +88,47 @@
           <div class="vertical-wrapper tall">
             <h2 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h4">Organisers</h2>
 
-            <div class="_5-grid">
+{{ $organiserFiles := readDir "data/organisers" }}
 
-              {{ range $index, $person := .Site.Data.people.organisers }}
-              {{/* {{ $color := index $colors (mod $index (len $colors)) }} */}}
-              {{ $emailUser := index (split $person.email "@") 0 }}
-              {{ $picture := printf "%s.jpg" (lower $emailUser) }}
-              <div id="w-node-e8af09b7-12d8-34d6-9626-da0d0c34638f-244b0c19" class="event-people-wrapper people">
+{{ $organisers := slice }}
+{{ range $file := $organiserFiles }}
+  {{ $person := readFile (printf "data/organisers/%s" $file.Name) | transform.Unmarshal }}
+  {{ $organisers = $organisers | append $person }}
+{{ end }}
 
-                <img src={{ printf "images/organisers/%s" $picture | absURL}} loading="lazy" alt=""
-                  class="member-image">
-                  
-                <div class="vertical-wrapper padded people">
-                  <h2 class="h6">{{.honorific}} {{ .name }}</h2>
-                  <div class="horizontal-line"></div>
-                  <div class="vertical-wrapper short">
-                    <div class="caption small">Division</div>
-                    <p id="w-node-_0ef520c5-519a-dfe8-d4a8-348c96202d43-244b0c19">{{ .division }}</p>
-                  </div>
-                  <div class="vertical-wrapper short">
-                    <div class="caption small">LAB</div>
-                    <p>{{ .group }}</p>
-                  </div>
-                  <div class="horizontal-wrapper full">
-                    <a href="mailto:{{ .email }}" class="text-link caption">{{ .email }}</a>
-                  </div>
-                </div>
-              </div>
+{{ $organisers = sort $organisers "order" }}
 
-              {{ end }}
+<div class="_5-grid">
+  {{ range $person := $organisers }}
+    {{ $emailUser := index (split $person.email "@") 0 }}
+    {{ $picture := printf "%s.jpg" (lower $emailUser) }}
 
-            </div>
+    <div class="event-people-wrapper people">
+      <img src="{{ printf "images/organisers/%s" $picture | absURL }}" loading="lazy" alt="" class="member-image">
+
+      <div class="vertical-wrapper padded people">
+        {{ $organiser_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
+        <h2 class="h6">{{ $organiser_full }}</h2>
+
+        <div class="horizontal-line"></div>
+
+        <div class="vertical-wrapper short">
+          <div class="caption small">Division</div>
+          <p>{{ $person.division }}</p>
+        </div>
+
+        <div class="vertical-wrapper short">
+          <div class="caption small">LAB</div>
+          <p>{{ $person.group }}</p>
+        </div>
+
+        <div class="horizontal-wrapper full">
+          <a href="mailto:{{ $person.email }}" class="text-link caption">{{ $person.email }}</a>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
             {{/* <h4 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h6" style="text-align: center;">
               <span style="font-size: large;">For all enquiries, get in touch with </span>
               <span class="caption">camnetnet@cam.ac.uk</span>
@@ -138,34 +150,43 @@
             </div>
             <div class="vertical-wrapper _0 members" id="shuffle-list">
 
-              {{ range $index, $person := .Site.Data.people.members }}
-              {{ $colors := partial "colors" }}
-              {{ $color := index $colors (mod $index (len $colors)) }}
-              <div class="member-wrapper">
+  {{ $networkMembers := readDir "data/members" }}
+  {{ $colors := partial "colors" }}
+  {{ range $index, $file := $networkMembers }}
+    {{ $person := readFile (printf "data/members/%s" $file.Name) | transform.Unmarshal }}
+    {{ $color := index $colors (mod $index (len $colors)) }}
 
-                <div class="dot big ">
+    <div class="member-wrapper">
+      <div class="dot big">
+        <div class="glyph event-thumbnail" style="background-color: transparent" 
+             data-type="adj" 
+             data-color="{{ $color.main }}" 
+             data-bg="transparent" 
+             data-char="{{ $person.first_name }}"></div>
+      </div>
 
-                  <div class="glyph event-thumbnail" style="background-color: transparent" data-type="adj" data-color={{
-                    $color.main }} data-bg="transparent" data-char="{{ .name }}"></div>
-                </div>
+      <div class="vertical-wrapper short">
+        {{ $member_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
+        <h2 class="h6">{{ $member_full }}</h2>
+        <p>{{ partial "stacker.html" $person.affiliation }}</p>
+      </div>
 
-                <div class="vertical-wrapper short">
-                  <h2 class="h6">{{ .honorific}} {{ .name }}</h2>
-                  <p>{{ .affiliation }}</p>
-                </div>
-                <div class="horizontal-wrapper tight er">
-                  {{ range $tag := $person.tags }}
-                  <div class="caption tag">{{ $tag }}</div>
-                  {{ end }}
-                </div>
-                <div style="white-space: nowrap;" id="w-node-ad3e0f97-dcd1-60ab-d5ff-9950fda83b0b-244b0c19"
-                  class="text-link caption"><a href="mailto:{{ .email }}">{{ .email }}</a></div>
-              </div>
-              {{ end }}
-              <div id="no-members" class="caption" style="display:none; text-align:center; padding: 40px">
-                No members found
-              </div>
-            </div>
+      <div class="horizontal-wrapper tight er">
+        {{ range $tag := $person.tags }}
+          <div class="caption tag">{{ $tag }}</div>
+        {{ end }}
+      </div>
+
+      <div style="white-space: nowrap;" class="text-link caption">
+        <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
+      </div>
+    </div>
+  {{ end }}
+
+  <div id="no-members" class="caption" style="display:none; text-align:center; padding: 40px">
+    No members found
+  </div>
+</div>
 
             <div id="pagination-container" class="pagination-container"></div>
 
@@ -188,7 +209,6 @@
     crossorigin="anonymous"></script>
   <script src={{ absURL "js/webflow.js" }} type="text/javascript"></script>
   <script src={{ absURL "js/alphabet.js" }}></script>
-  <script src={{ absURL "js/load.js" }}></script>
   <script type="text/javascript" src={{ absURL "js/pagination.js" }}></script>
   <script>
     $(function () {

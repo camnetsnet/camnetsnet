@@ -1,0 +1,4 @@
+title: Graph-tool
+tag: Software
+link: https://graph-tool.skewed.de/static/docs/stable/
+desc: An efficient Python module for the manipulation and statistical analysis of graphs. The internals are implemented in C++ for performance together with the Boost Graph Library.

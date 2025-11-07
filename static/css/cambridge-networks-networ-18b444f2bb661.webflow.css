@@ -9,7 +9,7 @@
 @font-face {
   font-family: Feijoa;
   src: url('../fonts/Feijoa-Medium.otf') format("opentype");
-  font-weight: 500;
+  font-weight: 500;event-people-wrapper
   font-style: normal;
   font-display: swap;
 }
@@ -33,7 +33,7 @@
   --purple-020: #8377d133;
   --green-020: #afbb5533;
 
-  --grey-000: gainsboro;
+  --grey-000: #dcdcdc;
   --grey-010: #0d0d0d1a;
   --grey-040: #0d0d0d66;
   --grey-100: #0d0d0d;
@@ -243,7 +243,8 @@ span.ellipse.clickable {
 }
 
 .sponsor-logo {
-  width: 120px;
+  max-width: 120px;
+  max-height: 70px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
@@ -879,6 +880,8 @@ blockquote {
   grid-template-rows: 1fr;
   grid-template-columns: 1.5fr 1fr;
   padding: 0 40px 0 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* .event-people-wrapper.orange {
@@ -2031,15 +2034,15 @@ blockquote {
   }
 
   #Honorific {
-    grid-area: span 1 / span 1 / span 1 / span 1;
+    grid-area: span 1 / span 2 / span 1 / span 1;
   }
 
   #First-Name.w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b0a-41133170 {
-    grid-area: span 1 / span 2 / span 1 / span 2;
+    grid-area: span 1 / span 3 / span 1 / span 2;
   }
 
   #Last-Name.w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b0b-41133170 {
-    grid-area: span 1 / span 2 / span 1 / span 2;
+    grid-area: span 1 / span 5 / span 1 / span 2;
   }
 
   #Email.w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b0c-41133170,

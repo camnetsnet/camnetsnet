@@ -11,7 +11,7 @@ backend:
     delete: Delete {{collection}} “{{slug}}”
     uploadMedia: Upload “{{path}}”e
     deleteMedia: Delete “{{path}}”
-    openAuthoring: '{{message}}'
+    openAuthoring: "{{message}}"
 
 logo:
   src: https://camnetnet.github.io/camnetnet/images/logos/light/icon_orange.svg
@@ -21,78 +21,23 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "seminar"
-    label: "Seminars"
-    folder: "content/events"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}:Seminar:{{slug}}"
-    fields:
-      - { label: "Draft", name: "draft", widget: "boolean", default: false}
-      - { label: "Pin", name: "pin", widget: "boolean", default: false}
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Abstract", name: "abstract", widget: "text" }
-      - { label: "Speaker", name: "speaker", widget: "object", fields: [
-          { label: "Honorific", name: "honorific", widget: "select", options: ["", "Dr.", "Prof."] },
-          { label: "First Name(s)", name: "first_name", widget: "string" },
-          { label: "Last Name(s)", name: "last_name", widget: "string" },
-          { label: "Main affiliation", name: "affiliation", widget: "list"}
-        ] }
-      - { label: "Date", name: "start_date", widget: "datetime", date_format: "YYYY.MM.DD", time_format: false }
-      - { label: "Start time", name: "start_time", widget: "datetime", time_format: "HH:mm", date_format: false}
-      - { label: "End time", name: "end_time", widget: "datetime", time_format: "HH:mm", date_format: false}
-      - { label: "Watch link", name: "link", widget: "string", required: false }
-      - { label: "Physical location", name: "location", widget: "list", required: false }
-      - label: "Custom image"
-        name: "image"
-        widget: "file"
-        allow_multiple: false
-        media_library:
-          config:
-            multiple: false
-            allow_types: ['image/png']
-        required: false
 
-  - name: "events"
-    label: "Events"
-    folder: "content/events"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}:Event:{{slug}}"
-    fields:
-      - { label: "Draft", name: "draft", widget: "boolean", default: false}
-      - { label: "Pin", name: "pin", widget: "boolean", default: false}
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Brief description", name: "description", widget: "text" }
-      - { label: "Date", name: "start_date", widget: "datetime", date_format: "YYYY.MM.DD", time_format: false }
-      - { label: "Start time", name: "start_time", widget: "datetime", time_format: "HH:mm", date_format: false}
-      - { label: "End time", name: "end_time", widget: "datetime", time_format: "HH:mm", date_format: false}
-      - { label: "Physical location", name: "location", widget: "list" }
-      - label: "Sponsors"
-        name: "sponsors"
-        widget: "select"
-        multiple: true
-        options:
-            file: "data/sponsors/groups.yml"
-            label_field: "Name"
-            value_field: "name"     
-      - label: "Keynote Speakers"
-        name: "keynote_speakers"
-        widget: "list"
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/_index.md"
         fields:
-            - { label: "Honorific", name: "honorific", widget: "select", options: ["", "Dr.", "Prof."] }
-            - { label: "First Name(s)", name: "first_name", widget: "string" }
-            - { label: "Last Name(s)", name: "last_name", widget: "string" }
-            - { label: "Main affiliation", name: "affiliation", widget: "list" }
-
-      - { label: "Main content", name: "content", widget: "markdown", modes: [ "raw" ] }
-      - label: "Custom image"
-        name: "image"
-        widget: "file"
-        allow_multiple: false
-        media_library:
-          config:
-            multiple: false
-            allow_types: ['image/png']
-        required: false
+          - { label: "Content", name: "body", widget: "markdown", modes: ["raw"]}
+          - label: "Sponsors"
+            name: "sponsors"
+            widget: "relation"
+            multiple: true
+            collection: "sponsors"
+            search_fields: ["name"]
+            value_field: "{{slug}}"
+            display_fields: ["name"]
 
   - name: "resources"
     label: "Resources"
@@ -102,18 +47,246 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tag", name: "tag", widget: "select", options: ["Software", "Learning", "Places"] }
+      - {
+          label: "Tag",
+          name: "tag",
+          widget: "select",
+          options: ["Software", "Learning", "Places"],
+        }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Description", name: "desc", widget: "text" }
+
+  - name: "sponsors"
+    label: "Sponsors"
+    folder: "data/sponsors"
+    extension: "yaml"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+
+      - label: "Link"
+        name: "link"
+        widget: "string"
+
+      - label: "Logo"
+        name: "logo"
+        widget: "file"
+        multiple: false
+        media_library:
+          config:
+            multiple: false
+            allow_types: ["image/png"]
+
+  # - name: "external"
+  #   label: "External"
+  #   folder: "content/events"
+  #   create: true
+  #   slug: "{{year}}-{{month}}-{{day}}:External:{{slug}}"
+  #   fields:
+  #     - { label: "Important", name: "important", widget: "hidden", default: false }
+  #     - { label: "Draft", name: "draft", widget: "boolean", default: false }
+  #     - { label: "Pin", name: "pin", widget: "boolean", default: false }
+  #     - { label: "Cambridge", name: "cambridge", widget: "boolean", default: false }
+  #     - { label: "Direct link", name: "direct_link", widget: "string", required: true }
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - label: "Custom image"
+  #       name: "image"
+  #       widget: "file"
+  #       multiple: false
+  #       media_library:
+  #         config:
+  #           multiple: false
+  #           allow_types: ["image/png"]
+  #       required: false
+
+  - name: "seminar"
+    label: "Seminars"
+    folder: "content/events"
+    create: true
+    slug: "{{fields.date}}:seminar:{{slug}}"
+    fields:
+      - { label: "Important", name: "important", widget: "hidden", default: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Pin", name: "pin", widget: "boolean", default: false }
+      - { label: "Cambridge", name: "cambridge", widget: "boolean", default: true }
+      - { label: "More link", name: "more_link", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Abstract", name: "body", widget: "markdown", modes: ["raw"]}
+      - {
+          label: "Speaker",
+          name: "speaker",
+          widget: "object",
+          fields:
+            [
+              {
+                label: "Honorific",
+                name: "honorific",
+                widget: "select",
+                options: [" ", "Dr.", "Prof."],
+              },
+              { label: "First Name(s)", name: "first_name", widget: "string" },
+              { label: "Last Name(s)", name: "last_name", widget: "string" },
+              {
+                label: "Main affiliation",
+                name: "affiliation",
+                widget: "list",
+              },
+            ],
+        }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+        }
+      - {
+          label: "Start time",
+          name: "start_time",
+          widget: "datetime",
+          time_format: "HH:mm",
+          date_format: false,
+        }
+      - {
+          label: "End time",
+          name: "end_time",
+          widget: "datetime",
+          time_format: "HH:mm",
+          date_format: false,
+        }
+      - { label: "Watch link", name: "link", widget: "string", required: false }
+      - {
+          label: "Physical location",
+          name: "location",
+          widget: "list",
+          required: false,
+        }
+
+      - label: "Custom image"
+        name: "image"
+        widget: "file"
+        multiple: false
+        media_library:
+          config:
+            multiple: false
+            allow_types: ["image/png"]
+        required: false
+
+      - label: "Slides"
+        name: "slides"
+        widget: "file"
+        multiple: false
+        media_library:
+          config:
+            multiple: false
+            allow_types: ["pdf"]
+        required: false
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{fields.date}}:event:{{slug}}"
+    fields:
+      - { label: "Important", name: "important", widget: "hidden", default: true }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Pin", name: "pin", widget: "boolean", default: false }
+      - { label: "Registration link", name: "registration", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Brief description", name: "description", widget: "text" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+        }
+      - {
+          label: "Start time",
+          name: "start_time",
+          widget: "datetime",
+          time_format: "HH:mm",
+          date_format: false,
+        }
+      - {
+          label: "End time",
+          name: "end_time",
+          widget: "datetime",
+          time_format: "HH:mm",
+          date_format: false,
+        }
+      - { label: "Physical location", name: "location", widget: "list" }
+      - label: "Sponsors"
+        required: false
+        name: "sponsors"
+        widget: "relation"
+        multiple: true
+        collection: "sponsors"
+        search_fields: ["name"]
+        value_field: "{{slug}}"
+        display_fields: ["name"]
+
+      - label: "Keynote Speakers"
+        name: "keynote_speakers"
+        widget: "list"
+        required: false
+        fields:
+          - {
+              label: "Honorific",
+              name: "honorific",
+              widget: "select",
+              options: [" ", "Dr.", "Prof."],
+            }
+          - { label: "First Name(s)", name: "first_name", widget: "string" }
+          - { label: "Last Name(s)", name: "last_name", widget: "string" }
+          - { label: "Main affiliation", name: "affiliation", widget: "list" }
+
+          - label: "Slides"
+            name: "slides"
+            widget: "file"
+            multiple: false
+            media_library:
+              config:
+                multiple: false
+                allow_types: ["pdf"]
+            required: false
+
+
+      - {
+          label: "Main content",
+          name: "body",
+          widget: "markdown",
+          modes: ["raw"],
+          required: false,
+        }
+      - label: "Custom image"
+        name: "image"
+        widget: "file"
+        multiple: false
+        media_library:
+          config:
+            multiple: false
+            allow_types: ["image/png"]
+        required: false
 
   - name: "members"
     label: "Members"
     folder: "data/members"
     extension: "yaml"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.first_name}}-{{fields.last_name}}"
     fields:
-      - { label: "Honorific", name: "title", widget: "select", options: ["", "Dr.", "Prof."] }
-      - { label: "Tag", name: "tag", widget: "select", options: ["Software", "Learning", "Places"] }
-      - { label: "Link", name: "link", widget: "string" }
-      - { label: "Description", name: "desc", widget: "text" }
+      - {
+          label: "Honorific",
+          name: "honorific",
+          widget: "select",
+          options: [" ", "Dr.", "Prof."],
+        }
+      - { label: "First Name(s)", name: "first_name", widget: "string" }
+      - { label: "Last Name(s)", name: "last_name", widget: "string" }
+      - { label: "Main affiliation", name: "affiliation", widget: "list" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }

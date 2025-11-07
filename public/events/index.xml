@@ -6,280 +6,35 @@
     <description>Recent content on Cambridge Networks Network</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/camnetnet/events/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Neural Belief Propagation for Combinatorial Optimisation</title>
-      <link>http://localhost:1313/camnetnet/events/demo_seminar/</link>
-      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/demo_seminar/</guid>
-      <description>&lt;p&gt;Combinatorial optimization problems remain ubiquitous in industry and science. Recently, deep&#xA;learning approaches have been motivated as heuristics for such problems. Although promising results&#xA;appear in restricted settings, most still struggle to overcome classical algorithms in both quality and&#xA;time taken to produce solutions. Likewise, loopy belief propagation has been used as a heuristic&#xA;for optimization, but tends to remain uncompetitive in solution quality against other strategies&#xA;like Monte Carlo on general graphs. In this work, we combine a graph neural network acting on&#xA;the non-backtracking matrix with the sum-product algorithm, as a means to approximately solve&#xA;quadratic unconstrained binary optimization problems. This fully unsupervised model is trained on&#xA;distributions of smaller graphs, and learns to improve the sum-product message passing equations&#xA;under a particular optimization problem on unseen larger graph instances. We find that the method&#xA;offers improvements surpassing the quality of hand-crafted approaches to refining belief propagation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Silly beans now demo</title>
-      <link>http://localhost:1313/camnetnet/events/demo_seminar_2/</link>
-      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/demo_seminar_2/</guid>
-      <description>&lt;p&gt;Combinatorial optimization problems remain ubiquitous in industry and science. Recently, deep&#xA;learning approaches have been motivated as heuristics for such problems. Although promising results&#xA;appear in restricted settings, most still struggle to overcome classical algorithms in both quality and&#xA;time taken to produce solutions. Likewise, loopy belief propagation has been used as a heuristic&#xA;for optimization, but tends to remain uncompetitive in solution quality against other strategies&#xA;like Monte Carlo on general graphs. In this work, we combine a graph neural network acting on&#xA;the non-backtracking matrix with the sum-product algorithm, as a means to approximately solve&#xA;quadratic unconstrained binary optimization problems. This fully unsupervised model is trained on&#xA;distributions of smaller graphs, and learns to improve the sum-product message passing equations&#xA;under a particular optimization problem on unseen larger graph instances. We find that the method&#xA;offers improvements surpassing the quality of hand-crafted approaches to refining belief propagation.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Cambridge Networks Relaunch</title>
-      <link>http://localhost:1313/camnetnet/events/demo_conference/</link>
-      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/demo_conference/</guid>
-      <description>&lt;h2 id=&#34;about-the-event&#34;&gt;About the event&lt;/h2&gt;&#xA;&lt;p&gt;This will be the first academic event of the year, and an especially important one this time. The CNN community has been revitalised, offering not only a healthy new identity but a&lt;/p&gt;</description>
+      <link>http://localhost:1313/camnetnet/events/2025-11-07eventcambridge-networks-relaunch/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetnet/events/2025-11-07eventcambridge-networks-relaunch/</guid>
+      <description>&lt;h2 id=&#34;about-this-event&#34;&gt;About this event&lt;/h2&gt;&#xA;&lt;p&gt;This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Epidemics over Mobile Phone Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2015_10_03_sem/</link>
+      <link>http://localhost:1313/camnetnet/events/2025-11-07-seminar-epidemics-over-mobile-phone-networks/</link>
       <pubDate>Sat, 03 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2015_10_03_sem/</guid>
+      <guid>http://localhost:1313/camnetnet/events/2025-11-07-seminar-epidemics-over-mobile-phone-networks/</guid>
       <description>&lt;p&gt;Human interactions sensed ubiquitously by mobile phones can improve a significant number of public health problems, particularly helping to track the spread of disease. In this talk, we evaluate multiple avenues for the integration of high-resolution face to face Bluetooth-sensed interaction networks into epidemic models. Our goal is to evaluate the capacity of the different avenues of integration to track the spread of seasonal influenza on a real-world community of 72 individuals over a period of 17 weeks. The dataset considered contains real-time tracking of individual flu symptoms over the whole observation period, providing a concrete individualized source for evaluation. We present two different studies on this dataset. The first considers the standard SIR model simulated over real network dynamics with the overall goal of predicting the real infections over time. We obtain an error of less than 2 infected people on average when predicting the total number of individuals affected by the flu and a precision of approximately 30% when predicting exactly which individual will become infected at a given time. Our results indicate that high-resolution mobile phone data can increase the predictive power of even the simplest of epidemic models. The second study proposes a dual model for contact tracing, where an infection is spreading in the physical interpersonal network&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Technology Pathway of Society from U.S. Patents</title>
-      <link>http://localhost:1313/camnetnet/events/2015_02_17_sem/</link>
+      <link>http://localhost:1313/camnetnet/events/2025-11-07-seminar-understanding-technology-pathway-of-society-from-u.s.-patents/</link>
       <pubDate>Tue, 17 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2015_02_17_sem/</guid>
+      <guid>http://localhost:1313/camnetnet/events/2025-11-07-seminar-understanding-technology-pathway-of-society-from-u.s.-patents/</guid>
       <description>&lt;p&gt;Technology’s advance is central to our understanding of economic growth and development. Furthermore, solutions for many of the planet’s most pressing challenges – economic recovery, poverty reduction, climate change, sustainability – require significant additions to society’s technological toolkit. Yet, our ability to quantitatively model and forecast technological change has been limited due to difficulties in defining units of analysis and in collecting comparative empirical data. Some inventions, namely patents, however, leave behind a documentary trail, enabling us to study the invention processes in a quantitative way. Here, we propose to develop a formal methodology to construct detailed technology &amp;ldquo;map&amp;rdquo; and its temporal evolution from large-scale U.S. Patent data spanning 220 years. We utilize the classification system consisting of codes as temporally consistent units of analysis (nodes). These technology codes are means to succinctly describe a patent’s technology capabilities. When codes appear together in a patent, therefore, we consider them inter-dependent to make a useable function and represent this inter-dependency by assigning a link to between them. These micro-scale invention activities add up to form networks in time where macro-scale structures emerge through temporal evolution of community structure. We observe and identify episodic change of structure over time corresponding to historic events and major breakthroughs, indicating the technology change is not gradual but serious of punctuated equilibriums.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Time Series meet Network Science</title>
-      <link>http://localhost:1313/camnetnet/events/2015_01_27_sem/</link>
+      <link>http://localhost:1313/camnetnet/events/2025-11-07seminartime-series-meet-network-science/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2015_01_27_sem/</guid>
+      <guid>http://localhost:1313/camnetnet/events/2025-11-07seminartime-series-meet-network-science/</guid>
       <description>&lt;p&gt;In the last years, ideas and methods from network science have been applied to study the structure of time series and signals, thereby building a bridge between nonlinear dynamics, time series analysis and graph theory. In this talk I will focus on a particular approach, namely the family of visibility algorithms, and will give an overview of the main results that we have obtained recently. In particular, I will depict several case studies where concrete problems in nonlinear dynamics, stochastic processes and statistical physics can be easily mapped, via visibility algorithms, to the study of the topological properties of classes of visibility graphs. I will conclude with a summary of open problems and applications.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dominance Hierarchy Networks of Worker Ants</title>
-      <link>http://localhost:1313/camnetnet/events/2014_12_02_sem/</link>
-      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2014_12_02_sem/</guid>
-      <description>&lt;p&gt;Group-living animals, from insects to mammals, often form dominance hierarchy, which is a directed network. The direction of the link represents aggression by one individual on the other subordinate individual. In small groups of animals, it has been long known that the hierarchy is often perfectly linear, allowing unique ranking of the individuals. However, perfect linearity is often violated in large groups. I present analysis of aggressive dominance hierarchy formed by worker ants as large directed networks and then discuss evolutionary implications of the results. I also present some results on generative models to account for the observed connectivity patterns, built on the assumption of heterogeneously distributed intrinsic strengths of individual nodes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Localization of Instabilities in Complex Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2014_11_11_sem/</link>
-      <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2014_11_11_sem/</guid>
-      <description>&lt;p&gt;On several levels, humans depend on the functioning of complex networks, including the molecular networks in cells, ecological food webs and technical infrastructure nets. In such systems the complex interplay of distributed components can result in cascading failures. Large complex networks are likely to be dynamically unstable and recent work showed that trying to stabilize the network can lead to large-scale failure. In this talk I will investigate both the propensity of networked systems to fail and the scale of the failure once it occurs. I will show mathematically that naturally occurring networks have predominantly localised instabilities that are confined to small parts of the network, but attempts to stabilize the network can lead to a delocalisation, such that instabilities become less likely but affect a larger number of nodes. These results shed new light on the apparent stability of ecological food webs and the causes of systemic failure in artificial technical and organizational networks. Furthermore they have implications for the planning of interventions, such as vaccination campaigns against epidemic diseases.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Inferring Social Network Structure in Ecological Systems from Spatio-Temporal Data Streams</title>
-      <link>http://localhost:1313/camnetnet/events/2014_10_28_sem/</link>
-      <pubDate>Tue, 28 Oct 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2014_10_28_sem/</guid>
-      <description>&lt;p&gt;We propose a collection of analytical and computational methods for inferring the underlying social structure of a given animal population, observed only via timestamped occurrences of its members across a range of locations. We show that such data streams have a modular and temporally-focused structure, neither fully ordered nor completely random, with individuals appearing in “gathering events”. By exploiting such structure, we propose an appropriate mapping of those spatio-temporal data streams to a social network, based on the co-occurrences of individuals across gathering events. The methods proposed are applied on a data set of wild-bird visitations in order to explore bird sociality, reveal its internal organisation across a variety of different scales and provide insights into important biological processes relating to mating pair formation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Network Pharmacology for Parkinson&#39;s Disease</title>
-      <link>http://localhost:1313/camnetnet/events/2014_03_04_sem/</link>
-      <pubDate>Tue, 04 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2014_03_04_sem/</guid>
-      <description>&lt;p&gt;Network pharmacology offers a new approach to identifying potential drug targets in diseases with complex aetiology. Parkinson’s disease (PD) is used as an exemplar of such a disease due to its sporadic nature and the involvement of multiple cellular pathways. PD is the second most common neurodegenerative disease with a prevalence of 5% at age 85. Despite this, there is currently no cure for PD or treatment capable of slowing disease progression. Many of the key features of PD can be reproduced using the neurotoxin MPP+, a complex I inhibitor that induces cytotoxicity via a programmed cell death (apoptotic) mechanism. Although key processes in MPP+ toxicity have been characterised, analysis of the underlying biological network can offer an insight into the interplay of these individual processes and pathways.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mining Real-World Networks: From Biology to Economics</title>
-      <link>http://localhost:1313/camnetnet/events/2014_02_11_sem/</link>
-      <pubDate>Tue, 11 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2014_02_11_sem/</guid>
-      <description>&lt;p&gt;Comparing networks is important for understanding the organizational principles and tracking the dynamics in a broad spectrum of areas that involve many interacting objects. Examples include relationships between people, the global climate system, the world’s economic system, bindings between bio-molecules in a cell, and much else. We introduce new network analysis, comparison and alignment methods, based on counts of local subnetworks, which are easy to compute and produce meaningful and robust results along a wide array of networks. We validate them on simple models, for which, unlike for real world, we know the answers and hence can check the validity of the methods. Also, we apply them to real-world networks from several domains and uncover new domain-specific knowledge.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Understanding and Exploiting Social and Mobility Information from Big Mobile Data</title>
-      <link>http://localhost:1313/camnetnet/events/2014_01_21_sem/</link>
-      <pubDate>Tue, 21 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2014_01_21_sem/</guid>
-      <description>&lt;p&gt;Mobile phones are increasingly equipped with sensors, such as accelerometers, GPS receivers, and cameras, which can be used to sense and interpret people behaviour in real-time. Novel user-centered sensing applications can be built by exploiting the availability of these technologies. Moreover, data extracted from the sensors can also be used to model and predict people behaviour and movement patterns, providing a very rich set of multi-dimensional and linked data, which can be extremely useful, for instance, for the development of highly personalised applications, health interventions, and real-time support for policy-makers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Modelling Human Mobility and the Origin of Cities</title>
-      <link>http://localhost:1313/camnetnet/events/2013_12_03_sem/</link>
-      <pubDate>Tue, 03 Dec 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_12_03_sem/</guid>
-      <description>&lt;p&gt;Human mobility and social interactions have always been subjects of interest to many disciplines, including sociology, geography, and economics. These topics are key to address real-life problems like the design of optimal transportation systems for goods and individuals, the control and prevention of epidemic spreading, and the forecast of social and economic consequences of migrations. Today, thanks to the availability of large and detailed datasets on people&amp;rsquo;s communications and whereabouts, we are in the position to test the validity of classical theories and models, improve them, and develop a deeper understanding of the underlying mechanisms governing our society.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Burstiness and Correlations Affect Spreading on Temporal Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2013_11_12_sem/</link>
-      <pubDate>Tue, 12 Nov 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_11_12_sem/</guid>
-      <description>&lt;p&gt;In the study of dynamical processes on networks, there has been intense focus on network structure—i.e., the arrangement of edges and their associated weights—but the effects of the temporal patterns of edges remains poorly understood. In this talk, I will focus on analytically-tractable models in order to identify mechanisms by which temporality affects transient and stationary properties of dynamical processes. In particular, I will study the effect of the waiting-time distribution between events, and of correlations between successive events.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Community Structure in Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2013_10_15_sem/</link>
-      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_10_15_sem/</guid>
-      <description>&lt;p&gt;Many networks have cohesive groups of nodes called &amp;ldquo;communities&amp;rdquo;. The study of community structure borrows ideas from many scientific areas, and there are now numerous methods available to find communities algorithmically. My collaborators and I have been very active in this area, and I will discuss some of our work on both methodological development and applications. Examples will include subjects like social networks, brain networks, granular materials, and more.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cambridge Networks Day 2013</title>
-      <link>http://localhost:1313/camnetnet/events/2013_05_07_day/</link>
-      <pubDate>Tue, 07 May 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_05_07_day/</guid>
-      <description>&lt;p&gt;CNDay 2013 will take place on Tuesday, 7th May 2013, at the Sainsbury Laboratory. Thanks to the generous sponsorship of the University of Cambridge and the Sainsbury Laboratory, the event is free of charge, though registration is required.&lt;/p&gt;&#xA;&lt;p&gt;Confirmed speakers include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Albert-Lászlo Barabási, Northeastern University, Boston&lt;/li&gt;&#xA;&lt;li&gt;Marc Barthélémy, CEA Institut de Physique Théorique, Saclay, France&lt;/li&gt;&#xA;&lt;li&gt;Ed Bullmore, Department of Psychiatry, University of Cambridge&lt;/li&gt;&#xA;&lt;li&gt;Ginestra Bianconi, Queen Mary University of London&lt;/li&gt;&#xA;&lt;li&gt;Jörg Menche, Northeastern University, Boston&lt;/li&gt;&#xA;&lt;li&gt;Cecilia Mascolo, Computing Laboratory, University of Cambridge&lt;/li&gt;&#xA;&lt;li&gt;Felix Reed-Tsochas, Saïd Business School, Oxford&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The event also features a poster session. Abstract submissions for posters are accepted until 2nd April 2013. For submissions or inquiries, email &lt;a href=&#34;mailto:cnninfo@hermes.cam.ac.uk&#34;&gt;cnninfo@hermes.cam.ac.uk&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Counting and Generating Tailored Random Graphs</title>
-      <link>http://localhost:1313/camnetnet/events/2013_03_05_sem/</link>
-      <pubDate>Tue, 05 Mar 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_03_05_sem/</guid>
-      <description>&lt;p&gt;Ensembles of tailored random graphs with controlled topological properties are a natural language for describing real-world networks. They allow precise definitions of structural features, classification of networks, measures of complexity and (dis)similarity, provide ‘null models’ for hypothesis testing, and serve as efficient proxies for real networks in process modelling.&lt;/p&gt;&#xA;&lt;p&gt;This seminar explains the connection between networks and tailored random graphs, demonstrates how tools from statistical mechanics and information theory can exploit this connection, and discusses exact algorithms for generating such graphs numerically. Ongoing research and open problems, including analysis of ensembles with many short loops, are also presented.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Biochemical Network Inference from Data</title>
-      <link>http://localhost:1313/camnetnet/events/2013_02_19_sem/</link>
-      <pubDate>Tue, 19 Feb 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_02_19_sem/</guid>
-      <description>&lt;p&gt;One of the fundamental interests in systems biomedicine is to understand the functionality of molecules involved with a particular disease. This talk focuses on developing predictive models of biochemical networks to infer: (a) causal molecular interactions and regulations, (b) dynamical behaviours, and (c) the mapping from networks to phenotypic or disease behaviour. Such models enable simulation of hypotheses for experimental testing, accelerating understanding of disease mechanisms.&lt;/p&gt;&#xA;&lt;p&gt;The talk emphasizes methods to infer dynamical causal interactions between measured species. It highlights the importance of experimental design: for a network with p measured species, p experiments are required, each independently controlling one species. The resulting network representation is predictive, with steady-state data yielding static network information and time series generating dynamic representations suitable for simulation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Analysis of Spatial and Social Networks in Complex Buildings</title>
-      <link>http://localhost:1313/camnetnet/events/2013_02_05_sem/</link>
-      <pubDate>Tue, 05 Feb 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_02_05_sem/</guid>
-      <description>&lt;p&gt;Considering spatial variables in the analysis of social and economic activity is not new, with early studies linking social ties to spatial location, such as the Bank Wiring Room Study and investigations of friendship prevalence relative to home distances.&lt;/p&gt;&#xA;&lt;p&gt;Despite growing interest in integrating spatial and social network analyses, spatial approaches remain underrepresented in network science. This talk examines space within complex buildings as a network using the method of &lt;em&gt;Space Syntax&lt;/em&gt;. Concepts and methods from Space Syntax research will be introduced, and three building types—museums, hospitals, and offices—will be analyzed to explore how spatial networks shape social life and behavioral patterns. Recent research will also be presented on how spatial network analysis can illuminate interaction and communication networks among building users.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Social Network Analysis for Preventative Health in sub-Saharan Africa</title>
-      <link>http://localhost:1313/camnetnet/events/2013_01_22_sem/</link>
-      <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2013_01_22_sem/</guid>
-      <description>&lt;p&gt;The characteristics of networks—ranging from biological and physical to social systems—enable computational analyses that provide insights unattainable from examining individual components. Despite this potential, network theory has yet to be widely applied in public health, particularly in interventions addressing parasitic diseases and preventative health behaviors.&lt;/p&gt;&#xA;&lt;p&gt;This talk explores how social networks and the resulting social capital can inform disease control strategies. Preliminary results from former “blood-diamond” regions of Sierra Leone and Liberia will be presented, along with discussion of challenges in conducting large-scale, tractable social network surveys in rural, resource-limited settings.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Social Networks, Tie Attributes, and Channels of Communication</title>
-      <link>http://localhost:1313/camnetnet/events/2012_11_20_sem/</link>
-      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_11_20_sem/</guid>
-      <description>&lt;p&gt;Technology mediates a large fraction of social interactions, yet large datasets of these interactions—drawn from channels like SMS, mobile phone calls, and online networks—often lack information about the attributes or the nature of relationships between individuals.&lt;/p&gt;&#xA;&lt;p&gt;This talk presents research that combines an 18-month mobile phone dataset with supporting self-reported attribute data to unify behavioural data studies with traditional social network analyses based on surveys. The study examines how participants’ valuation of tie strength corresponds with communication behaviour via voice calls and SMS. Results reveal that variations in perceived social tie strength translate into measurable differences in communication patterns across the two channels, providing insights into the interplay between tie attributes and observable social behaviour.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Measuring Social Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2012_11_06_sem/</link>
-      <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_11_06_sem/</guid>
-      <description>&lt;p&gt;Recent advances in technology have made it possible to measure social networks with unprecedented precision, using smartphones as sensors. Dr Lehmann&amp;rsquo;s group has been developing a large-scale dataset to capture the complete social network—including face-to-face interactions, telecommunication, and online social networks—of an entire freshman class (~1200 individuals) in 2013.&lt;/p&gt;&#xA;&lt;p&gt;This talk covers prior research, the methodology behind establishing an experiment of this scale, and early results from a beta-test involving ~200 participants. The project represents a significant step forward in quantitatively understanding social systems through high-resolution measurement.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Spatial Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2012_10_23_sem/</link>
-      <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_10_23_sem/</guid>
-      <description>&lt;p&gt;Modeling interactions between sites in space is relevant across fields such as geography, economics, transport, communications, town planning, and archaeology. Prof Evans discusses common features and choices in models of spatial networks, including the recent Radiation model developed by Simini, Barabási, and colleagues. He also addresses how different models of spatial networks can be compared and evaluated, providing insights for prediction and data completion.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Community Structure and Patterns of Scientific Collaboration in Co-authorship Networks: Evidence from Business and Management</title>
-      <link>http://localhost:1313/camnetnet/events/2012_10_09_sem/</link>
-      <pubDate>Tue, 09 Oct 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_10_09_sem/</guid>
-      <description>&lt;p&gt;Dr Panzarasa investigates the role of homophily and focus constraints in shaping scientific collaboration. He distinguishes between status-based and research-based homophily, and between institutional and geographic constraints. Using a community-detection algorithm applied to a co-authorship network in Business and Management (1996–2000), he finds partial support for research-based homophily, strong support for status-based selection, and clear evidence that collaborations are constrained by institutional and geographic factors. The talk highlights both formal and informal channels of scientific exchange and discusses their implications for tie formation in collaborative research.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cambridge Networks Day 2012</title>
-      <link>http://localhost:1313/camnetnet/events/2012_05_19_day/</link>
-      <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_05_19_day/</guid>
-      <description>&lt;p&gt;The first Cambridge Networks Day (CNN Day) is a one-day conference bringing together researchers interested in complex networks from various departments and institutes in and around Cambridge. The event features talks, discussions, and networking opportunities for attendees across multiple disciplines.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Bacterial Non-coding RNA and Regulatory Networks of Gene Expression</title>
-      <link>http://localhost:1313/camnetnet/events/2012_04_24_sem_1/</link>
-      <pubDate>Tue, 24 Apr 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_04_24_sem_1/</guid>
-      <description>&lt;p&gt;Bacteria such as Escherichia coli and Salmonella encode over a hundred small RNAs that do not produce proteins but instead regulate gene expression. These ‘riboregulators’ can amplify or attenuate genetic expression depending on context, act redundantly on common targets, or influence multiple targets in complex regulatory networks. Through these interactions, riboregulators enable bacteria to respond dynamically to environmental changes and maintain metabolic homeostasis. Their rapid and specific activity likely stems from base-pair recognition with target RNAs, though the precise rules governing speed and fidelity remain unclear. Riboregulators also compete for a limiting factor that facilitates their actions, resulting in dynamic network interplay. Dr Luisi will discuss mechanisms by which riboregulators achieve accurate and rapid transcript silencing, illuminating their broader roles in bacterial gene regulation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploring Human Anti-proliferative and Cell Survival Responses Using Pathways, Networks and Integrative Genomic Approaches</title>
-      <link>http://localhost:1313/camnetnet/events/2012_04_24_sem_2/</link>
-      <pubDate>Tue, 24 Apr 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_04_24_sem_2/</guid>
-      <description>&lt;p&gt;Cell proliferation in mammalian systems is tightly controlled, and loss of this regulation often leads to tumour formation. Multiple mechanisms underlie anti-proliferative and cell survival effects, which can be explored through integrative genomics combined with pathway and network modelling. Dr Samarajiwa examines processes such as cellular senescence and apoptosis—both key in preventing tumorigenesis—by integrating gene expression and next-generation sequencing data. His research identifies transcription factors, pathways, and regulatory networks that mediate these effects, focusing especially on the anti-proliferative actions of interferons, a class of host defence molecules with potent antiviral, antitumour, and immunomodulatory properties. Using interferon-treated breast cancer cell lines and tumour-derived genomic data, he explores how these pathways and networks contribute to interferon-mediated anti-tumour responses. Understanding these regulatory interactions at a systems level may help reveal the genetic basis of key cellular phenotypes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Logic Modelling as a Means to Link Protein Signalling Networks with Functional Analysis of Signal Transduction</title>
-      <link>http://localhost:1313/camnetnet/events/2012_03_16_sem_2/</link>
-      <pubDate>Fri, 16 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_03_16_sem_2/</guid>
-      <description>&lt;p&gt;Advances in experimental techniques and literature mining now allow researchers to construct detailed networks of protein–protein interactions. While these networks reveal the architecture of complex biochemical pathways, they are often not cell-type specific and lack the input–output relationships needed to analyse receptor-mediated signalling and drug responses. Dr Saez-Rodriguez presents a hybrid approach that compresses protein networks into logical models—ranging from discrete Boolean circuits to quantitative fuzzy-logic and dynamic differential equation frameworks. Implemented in the CellNOpt toolbox (&lt;a href=&#34;http://www.ebi.ac.uk/saezrodriguez/software.html)&#34;&gt;http://www.ebi.ac.uk/saezrodriguez/software.html)&lt;/a&gt;, this method integrates experimental data from cells exposed to combinations of ligands and drugs to infer the underlying signalling mechanisms. He illustrates the approach through a study comparing immediate early signalling networks in primary human hepatocytes and four hepatocellular carcinoma (HCC) cell lines (Cancer Research, 71(16):5400–11, 2011).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Probabilistic Models of Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2012_03_16_sem_1/</link>
-      <pubDate>Fri, 16 Mar 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_03_16_sem_1/</guid>
-      <description>&lt;p&gt;Network data capturing pairwise relationships between objects arise in diverse domains—from protein interaction networks in biology to social connections among individuals. Analysing and modelling such complex networks has become a central challenge across many scientific fields. Professor Ghahramani reviews probabilistic approaches to modelling networks, including the stochastic blockmodel and infinite relational models. These models assume that each object possesses latent features, with observed links depending on these hidden attributes. Probabilistic inference enables discovery of an unbounded number of latent features—revealing community structures, predicting missing links, and uncovering key statistical properties of networks. To overcome limitations of existing models, he introduces the more flexible Infinite Latent Attribute (ILA) model, demonstrating its effectiveness on link prediction tasks in both biological and social network datasets.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Novel Network Centrality and Community Measures – and Their Changes in Crisis and Adaptation</title>
-      <link>http://localhost:1313/camnetnet/events/2012_02_24_lec/</link>
-      <pubDate>Fri, 24 Feb 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_02_24_lec/</guid>
-      <description>&lt;p&gt;In February, the regular CNN seminar will be replaced by a special lecture by Professor Péter Csermely, visiting from the Department of Medical Chemistry, Semmelweis University, Budapest.&lt;/p&gt;&#xA;&lt;p&gt;Professor Csermely will speak on “Novel Network Centrality and Community Measures – and Their Changes in Crisis and Adaptation.”&lt;/p&gt;&#xA;&lt;p&gt;His multidisciplinary research group explores the universal properties of networks as conceptual “highways” that facilitate the transfer of ideas across scientific fields. This cross-disciplinary approach enables creative breakthroughs and helps apply biological insights on crisis survival—honed over billions of years—to other complex systems.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Controlling Centrality in Complex Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2012_01_26_sem_1/</link>
-      <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_01_26_sem_1/</guid>
-      <description>&lt;p&gt;Node and edge centrality are pivotal concepts in the analysis of complex networks. Centrality measures are used to identify influential individuals in social groups, rank web pages, and assess scientific impact. Traditionally, centrality depends on the entire network structure, and is computed only after the network is defined.&lt;/p&gt;&#xA;&lt;p&gt;Dr Nicosia presents a solution to the “inverse centrality problem”—the task of controlling node centrality values by modifying the network structure. Focusing on spectral centrality measures, he introduces the concept of controlling sets—subsets of nodes that can assign any desired set of centrality values across the network by cooperatively adjusting their outgoing link weights.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>On Joint Diagonalisation for Dynamic Network Analysis</title>
-      <link>http://localhost:1313/camnetnet/events/2012_01_26_sem_2/</link>
-      <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2012_01_26_sem_2/</guid>
-      <description>&lt;p&gt;Joint Diagonalisation (JD) is a mathematical technique used to estimate an average eigenspace across a set of matrices. While widely applied in system dynamics, its use in network analysis is relatively new. Dr Yoneki explores the application of JD to matrices representing spanning trees of dynamic networks, where no single static graph can fully describe interactions.&lt;/p&gt;&#xA;&lt;p&gt;By using JD, an average eigenspace can be constructed to represent an “average spanning tree” — effectively capturing the most common propagation paths in a network. Analysing deviations from this average reveals that real-world contact networks exhibit multi-modal distributions, corresponding to distinct behavioural modes over time.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Drug Discovery and Re-purposing by Network-Analysis of Gene Expression Data</title>
-      <link>http://localhost:1313/camnetnet/events/2011_12_14_sem_1/</link>
-      <pubDate>Wed, 14 Dec 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2011_12_14_sem_1/</guid>
-      <description>&lt;p&gt;Recent studies suggest that every biological state can be characterized by a gene expression signature—a defined set of genes and their specific pattern of expression. This principle applies to disease phenotypes, pathway activity, or cellular responses to drugs. While individual genes may poorly capture a state, sets of genes considered together can robustly describe it.&lt;/p&gt;&#xA;&lt;p&gt;Dr Iorio presents MANTRA (Mode of Action by NeTwoRk Analysis), a computational tool for analyzing the mode of action (MoA) of novel drugs and identifying candidates for drug repurposing. MANTRA integrates network-theory concepts and non-parametric statistics to leverage gene expression patterns for both discovery and repositioning of therapeutics.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Inferring Phenotypic Networks with Nested Effect Models</title>
-      <link>http://localhost:1313/camnetnet/events/2011_12_14_sem_2/</link>
-      <pubDate>Wed, 14 Dec 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2011_12_14_sem_2/</guid>
-      <description>&lt;p&gt;High-dimensional phenotyping screens generate extensive cellular feature data after gene perturbations, such as knockouts or RNA interference. Analysing these effects systematically is key to understanding gene function.&lt;/p&gt;&#xA;&lt;p&gt;Dr Markowetz introduces Nested Effects Models (NEMs), a probabilistic framework to infer genetic hierarchies from the nested structure of observed phenotypic effects. NEMs:&#xA;1.&#x9;Identify clusters of genes with highly similar phenotypic profiles, and&#xA;2.&#x9;Order genes or gene clusters based on subset relationships between phenotypes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Network Analyses of Protein Structure, Evolution and Dynamics</title>
-      <link>http://localhost:1313/camnetnet/events/2011_11_21_sem_1/</link>
-      <pubDate>Mon, 21 Nov 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2011_11_21_sem_1/</guid>
-      <description>&lt;p&gt;Graph theory has transformed molecular biology over the past decade, providing a framework for analysing gene and protein interactions. Dr Teichmann’s group applies graph-theoretical approaches to:&#xA;•&#x9;Examine the topology and evolution of genome-scale networks of physical protein interactions and transcriptional regulatory interactions, revealing the role of gene duplication in network shaping.&#xA;•&#x9;Study dynamical processes in protein–protein and regulatory networks.&#xA;•&#x9;Analyse interactions within small protein complexes of known 3D structure, uncovering principles of protein assembly and evolution.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Personality and Language in Social Media</title>
-      <link>http://localhost:1313/camnetnet/events/2011_11_21_sem_2/</link>
-      <pubDate>Mon, 21 Nov 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2011_11_21_sem_2/</guid>
-      <description>&lt;p&gt;Dr Quercia explores how personality traits relate to social media behaviour. In Facebook, he analysed the link between sociometric popularity (number of contacts) and personality traits, testing whether popular users maintain many offline friendships or many superficial connections. Extraversion emerged as the strongest predictor of both offline and Facebook popularity, but there was no evidence supporting the idea that highly connected users maintain more superficial relationships.&lt;/p&gt;&#xA;&lt;p&gt;On Twitter, analysis of 335 users revealed that both popular and influential users are extroverted and emotionally stable, with popular users scoring high in Openness and influentials in Conscientiousness. Using only three publicly available metrics—following, followers, and listed counts—it is possible to predict a user’s five personality traits with a root-mean-squared error below 0.88 on a [1,5] scale. Linguistic analysis of tweets further shows that popularity and influence also depend on personality and emotions, not just network structure.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Generative Models of Brain Functional Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2011_10_25_sem_1/</link>
-      <pubDate>Tue, 25 Oct 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2011_10_25_sem_1/</guid>
-      <description>&lt;p&gt;Brain functional networks derived from fMRI data are increasingly used to understand information flow in healthy and anomalous human brains, both during tasks and at rest. While a variety of network measures describe the topology of these networks, the underlying forces shaping them into characteristic patterns remain unknown. Dr Vertes examines generative models for the probability of functional connections (edges) between cortical areas (nodes) based on their Euclidean distances in anatomical space.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Knotty-Centredness: Finding the Connective Core of a Complex Network</title>
-      <link>http://localhost:1313/camnetnet/events/2011_10_25_sem_2/</link>
-      <pubDate>Tue, 25 Oct 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2011_10_25_sem_2/</guid>
-      <description>&lt;p&gt;Professor Shanahan presents knotty-centredness, a measure capturing the extent to which a network contains a densely interconnected and topologically central core. Applications to brain networks are highlighted, including analysis of a newly constructed connectome of the pigeon forebrain.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cambridge Networks Launch</title>
-      <link>http://localhost:1313/camnetnet/events/2011_09_27_cambridge_networks_launch/</link>
-      <pubDate>Tue, 27 Sep 2011 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2011_09_27_cambridge_networks_launch/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;about-the-event&#34;&gt;About the event&lt;/h1&gt;&#xA;&lt;p&gt;The Cambridge Networks Network launch event brought together nearly 90 academics from 23 different departments and institutes across Cambridge. This initial meeting featured short talks by leading researchers across a range of fields, including systems biology, brain mapping, economics, computer&#xA;networks, and epidemiology.&lt;/p&gt;&#xA;&lt;p&gt;Speakers included Dr Madan Babu (Systems Biology Group, MRC&#xA;Laboratory of Molecular Biology), Professor Ed Bullmore (Brain Mapping Unit, Department&#xA;of Psychiatry), Professor Sanjeev Goyal (Faculty of Economics), Professor Cecilia Mascolo&#xA;(Networks and Operating Systems Group, Computer Laboratory), and Dr Franco M Neri&#xA;(Epidemiology and Modelling Group, Department of Plant Sciences).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
