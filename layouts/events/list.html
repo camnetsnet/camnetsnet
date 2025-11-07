@@ -157,7 +157,7 @@
               {{ if and $item.Params.pin (not $item.Params.important) }}
               {{ $colors := partial "colors" }}
               {{ $color := index $colors (mod (sub $numEvents $index ) (len $colors)) }}
-              {{ partial "event-card.html" (dict "item" $item "index" $index "color" $color) }}
+              {{ partial "event-card.html" (dict "item" $item "index" (sub $numEvents $index ) "color" $color) }}
               {{ end }}
               {{ end }}
 
@@ -190,11 +190,11 @@
               {{ $events := .Site.GetPage "section" "events" }}
               {{ $numEvents := len $events.Pages }}
               {{ range $index, $item := $events.Pages }}
-              {{ if and (not $item.Params.pin) (not $item.Params.important) }}
+              {{ if (not $item.Params.pin)}}
               {{ $colors := partial "colors" }}
               {{ $color := index $colors (mod (sub $numEvents $index ) (len $colors)) }}
               <div class="event-card">
-                {{ partial "event-card.html" (dict "item" $item "index" $index "color" $color) }}
+                {{ partial "event-card.html" (dict "item" $item "index" (sub $numEvents $index ) "color" $color) }}
               </div>
               {{ end }}
               {{ end }}

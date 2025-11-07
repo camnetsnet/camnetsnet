@@ -213,7 +213,18 @@ span.ellipse.clickable {
   }
 }
 
+.keynotes {
+  padding-left: 200px; 
+  padding-right: 200px;
+}
+
 @media screen and (max-width: 479px) {
+
+  .keynotes {
+    padding-left: 0px !important; 
+    padding-right: 0px !important;
+  }
+
   .event-people-wrapper.people {
     display: grid;
     grid-template-columns: 1fr 1fr;

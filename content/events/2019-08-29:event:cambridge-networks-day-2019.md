@@ -16,6 +16,7 @@ sponsors:
   - king-s-college-cambridge
   - sainsbury-laboratory
   - university-of-cambridge
+  - cambridge-centre-for-data-driven-discovery
 keynote_speakers:
   - honorific: Prof.
     first_name: Danielle

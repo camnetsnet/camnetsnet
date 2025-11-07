@@ -51,7 +51,7 @@
 
   <div class="container" style="margin-top: -10px; margin-bottom: -10px;">
     <div class="horizontal-wrapper sponsors"
-      style="justify-content: left;">
+      style="justify-content: center;">
       <p class="caption">Sponsored by:</p>
       {{ range .Params.sponsors }}
       {{ $sponsor := index site.Data.sponsors . }}
@@ -72,44 +72,53 @@
 <section class="section">
   <div class="container">
     <div class="vertical-wrapper tall">
-      {{ if .Params.keynotes }}
-      <h2 class="h3 h4">Keynote Speakers</h2>
-      <div class="_5-grid">
+      {{ if .Params.keynote_speakers }}
+      <h2 class="h3 h4 keynotes">Keynote Speakers</h2>
+      <div class="_4-grid keynotes">
+  {{ range $speaker := .Params.keynote_speakers }}
+    {{/* Generate fallback image name from email */}}
+    {{ $emailUser := index (split $speaker.email "@") 0 }}
+    {{ $picture := printf "%s.jpg" (lower $emailUser) }}
 
-        {{ range $person := .Params.keynote_speakers }}
-        <div id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f6a-a984b33e" class="event-people-wrapper">
+    <div class="event-people-wrapper people">
+      {{/* Show image if available, else fallback glyph */}}
+      {{ if $speaker.image }}
+        <img src="{{ printf "images/keynotes/%s.png" $speaker.image | absURL }}" 
+             loading="lazy" alt="" class="member-image">
+      {{ else }}
+        <div class="keynote_glyphs glyph event-thumbnail" 
+             style="background-color: transparent" 
+             data-type="adj" 
+             data-bg="transparent" 
+             data-char="{{ $speaker.first_name }}"></div>
+      {{ end }}
 
-          {{/* {{ if .image }}
-          <img src="/images/keynotes/{{ .image }}.png" loading="lazy" alt="" class="event-image">
-          {{ else }}
-          <div class="glyph event-thumbnail" style="background-color: transparent" data-type="graph" data-color={{
-            $color.main }} data-bg="transparent">{{ .name }}</div>
-          {{ end}} */}}
+      <div class="vertical-wrapper padded people">
+        {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
+        <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>
 
-          <div class="vertical-wrapper padded speaker">
-            {{ $speaker := $person }}
-            {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
-            <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>
-            <div class="horizontal-line"></div>
-            <div class="vertical-wrapper short">
-              <div class="caption small">Affiliation</div>
+        <div class="horizontal-line"></div>
 
-              <p id="w-node-c9d481e9-17b5-8488-30b6-d664b4c32f72-a984b33e">{{ partial "splitter.html" .affiliation }}</p>
-            </div>
-            <div class="vertical-wrapper short" style="display: flex; align-items: center;">
-
-              {{ if .slides }}
-              <a id="w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b10-41133170" href={{ .slides }}
-                class="text-link button neutral w-button">SLIDES ↓</a>
-              {{ end }}
-            </div>
-            {{/* <div id="w-node-f21b3267-23da-33b5-beba-395da1408633-a984b33e" class="text-link button neutral">
-              MORE INFO →</div> */}}
-          </div>
+        <div class="vertical-wrapper short">
+          <div class="caption small">Affiliation</div>
+          <p>{{ partial "stacker.html" $speaker.affiliation }}</p>
         </div>
+
+        {{ if $speaker.slides }}
+          <div class="vertical-wrapper short" style="display: flex; align-items: center;">
+            <a href="{{ $speaker.slides }}" class="text-link button neutral w-button">SLIDES ↓</a>
+          </div>
         {{ end }}
 
+        {{ if $speaker.email }}
+          <div class="horizontal-wrapper full">
+            <a href="mailto:{{ $speaker.email }}" class="text-link caption">{{ $speaker.email }}</a>
+          </div>
+        {{ end }}
       </div>
+    </div>
+  {{ end }}
+</div>
       {{ end }}
       <section class="section">
         <div class="container _0" style="max-width: 1000px;">
@@ -131,6 +140,8 @@
 
   const display = document.getElementById("event-display");
   const glyph = document.getElementById("main_glyph");
+  const glyphs = document.querySelectorAll(".keynote_glyphs");
+
   const button = document.getElementById("w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e");
 
 
@@ -167,7 +178,12 @@
       glyph.dataset.color = status === "ACTIVE" ? bgValue : colorValue;
       glyph.dataset.bg = status === "ACTIVE" ? colorValue : bgValue;
     }
-
+    if (glyphs.length > 0) {
+      glyphs.forEach(el => {
+        el.setAttribute("data-color", colorValue);
+        el.setAttribute("data-bg", bgValue);
+      });
+    }
     if (button) {
       button.className = status === "ACTIVE" ? `text-link button ${color}` : "text-link button grey";
     }
