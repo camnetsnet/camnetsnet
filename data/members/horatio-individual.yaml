@@ -1,0 +1,10 @@
+honorific: Dr.
+first_name: Horatio
+last_name: Individual
+affiliation:
+  - Imperial College London
+email: horatio-individual@imperial.ac.uk
+tags:
+  - Computational Statistics
+  - Bioinformatics
+  - Neuroscience
