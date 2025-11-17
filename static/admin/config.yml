@@ -88,6 +88,7 @@ collections:
     sort: "date:desc"
     fields:
       - { label: "Important", name: "important", widget: "hidden", default: false }
+      - { label: "Cambridge Networks", name: "camnetsnet", widget: "boolean", default: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Pin", name: "pin", widget: "boolean", default: false }
       - { label: "Cambridge", name: "cambridge", widget: "boolean", default: true }
@@ -142,17 +143,7 @@ collections:
           widget: "list",
           required: false,
         }
-
-      - label: "Custom image"
-        name: "image"
-        widget: "file"
-        multiple: false
-        media_library:
-          config:
-            multiple: false
-            allow_types: ["image/png"]
-        required: false
-
+        
       - label: "Slides"
         name: "slides"
         widget: "file"
@@ -171,6 +162,7 @@ collections:
     sort: "date:desc"
     fields:
       - { label: "Important", name: "important", widget: "hidden", default: true }
+      - { label: "Cambridge Networks", name: "camnetsnet", widget: "boolean", default: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Pin", name: "pin", widget: "boolean", default: false }
       - { label: "Registration link", name: "registration", widget: "string", required: false }
@@ -198,6 +190,7 @@ collections:
           date_format: false,
         }
       - { label: "Physical location", name: "location", widget: "list" }
+
       - label: "Sponsors"
         required: false
         name: "sponsors"

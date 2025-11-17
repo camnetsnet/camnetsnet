@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cambridge Networks Network</title>
-    <link>http://localhost:1313/camnetnet/</link>
-    <description>Recent content on Cambridge Networks Network</description>
+    <title>Complex Networks at Cambridge</title>
+    <link>http://localhost:1313/camnetsnet/</link>
+    <description>Recent content on Complex Networks at Cambridge</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/camnetnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/camnetsnet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cambridge Networks Relaunch</title>
-      <link>http://localhost:1313/camnetnet/events/2025-11-27eventcambridge-networks-relaunch/</link>
-      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2025-11-27eventcambridge-networks-relaunch/</guid>
-      <description>&lt;h2 id=&#34;about-this-event&#34;&gt;About this event&lt;/h2&gt;&#xA;&lt;p&gt;This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.&lt;/p&gt;</description>
+      <link>http://localhost:1313/camnetsnet/events/2025-11-27eventcambridge-networks-relaunch/</link>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2025-11-27eventcambridge-networks-relaunch/</guid>
+      <description>&lt;h2 id=&#34;about-this-event&#34;&gt;About this event&lt;/h2&gt;&#xA;&lt;p&gt;This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.&lt;/p&gt;&#xA;&lt;p&gt;Further details will be announced soon.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cambridge Networks Day 2019</title>
-      <link>http://localhost:1313/camnetnet/events/2019-08-29eventcambridge-networks-day-2019/</link>
+      <link>http://localhost:1313/camnetsnet/events/2019-08-29eventcambridge-networks-day-2019/</link>
       <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2019-08-29eventcambridge-networks-day-2019/</guid>
+      <guid>http://localhost:1313/camnetsnet/events/2019-08-29eventcambridge-networks-day-2019/</guid>
       <description>&lt;h2 id=&#34;about-this-event&#34;&gt;About this event&lt;/h2&gt;&#xA;&lt;p&gt;Cambridge Networks Day 2019 is the sixth of our annual meetings on the topic of complex networks. It&#xA;is an occasion for the research community to exchange ideas and expertise, intended to spark interdisciplinary collaborations. The day will include a diverse set of talks by invited speakers highlighting interesting new directions in the field of complex networks, as well as a poster session. We hope the day’s events will strengthen the interdisciplinary links between researchers and promote communication within the community.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Epidemics over Mobile Phone Networks</title>
-      <link>http://localhost:1313/camnetnet/events/2015-10-03seminarepidemics-over-mobile-phone-networks/</link>
+      <link>http://localhost:1313/camnetsnet/events/2015-10-03seminarepidemics-over-mobile-phone-networks/</link>
       <pubDate>Sat, 03 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2015-10-03seminarepidemics-over-mobile-phone-networks/</guid>
+      <guid>http://localhost:1313/camnetsnet/events/2015-10-03seminarepidemics-over-mobile-phone-networks/</guid>
       <description>&lt;p&gt;Human interactions sensed ubiquitously by mobile phones can improve a significant number of public health problems, particularly helping to track the spread of disease. In this talk, we evaluate multiple avenues for the integration of high-resolution face to face Bluetooth-sensed interaction networks into epidemic models. Our goal is to evaluate the capacity of the different avenues of integration to track the spread of seasonal influenza on a real-world community of 72 individuals over a period of 17 weeks. The dataset considered contains real-time tracking of individual flu symptoms over the whole observation period, providing a concrete individualized source for evaluation. We present two different studies on this dataset. The first considers the standard SIR model simulated over real network dynamics with the overall goal of predicting the real infections over time. We obtain an error of less than 2 infected people on average when predicting the total number of individuals affected by the flu and a precision of approximately 30% when predicting exactly which individual will become infected at a given time. Our results indicate that high-resolution mobile phone data can increase the predictive power of even the simplest of epidemic models. The second study proposes a dual model for contact tracing, where an infection is spreading in the physical interpersonal network&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Technology Pathway of Society from U.S. Patents</title>
-      <link>http://localhost:1313/camnetnet/events/2015-02-17seminarunderstanding-technology-pathway-of-society-from-u.s.-patents/</link>
+      <link>http://localhost:1313/camnetsnet/events/2015-02-17seminarunderstanding-technology-pathway-of-society-from-u.s.-patents/</link>
       <pubDate>Tue, 17 Feb 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2015-02-17seminarunderstanding-technology-pathway-of-society-from-u.s.-patents/</guid>
+      <guid>http://localhost:1313/camnetsnet/events/2015-02-17seminarunderstanding-technology-pathway-of-society-from-u.s.-patents/</guid>
       <description>&lt;p&gt;Technology’s advance is central to our understanding of economic growth and development. Furthermore, solutions for many of the planet’s most pressing challenges – economic recovery, poverty reduction, climate change, sustainability – require significant additions to society’s technological toolkit. Yet, our ability to quantitatively model and forecast technological change has been limited due to difficulties in defining units of analysis and in collecting comparative empirical data. Some inventions, namely patents, however, leave behind a documentary trail, enabling us to study the invention processes in a quantitative way. Here, we propose to develop a formal methodology to construct detailed technology &amp;ldquo;map&amp;rdquo; and its temporal evolution from large-scale U.S. Patent data spanning 220 years. We utilize the classification system consisting of codes as temporally consistent units of analysis (nodes). These technology codes are means to succinctly describe a patent’s technology capabilities. When codes appear together in a patent, therefore, we consider them inter-dependent to make a useable function and represent this inter-dependency by assigning a link to between them. These micro-scale invention activities add up to form networks in time where macro-scale structures emerge through temporal evolution of community structure. We observe and identify episodic change of structure over time corresponding to historic events and major breakthroughs, indicating the technology change is not gradual but serious of punctuated equilibriums.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Time Series meet Network Science</title>
-      <link>http://localhost:1313/camnetnet/events/2015-01-27seminartime-series-meet-network-science/</link>
+      <link>http://localhost:1313/camnetsnet/events/2015-01-27seminartime-series-meet-network-science/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2015-01-27seminartime-series-meet-network-science/</guid>
+      <guid>http://localhost:1313/camnetsnet/events/2015-01-27seminartime-series-meet-network-science/</guid>
       <description>&lt;p&gt;In the last years, ideas and methods from network science have been applied to study the structure of time series and signals, thereby building a bridge between nonlinear dynamics, time series analysis and graph theory. In this talk I will focus on a particular approach, namely the family of visibility algorithms, and will give an overview of the main results that we have obtained recently. In particular, I will depict several case studies where concrete problems in nonlinear dynamics, stochastic processes and statistical physics can be easily mapped, via visibility algorithms, to the study of the topological properties of classes of visibility graphs. I will conclude with a summary of open problems and applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dominance Hierarchy Networks of Worker Ants</title>
-      <link>http://localhost:1313/camnetnet/events/2014-12-02seminardominance-hierarchy-networks-of-worker-ants/</link>
+      <link>http://localhost:1313/camnetsnet/events/2014-12-02seminardominance-hierarchy-networks-of-worker-ants/</link>
       <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/camnetnet/events/2014-12-02seminardominance-hierarchy-networks-of-worker-ants/</guid>
+      <guid>http://localhost:1313/camnetsnet/events/2014-12-02seminardominance-hierarchy-networks-of-worker-ants/</guid>
       <description>&lt;p&gt;Group-living animals, from insects to mammals, often form dominance hierarchy, which is a directed network. The direction of the link represents aggression by one individual on the other subordinate individual. In small groups of animals, it has been long known that the hierarchy is often perfectly linear, allowing unique ranking of the individuals. However, perfect linearity is often violated in large groups. I present analysis of aggressive dominance hierarchy formed by worker ants as large directed networks and then discuss evolutionary implications of the results. I also present some results on generative models to account for the observed connectivity patterns, built on the assumption of heterogeneously distributed intrinsic strengths of individual nodes.&lt;/p&gt;</description>
     </item>
   </channel>

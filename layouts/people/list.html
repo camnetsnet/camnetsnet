@@ -83,71 +83,22 @@
         role="banner" class="navbar w-nav">
         {{ partial "header.html" . }}
       </div>
+
       <section class="section">
         <div class="container">
           <div class="vertical-wrapper tall">
-            <h2 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h4">Organisers</h2>
-
-{{ $organiserFiles := readDir "data/organisers" }}
-
-{{ $organisers := slice }}
-{{ range $file := $organiserFiles }}
-  {{ $person := readFile (printf "data/organisers/%s" $file.Name) | transform.Unmarshal }}
-  {{ $organisers = $organisers | append $person }}
-{{ end }}
-
-{{ $organisers = sort $organisers "order" }}
-
-<div class="_5-grid">
-  {{ range $person := $organisers }}
-    {{ $emailUser := index (split $person.email "@") 0 }}
-    {{ $picture := printf "%s.jpg" (lower $emailUser) }}
-
-    <div class="event-people-wrapper people">
-      <img src="{{ printf "images/organisers/%s" $picture | absURL }}" loading="lazy" alt="" class="member-image">
-
-      <div class="vertical-wrapper padded people">
-        {{ $organiser_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
-        <h2 class="h6">{{ $organiser_full }}</h2>
-
-        <div class="horizontal-line"></div>
-
-        <div class="vertical-wrapper short">
-          <div class="caption small">Division</div>
-          <p>{{ $person.division }}</p>
-        </div>
-
-        <div class="vertical-wrapper short">
-          <div class="caption small">LAB</div>
-          <p>{{ $person.group }}</p>
-        </div>
-
-        <div class="horizontal-wrapper full">
-          <a href="mailto:{{ $person.email }}" class="text-link caption">{{ $person.email }}</a>
-        </div>
-      </div>
-    </div>
-  {{ end }}
-</div>
-            {{/* <h4 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h6" style="text-align: center;">
-              <span style="font-size: large;">For all enquiries, get in touch with </span>
-              <span class="caption">camnetsnet@cam.ac.uk</span>
-            </h4> */}}
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="vertical-wrapper tall">
-            <h2 class="h4">Members</h2>
+            {{/*  <h2 class="h4">Members</h2>  */}}
             <div class="w-form">
-              <form id="email-form" name="email-form" data-name="Email Form" method="get" class="_2-grid"
-                onsubmit="return false;" data-wf-page-id="68dda330230c1f68244b0c19"
-                data-wf-element-id="ad3e0f97-dcd1-60ab-d5ff-9950fda83af4">
-                <input class="text-field w-node-ad3e0f97-dcd1-60ab-d5ff-9950fda83af5-244b0c19 w-input" maxlength="256"
-                  name="Search" data-name="Search" placeholder="Search" type="text" id="Search">
-              </form>
-            </div>
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="_4-grid"
+              onsubmit="return false;" data-wf-page-id="68dd9ee202318045e1ee0168"
+              data-wf-element-id="5f75e165-7088-e008-8d86-785d9e4a16cd">
+              <div id="w-node-_5f75e165-7088-e008-8d86-785d9e4a16e7-e1ee0168" class="horizontal-wrapper filters">
+                <h2 class="h4">Members</h2>
+                {{/*  <div class="caption">SEARCH FOR MEMBERS</div>  */}}
+              </div><input class="text-field w-node-_5f75e165-7088-e008-8d86-785d9e4a16d2-e1ee0168 w-input"
+                maxlength="256" name="Search" data-name="Search" placeholder="Search" type="text" id="Search">
+            </form>
+          </div>
             <div class="vertical-wrapper _0 members" id="shuffle-list">
 
   {{ $networkMembers := readDir "data/members" }}
@@ -193,10 +144,66 @@
           </div>
           {{/* <div class="caption ceneterd">Scroll for more ↓</div> */}}
         </div>
-        {{ partial "footer.html" . }}
+       
     </div>
   </div>
   </section>
+
+        <section class="section">
+        <div class="container">
+          <div class="vertical-wrapper tall">
+            <h2 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h4">Organisers</h2>
+
+      {{ $organiserFiles := readDir "data/organisers" }}
+
+      {{ $organisers := slice }}
+      {{ range $file := $organiserFiles }}
+        {{ $person := readFile (printf "data/organisers/%s" $file.Name) | transform.Unmarshal }}
+        {{ $organisers = $organisers | append $person }}
+      {{ end }}
+
+      {{ $organisers = sort $organisers "order" }}
+
+      <div class="_5-grid">
+        {{ range $person := $organisers }}
+          {{ $emailUser := index (split $person.email "@") 0 }}
+          {{ $picture := printf "%s.jpg" (lower $emailUser) }}
+
+          <div class="event-people-wrapper people">
+            <img src="{{ printf "images/organisers/%s" $picture | absURL }}" loading="lazy" alt="" class="member-image">
+
+            <div class="vertical-wrapper padded people">
+              {{ $organiser_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
+              <h2 class="h6">{{ $organiser_full }}</h2>
+
+              <div class="horizontal-line"></div>
+
+              <div class="vertical-wrapper short">
+                <div class="caption small">Division</div>
+                <p>{{ $person.division }}</p>
+              </div>
+
+              <div class="vertical-wrapper short">
+                <div class="caption small">LAB</div>
+                <p>{{ $person.group }}</p>
+              </div>
+
+              <div class="horizontal-wrapper full">
+                <a href="mailto:{{ $person.email }}" class="text-link caption">{{ $person.email }}</a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+            {{/* <h4 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h6" style="text-align: center;">
+              <span style="font-size: large;">For all enquiries, get in touch with </span>
+              <span class="caption">camnetsnet@cam.ac.uk</span>
+            </h4> */}}
+          </div>
+           {{ partial "footer.html" . }}
+        </div>
+      </section>
+
   <script>
     const list = document.querySelector('#shuffle-list');
     const items = Array.from(list.children);
