@@ -122,7 +122,7 @@
             {{ $resource := readFile (printf "data/resources/%s" $file.Name) | transform.Unmarshal }}
 
             {{ $color := partial "tags.html" (index $resource "tag") }}
-            <a id="w-node-_05c17aaa-7644-c4c6-c4a3-a70e8cbfc276-e1ee0168" href="{{ index $resource " link" }}"
+            <a id="w-node-_05c17aaa-7644-c4c6-c4a3-a70e8cbfc276-e1ee0168" href={{ index $resource "link" }}
               class="resource-wrapper {{ $color.name }} w-inline-block">
               <div class="horizontal-wrapper tight er">
                 <div class="dot {{ $color.name }}"></div>
