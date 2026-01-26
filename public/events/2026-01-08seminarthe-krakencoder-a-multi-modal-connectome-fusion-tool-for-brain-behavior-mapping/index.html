@@ -105,133 +105,97 @@
 
       
 
-      <style>
-   
-  .img-tint {
-    transition: opacity 0.3s ease;
-  }
+      <section class="section">
+  <div class="container centered _0" style="max-width: 1000px;">
+    <div class="vertical-wrapper tall light-wrapper" style="min-height: calc(100vh - 150px); " id="background">
+      <div class="vertical-wrapper">
 
-   
-  .event-thumbnail:hover .img-tint {
-    opacity: 0;
-  }
-</style>
-<section class="section dark">
-  <div class="container event">
-    
-    
-    
-    <div class="_2-grid">
+        
 
-      <div id="event-display">
-        <div id="main_glyph" class="glyph event-thumbnail big ger" data-type="adj" data-char="Cambridge Networks Relaunch"></div>
-      </div>
+        <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd80e-14312913" class="vertical-wrapper tall event"
+          style="padding-bottom: 20px">
+          <h1 class="h5 short lined">The Krakencoder: a multi-modal connectome fusion tool for brain-behavior mapping</h1>
 
-      <div id="w-node-_7e404c44-e8f6-9782-33dc-87433961863a-a984b33e" class="vertical-wrapper tall event">
-        <h2 class="h4 short mono">Cambridge Networks Relaunch</h2>
+        </div>
+
+        
         <div class="detail-grid">
-          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df592-a984b33e" class="caption small white">Date</div>
-          <div class="caption">27 February 2026</div>
-          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df596-a984b33e" class="caption small white">Time</div>
-          <div class="caption">14:00 - 16:00</div>
-          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df59a-a984b33e" class="caption small white">Location</div>
+
+          
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd81e-14312913" class="caption small ">Speaker</div>
+          
+          <div class="caption">
+    
+    
+    
+    <div class="caption">Prof. Amy Kuceyeski</div>
+    
+    
+</div>
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd822-14312913" class="caption small ">Affiliation</div>
           <div class="caption">
     
     
     
     
-    <div class="caption">Trinity College Cambridge</div>
+    <div class="caption">Cornell University</div>
     
-    <div class="caption">Ordinary Combination Room</div>
+    <div class="caption">Weill Cornell Medicine</div>
+    
+    <div class="caption">Computational Connectomics (CoCo) Laboratory</div>
     
     
     
 </div>
-        </div>
-        <p class="p-short">This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.</p>
-        
-        
+          
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd812-14312913" class="caption small ">Date</div>
+          <div class="caption">08 January 2026</div>
+          <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd816-14312913" class="caption small ">Time</div>
+          <div class="caption">15:00 - 16:00</div>
+          
+          
 
-        
-        
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="horizontal-line"></div>
+      <div class="vertical-wrapper centered">
+        <h2 id="w-node-_34c7b209-18b2-8d74-0d67-33f983fb7a4b-14312913" class="h6">Abstract</h2>
+        <p id="w-node-_88a39da7-0b53-44a6-8beb-635bcc5195fa-14312913" class="p-short ish"><p>In this talk, Dr. Kuceyeski will introduce the Krakencoder – her lab’s new tool for multi-modal integration of brain network measurements that allows mapping between connectome processing pipelines as well as between structural and functional connectomes. This AI tool allows state of the art preservation of inter-individual differences in brain networks through a shared latent space. In an extension from the original publication earlier this year, she will demonstrate the flexibility of the tool for jointly minimizing site differences (harmonization) as well as maximizing brain-behavior mapping accuracy for various metrics. She also demonstrate how the tool can be used to create interpretable feature importances when mapping to behavior or demographics. This tool represents the power of AI in better understanding the mapping between brain structure and function and behavior.</p>
+</p>
+        
+        
+        <a id="w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913" href="https://talks.cam.ac.uk/talk/index/239677"
+          class="text-link button purple">MORE INFO →</a>
+        
+        
 
-<section class="section">
-  <div class="container">
-    <div class="vertical-wrapper tall">
-      
-      <section class="section">
-        <div class="container _0" style="max-width: 1000px;">
-          <h2 id="about-this-event">About this event</h2>
-<p>This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.</p>
-<p>Further details will be announced soon.</p>
-
-        </div>
-      </section>
+      </div>
     </div>
   </div>
 </section>
 <script>
   const params = new URLSearchParams(window.location.search);
   const index = params.get('index');
-  const source = params.get('source');
-  const status = params.get('status');
-
-  const mod = index % 3;
+  const mod = index % 3 + 0
   const colorMap = ["orange", "purple", "green"];
   const color = colorMap[mod];
 
-  const display = document.getElementById("event-display");
-  const glyph = document.getElementById("main_glyph");
-  const glyphs = document.querySelectorAll(".keynote_glyphs");
-
-  const button = document.getElementById("w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e");
-
-
   if (color) {
+    const bgVar = `--${color}-dark-100`;
+    const colorVar = `--${color}-100`;
+    const colorBack = `--${color}-020`;
+
     const rootStyles = getComputedStyle(document.documentElement);
-    const bgValue = rootStyles.getPropertyValue(`--${color}-100`).trim();
-    const colorValue = rootStyles.getPropertyValue(`--${color}-dark-100`).trim();
+    const bgValue = rootStyles.getPropertyValue(bgVar).trim();
+    const colorValue = rootStyles.getPropertyValue(colorVar).trim();
+    const colorBackValue = rootStyles.getPropertyValue(colorBack).trim();
 
-    const baseURL = 'https://camnetsnet.github.io/camnetsnet';
+    const glyph = document.getElementById("main_glyph");
+    const background_bit = document.getElementById("background");
+    glyph.dataset.color = colorValue;
 
-    if (source != "none") {
-      display.innerHTML = `<div id="main_image" class="event-thumbnail">
-    <img src="${baseURL}${source}" loading="lazy" alt="${source}" class="event-image">
-  </div>`;
-
-
-      const imgDiv = document.getElementById("main_image");
-      imgDiv.style.border = `0px solid ${bgValue}`;
-      imgDiv.style.position = "relative";
-
-      const overlay = document.createElement("div");
-      overlay.className = "img-tint";
-      overlay.style.position = "absolute";
-      overlay.style.top = 0;
-      overlay.style.left = 0;
-      overlay.style.width = "100%";
-      overlay.style.height = "100%";
-      overlay.style.pointerEvents = "none";
-      overlay.style.borderRadius = "inherit";
-
-      imgDiv.appendChild(overlay);
-    } else {
-      glyph.style.backgroundColor = status === "ACTIVE" ? colorValue : bgValue;
-      glyph.dataset.color = status === "ACTIVE" ? bgValue : colorValue;
-      glyph.dataset.bg = status === "ACTIVE" ? colorValue : bgValue;
-    }
-    if (glyphs.length > 0) {
-      glyphs.forEach(el => {
-        el.setAttribute("data-color", colorValue);
-      });
-    }
-    if (button) {
-      button.className = status === "ACTIVE" ? `text-link button ${color}` : "text-link button grey";
-    }
+    const button = document.getElementById("w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e");
+    button.className = `text-link button ${color}`;
   }
 </script>
 

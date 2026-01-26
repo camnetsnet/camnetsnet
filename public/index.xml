@@ -6,14 +6,28 @@
     <description>Recent content on Complex Networks at Cambridge</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/camnetsnet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cambridge Networks Relaunch</title>
       <link>http://localhost:1313/camnetsnet/events/2025-11-27eventcambridge-networks-relaunch/</link>
-      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/camnetsnet/events/2025-11-27eventcambridge-networks-relaunch/</guid>
       <description>&lt;h2 id=&#34;about-this-event&#34;&gt;About this event&lt;/h2&gt;&#xA;&lt;p&gt;This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.&lt;/p&gt;&#xA;&lt;p&gt;Further details will be announced soon.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Krakencoder: a multi-modal connectome fusion tool for brain-behavior mapping</title>
+      <link>http://localhost:1313/camnetsnet/events/2026-01-08seminarthe-krakencoder-a-multi-modal-connectome-fusion-tool-for-brain-behavior-mapping/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2026-01-08seminarthe-krakencoder-a-multi-modal-connectome-fusion-tool-for-brain-behavior-mapping/</guid>
+      <description>&lt;p&gt;In this talk, Dr. Kuceyeski will introduce the Krakencoder – her lab’s new tool for multi-modal integration of brain network measurements that allows mapping between connectome processing pipelines as well as between structural and functional connectomes. This AI tool allows state of the art preservation of inter-individual differences in brain networks through a shared latent space. In an extension from the original publication earlier this year, she will demonstrate the flexibility of the tool for jointly minimizing site differences (harmonization) as well as maximizing brain-behavior mapping accuracy for various metrics. She also demonstrate how the tool can be used to create interpretable feature importances when mapping to behavior or demographics. This tool represents the power of AI in better understanding the mapping between brain structure and function and behavior.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Complex Structure and Dynamics in Brain Networks</title>
+      <link>http://localhost:1313/camnetsnet/events/2025-12-04seminarcomplex-structure-and-dynamics-in-brain-networks/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2025-12-04seminarcomplex-structure-and-dynamics-in-brain-networks/</guid>
+      <description>&lt;p&gt;How does the brain work as an integrated system? Understanding the organization of brain graphs (networks), their community structure and time-varying topology is key to tackling this challenge. Network Neuroscience is an emerging field dedicated to understanding the structure and function of neural systems across scales, from neurons to circuits and ultimately to the whole brain. In this presentation I will review a few current themes and future directions. These include connectomics, structure/function relationships as disclosed in neuroimaging data, the growing use of computational models to map information flow and communication dynamics, and a novel edge-centric approach to track dynamic functional connectivity. I will try to identify some key issues along three main dimensions: networks, dynamics, and information.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cambridge Networks Day 2019</title>
