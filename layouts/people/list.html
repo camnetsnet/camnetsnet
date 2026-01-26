@@ -176,23 +176,24 @@
 
             <div class="vertical-wrapper padded people">
               {{ $organiser_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
-              <h2 class="h6">{{ $organiser_full }}</h2>
+              <h2 class="h6"><a href={{ $person.link }}>{{ $organiser_full }}</a></h2>
 
               <div class="horizontal-line"></div>
+
+              <div class="vertical-wrapper short">
+                <div class="caption small">GROUP</div>
+                <p>{{ $person.group }}</p>
+              </div>
 
               <div class="vertical-wrapper short">
                 <div class="caption small">Division</div>
                 <p>{{ $person.division }}</p>
               </div>
-
-              <div class="vertical-wrapper short">
-                <div class="caption small">LAB</div>
-                <p>{{ $person.group }}</p>
-              </div>
-
-              <div class="horizontal-wrapper full">
+              <div class="horizontal-line"></div>
+              <div class="horizontal-wrapper full" style="">
                 <a href="mailto:{{ $person.email }}" class="text-link caption">{{ $person.email }}</a>
               </div>
+
             </div>
           </div>
         {{ end }}

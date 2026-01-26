@@ -283,5 +283,6 @@ collections:
       - { label: "First Name(s)", name: "first_name", widget: "string" }
       - { label: "Last Name(s)", name: "last_name", widget: "string" }
       - { label: "Main affiliation", name: "affiliation", widget: "list" }
-      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Email", name: "email", widget: "string", required: false }
+      - { label: "Link", name: "link", widget: "string", required: false }
       - { label: "Tags", name: "tags", widget: "list" }
