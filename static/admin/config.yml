@@ -285,4 +285,4 @@ collections:
       - { label: "Main affiliation", name: "affiliation", widget: "list" }
       - { label: "Email", name: "email", widget: "string", required: false }
       - { label: "Link", name: "link", widget: "string", required: false }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list", required: false}
