@@ -1,7 +1,7 @@
 ---
 important: false
 draft: false
-pin: false
+pin: true
 cambridge: false
 more_link: https://talks.cam.ac.uk/talk/index/239677
 title: 'The Krakencoder: a multi-modal connectome fusion tool for brain-behavior mapping'
