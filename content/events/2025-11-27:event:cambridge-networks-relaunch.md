@@ -2,6 +2,7 @@
 important: true
 draft: false
 pin: true
+cambridge: true
 registration: ''
 title: Cambridge Networks Relaunch
 description: This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.
@@ -13,8 +14,9 @@ location:
   - Ordinary Combination Room
 sponsors: []
 keynote_speakers: []
-image: ''
+image: /uploads/trinity_alley.png
 ---
+
 ## About this event
 This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.
 

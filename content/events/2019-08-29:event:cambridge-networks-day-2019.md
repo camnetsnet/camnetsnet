@@ -2,6 +2,7 @@
 important: true
 draft: false
 pin: false
+cambridge: true
 registration: ''
 title: Cambridge Networks Day 2019
 description: The sixth annual meeting on complex networks, including a diverse set of talks from our invited keynote speakers.

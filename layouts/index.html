@@ -112,6 +112,8 @@
             {{ $colors := partial "colors" }}
             {{ $color := index $colors (mod (sub $numEvents $index ) (len $colors)) }}
             {{ $image := cond $item.Params.image $item.Params.image "none" }}
+            {{ $isFuture := ge $item.Date.Unix now.Unix }}
+            {{ $iconVariant := cond $isFuture "light" "dark" }}
 
             {{ if ge $item.Date.Unix now.Unix }}
 
@@ -124,14 +126,35 @@
                 }} class="event-people-wrapper w-inline-block">
                 {{ end }}
 
+                {{/*  {{ range .Params.sponsors }}
+                {{ $sponsor := index site.Data.sponsors . }}
+                {{ if $sponsor }}
+                <div class="caption">
+                  <a href="{{ $sponsor.link }}">
+                    <img src={{ $sponsor.logo | strings.TrimPrefix "/" | absURL }} loading="lazy" alt="{{ $sponsor.name }}"
+                      class="sponsor-logo">
+                  </a>
+                </div>
+                {{ end }}
+                {{ end }}  */}}
+                 
+
                 {{ if $item.Params.image }}
                 <div class="event-thumbnail">
-                  <img src={{ printf "images/events/%s.png" $item.Params.image | absURL }} loading="lazy" alt=""
+                  <img src={{ printf $item.Params.image | strings.TrimPrefix "/" | absURL }} loading="lazy" alt=""
                     class="event-image">
                 </div>
                 {{ else }}
                 <div class="glyph event-thumbnail" style="background-color: {{ $color.background }}" data-type="adj"
                   data-color="{{ $color.main }}" data-bg="{{ $color.background }}">{{ .Title }}</div>
+                {{ end }}
+
+                {{ if $item.Params.cambridge }}
+
+                <div style="margin: 12px; padding: 0px; position: absolute;">
+                    <img src="{{ printf "/images/logos/%s/icon_%s.svg" $iconVariant $color.name | strings.TrimPrefix "/" | absURL }}" loading="lazy"
+                        style="width: 20px;">
+                </div>
                 {{ end }}
 
                 <div id="w-node-f41825b4-6da0-0e36-95fc-6e7a698f5ea4-fe3ea3f3" class="vertical-wrapper padded">

@@ -88,7 +88,6 @@ collections:
     sort: "date:desc"
     fields:
       - { label: "Important", name: "important", widget: "hidden", default: false }
-      - { label: "Cambridge Networks", name: "camnetsnet", widget: "boolean", default: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Pin", name: "pin", widget: "boolean", default: false }
       - { label: "Cambridge", name: "cambridge", widget: "boolean", default: true }
@@ -162,9 +161,9 @@ collections:
     sort: "date:desc"
     fields:
       - { label: "Important", name: "important", widget: "hidden", default: true }
-      - { label: "Cambridge Networks", name: "camnetsnet", widget: "boolean", default: false }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Pin", name: "pin", widget: "boolean", default: false }
+      - { label: "Cambridge", name: "cambridge", widget: "boolean", default: true }
       - { label: "Registration link", name: "registration", widget: "string", required: false }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Brief description", name: "description", widget: "text" }

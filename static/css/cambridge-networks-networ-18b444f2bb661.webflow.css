@@ -977,11 +977,15 @@ blockquote {
 }
 
 .caption.tag {
+  display: inline-block; 
   border: 1px solid var(--grey-000);
   background-color: #f5f5f5;
   border-radius: 2px;
   padding: 4px 6px;
+  white-space: nowrap;  
+  margin: 2pt;
 }
+
 
 .caption.ceneterd {
   color: var(--grey-040);
@@ -1101,6 +1105,7 @@ blockquote {
 .checkbox.filter {
   margin-left: -12px;
 }
+
 
 .checkbox.filter.orange {
   border-color: var(--orange-100);
@@ -1289,15 +1294,22 @@ blockquote {
 .member-wrapper {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  border-bottom: 1px solid var(--grey-000);
+  /* border-bottom: 1px solid var(--grey-000); */
   grid-template-rows: auto;
-  grid-template-columns: auto 2fr 2fr 1fr;
+  grid-template-columns: auto 2fr 0fr;
   grid-auto-columns: 1fr;
   align-content: center;
   place-items: center start;
   padding-top: 20px;
   padding-bottom: 20px;
   display: grid;
+  
+  border: 1px solid var(--grey-000);
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  padding: 4px 6px;
+  margin-bottom: 16px;
+
 }
 
 .past-event-slider {
@@ -1438,7 +1450,7 @@ blockquote {
   }
 
   .member-wrapper {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr;
   }
 
   .past-events-mask,

@@ -196,11 +196,11 @@
     const bgValue = rootStyles.getPropertyValue(`--${color}-100`).trim();
     const colorValue = rootStyles.getPropertyValue(`--${color}-dark-100`).trim();
 
-    const baseURL = 'https://camnetsnet.github.io/camnetsnet/';
+    const baseURL = 'https://camnetsnet.github.io/camnetsnet';
 
     if (source != "none") {
       display.innerHTML = `<div id="main_image" class="event-thumbnail">
-    <img src="${baseURL}images/events/${source}.png" loading="lazy" alt="${source}" class="event-image">
+    <img src="${baseURL}${source}" loading="lazy" alt="${source}" class="event-image">
   </div>`;
 
 

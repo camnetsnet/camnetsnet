@@ -42,6 +42,7 @@
           @media only screen and (min-width: 992px) {}
 
           /* Main Variables */
+
           :root {
             --main-dark: black;
             --main-light: white;
@@ -114,7 +115,7 @@
 
                 {{ if $item.Params.image }}
                 <div class="event-thumbnail">
-                  <img src={{ printf "images/events/%s.png" $item.Params.image | absURL }} loading="lazy" alt=""
+                  <img src={{ printf $item.Params.image | strings.TrimPrefix "/" | absURL }}  loading="lazy" alt=""
                     class="event-image">
                 </div>
                 {{ else }}
@@ -123,12 +124,12 @@
                 </div>
                 {{ end }}
 
-                {{/* {{ if $item.Params.cambridge }}
-                <div style="margin: 12px; padding: 0px; position: absolute;">
-                  <img src="/images/logos/{{ $iconVariant }}/icon_{{ $color.name }}.svg" loading="lazy"
-                    style="width: 20px;">
-                </div>
-                {{ end }} */}}
+                {{ if $item.Params.cambridge }}
+                  <div style="margin: 12px; padding: 0px; position: absolute;">
+                    <img src={{ printf "/images/logos/%s/icon_%s.svg" $iconVariant $color.name | strings.TrimPrefix "/" | absURL }} loading="lazy"
+                      style="width: 20px;">
+                  </div>
+                {{ end }}
 
                 <div id="w-node-b602a8dc-51dd-5588-ff64-ae89b0f5a7d2-fe3ea3f4" class="vertical-wrapper tablet-padded">
                   <div class="caption-wrapper"

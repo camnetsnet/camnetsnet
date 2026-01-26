@@ -7,62 +7,75 @@
 
     {{ if ge $item.Date.Unix now.Unix }}
     <a href={{ printf "%s?index=%d&source=%s&status=ACTIVE" ($item.RelPermalink | absURL) $index $image }}
-        class="event-people-wrapper past w-inline-block">
+       class="event-people-wrapper past w-inline-block">
+    {{ else }}
+    <a href={{ printf "%s?index=%d&source=%s&status=PAST" ($item.RelPermalink | absURL) $index $image }}
+       class="event-people-wrapper past w-inline-block">
+    {{ end }}
+
+        {{ $isImportant := $item.Params.important }}
+        {{ $isFuture := ge $item.Date.Unix now.Unix }}
+        {{ $bgColor := cond $isFuture $color.background $color.main }}
+        {{ $mainColor := cond $isFuture $color.main $color.background }}
+        {{ $dataType := cond $isImportant "adj" "graph" }}
+        {{ $iconVariant := cond $isFuture "light" "dark" }}
+
+        {{ if $item.Params.image }}
+        <div class="event-thumbnail">
+            <img src={{ printf $item.Params.image | strings.TrimPrefix "/" | absURL }} 
+                 loading="lazy" alt="" class="event-image">
+        </div>
         {{ else }}
-        <a href={{ printf "%s?index=%d&source=%s&status=PAST" ($item.RelPermalink | absURL) $index $image }}
-            class="event-people-wrapper past w-inline-block">
-            {{ end }}
+        <div class="glyph event-thumbnail" style="background-color: {{ $bgColor }}"
+             data-type="{{ $dataType }}"
+             data-color="{{ $mainColor }}"
+             data-bg="{{ $bgColor }}"
+             data-char="{{ $item.Title }}">
+        </div>
+        {{ end }}
 
-            {{ $isImportant := $item.Params.important }}
-            {{ $isFuture := ge $item.Date.Unix now.Unix }}
-            {{ $bgColor := cond $isFuture $color.background $color.main }}
-            {{ $mainColor := cond $isFuture $color.main $color.background }}
-            {{ $dataType := cond $isImportant "adj" "graph" }}
-            {{ $iconVariant := cond $isFuture "light" "dark" }}
+        {{ if $item.Params.cambridge }}
+        <div style="margin: 12px; padding: 0; position: absolute;">
+            <img src="{{ printf "/images/logos/%s/icon_%s.svg" $iconVariant $color.name | strings.TrimPrefix "/" | absURL }}"
+                 loading="lazy" style="width: 20px;">
+        </div>
+        {{ end }}
 
-            {{ if $item.Params.image }}
-            <div class="event-thumbnail">
-                <img src={{ printf "images/events/%s.png" $item.Params.image | absURL }} loading="lazy" alt=""
-                    class="event-image">
-            </div>
-            {{ else }}
-            <div class="glyph event-thumbnail" style="background-color: {{ $bgColor }}" data-type="{{ $dataType }}"
-                data-color="{{ $mainColor }}" data-bg="{{ $bgColor }}" data-char="{{ $item.Title }}">
+        <div class="vertical-wrapper padded" 
+             style="display: flex; flex-direction: column; height: 100%;">
 
-            </div>
-            {{ end }}
-
-            {{/* {{ if $item.Params.cambridge }}
-            <div style="margin: 12px; padding: 0px; position: absolute;">
-                <img src="/images/logos/{{ $iconVariant }}/icon_{{ $color.name }}.svg" loading="lazy"
-                    style="width: 20px;">
-            </div>
-            {{ end }} */}}
-
-            <div class="vertical-wrapper padded">
-                <div class="caption-wrapper"
-                    style="display: flex; justify-content: space-between; align-items: center;">
-                    <div class="caption">{{ $item.Date.Format "02 January 2006" }}</div>
-                    {{ if ge $item.Date.Unix now.Unix }}
-                    <div class="dot {{ $color.name }}"></div>
-                    {{ else }}
-                    <div class="dot grey"></div>
-                    {{ end }}
-                </div>
-                <div class="horizontal-line"></div>
-                {{ if $item.Params.important }}
-                <h2 class="h6"
-                    style="font-family: Martianmono Variablefont Wdth Wght, Arial, sans-serif; font-weight: 300; text-transform: uppercase;">
-                    {{ $item.Title }}</h2>
-                <p class="p-short">{{ $item.Params.description }}</p>
+            <div class="caption-wrapper"
+                 style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="caption">{{ $item.Date.Format "02 January 2006" }}</div>
+                {{ if ge $item.Date.Unix now.Unix }}
+                <div class="dot {{ $color.name }}"></div>
                 {{ else }}
-                <h2 class="h6">{{ $item.Title }}</h2>
-                {{ $speaker := $item.Params.speaker }}
-                {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
-                <div class="caption">{{ $speaker_full }}</div>
+                <div class="dot grey"></div>
                 {{ end }}
-                <div class="text-link button {{ $color.name }}"
-                    id="w-node-c9109f55-7eff-bfee-4b23-4bcc04f8fa1a-fe3ea3f4" style="">VIEW →</div>
             </div>
-        </a>
+
+            <div class="horizontal-line"></div>
+
+            {{ if $item.Params.important }}
+            <h2 class="h6" style="font-family: Martianmono Variablefont Wdth Wght, Arial, sans-serif; font-weight: 300; text-transform: uppercase;">
+                {{ $item.Title }}
+            </h2>
+            {{/*  <h2 class="h6">{{ $item.Title }}</h2>  */}}
+            <p class="p-short">{{ $item.Params.description }}</p>
+            {{ else }}
+            <h2 class="h6">{{ $item.Title }}</h2>
+            {{ $speaker := $item.Params.speaker }}
+            {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
+            <div class="caption">{{ $speaker_full }}</div>
+            {{ end }}
+
+            <div class="text-link button {{ $color.name }}" 
+                 id="w-node-c9109f55-7eff-bfee-4b23-4bcc04f8fa1a-fe3ea3f4"
+                 style="margin-top: auto;  align-self: flex-start;">
+                VIEW →
+            </div>
+
+        </div> 
+
+    </a>
 </div>

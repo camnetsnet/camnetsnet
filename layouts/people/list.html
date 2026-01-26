@@ -99,45 +99,47 @@
                 maxlength="256" name="Search" data-name="Search" placeholder="Search" type="text" id="Search">
             </form>
           </div>
-            <div class="vertical-wrapper _0 members" id="shuffle-list">
+            <div class="vertical-wrapper _0 members" id="shuffle-list" style="">
 
-  {{ $networkMembers := readDir "data/members" }}
-  {{ $colors := partial "colors" }}
-  {{ range $index, $file := $networkMembers }}
-    {{ $person := readFile (printf "data/members/%s" $file.Name) | transform.Unmarshal }}
-    {{ $color := index $colors (mod $index (len $colors)) }}
+            {{ $networkMembers := readDir "data/members" }}
+            {{ $colors := partial "colors" }}
+            {{ range $index, $file := $networkMembers }}
+              {{ $person := readFile (printf "data/members/%s" $file.Name) | transform.Unmarshal }}
+              {{ $color := index $colors (mod $index (len $colors)) }}
 
-    <div class="member-wrapper">
-      <div class="dot big">
-        <div class="glyph event-thumbnail" style="background-color: transparent" 
-             data-type="adj" 
-             data-color="{{ $color.main }}" 
-             data-bg="transparent" 
-             data-char="{{ $person.first_name }}"></div>
-      </div>
+              <div class="member-wrapper">
+            <div class="dot big">
+              <div class="glyph event-thumbnail" style="background-color: transparent" 
+                  data-type="adj" 
+                  data-color="{{ $color.main }}" 
+                  data-bg="transparent" 
+                  data-char="{{ $person.first_name }}"></div>
+            </div>
 
-      <div class="vertical-wrapper short">
-        {{ $member_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
-        <h2 class="h6">{{ $member_full }}</h2>
-        {{ partial "stacker.html" $person.affiliation }}
-      </div>
+            <div class="vertical-wrapper short">
+              {{ $member_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
+              <h2 class="h6">{{ $member_full }}</h2>
+              {{ partial "stacker.html" $person.affiliation }}
 
-      <div class="horizontal-wrapper tight er">
-        {{ range $tag := $person.tags }}
-          <div class="caption tag">{{ $tag }}</div>
-        {{ end }}
-      </div>
+              <div style="white-space: nowrap;" class="text-link caption">
+                <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
+              </div>
+            </div>
 
-      <div style="white-space: nowrap;" class="text-link caption">
-        <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
-      </div>
-    </div>
-  {{ end }}
+            <div class="tight er" style="text-align: right;">
+              {{ range $tag := $person.tags }}
+                <div class="caption tag">{{ $tag }}</div>
+              {{ end }}
+            </div>
 
-  <div id="no-members" class="caption" style="display:none; text-align:center; padding: 40px">
-    No members found
-  </div>
-</div>
+          </div>
+
+            {{ end }}
+
+            <div id="no-members" class="caption" style="display:none; text-align:center; padding: 40px">
+              No members found
+            </div>
+          </div>
 
             <div id="pagination-container" class="pagination-container"></div>
 
@@ -235,8 +237,8 @@
       function getItemsPerPage() {
         const width = $(window).width();
         if (width >= 1200) return 5;
-        if (width >= 768) return 3;
-        return 2;
+        if (width >= 768) return 5;
+        return 5;
       }
 
       function filterMembers(query) {
