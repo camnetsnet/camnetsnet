@@ -99,7 +99,7 @@
                 maxlength="256" name="Search" data-name="Search" placeholder="Search" type="text" id="Search">
             </form>
           </div>
-            <div class="vertical-wrapper _0 members" id="shuffle-list" style="">
+          <div class="_0 members _2-grid" id="shuffle-list" style="">
 
             {{ $networkMembers := readDir "data/members" }}
             {{ $colors := partial "colors" }}
@@ -125,6 +125,26 @@
                 <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
               </div>
             </div>
+
+            {{/*  <div class="vertical-wrapper short">
+              <h2 class="h6">{{ $member_full }}</h2>
+              {{ partial "stacker.html" $person.affiliation }}
+
+              <div class="text-link caption">
+                <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
+              </div>
+
+              {{ if $person.about }}
+                <button class="see-more caption" type="button">
+                  See more
+                </button>
+
+                <div class="member-about caption" hidden>
+                  {{ $person.about }}
+                </div>
+              {{ end }}
+            </div>  */}}
+
 
             <div class="tight er" style="text-align: right;">
               {{ range $tag := $person.tags }}
@@ -203,8 +223,9 @@
               <span class="caption">camnetsnet@cam.ac.uk</span>
             </h4> */}}
           </div>
-           {{ partial "footer.html" . }}
+          
         </div>
+        {{ partial "footer.html" . }}
       </section>
 
   <script>
@@ -237,9 +258,9 @@
 
       function getItemsPerPage() {
         const width = $(window).width();
-        if (width >= 1200) return 5;
+        if (width >= 1200) return 10;
         if (width >= 768) return 5;
-        return 5;
+        return 3;
       }
 
       function filterMembers(query) {
