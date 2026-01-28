@@ -1,0 +1,15 @@
+honorific: Dr.
+first_name: Madan
+last_name: Babu
+affiliation:
+  - University of Cambridge
+email: madanm@mrc-lmb.cam.ac.uk
+link: http://www.mrc-lmb.cam.ac.uk/genomes/madanm/
+tags:
+  - Evolution
+  - Molecular Biology
+  - Pathogenesis
+about: |-
+  My research interest is primarily in the area of Computational Molecular Biology, Computational Pathogenesis, Protein Structure Analysis and Biotechnology.
+
+  My team researches how regulation is achieved at multiple levels of complexity in cellular systems and how this influences the evolution of organisms and their genome.
