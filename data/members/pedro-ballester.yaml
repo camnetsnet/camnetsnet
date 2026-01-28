@@ -1,0 +1,14 @@
+honorific: Dr.
+first_name: Pedro
+last_name: Ballester
+affiliation:
+  - University of Cambridge
+email: pedro.ballester@gmail.com
+link: http://pjballester.wordpress.com/
+tags:
+  - Optimization methods
+  - Molecular docking
+  - Machine learning
+about: |-
+  MRC Methodology Research Fellow, EMBL-European Bioinformatics Institute
+  Governing Body Fellow, Wolfson College.
