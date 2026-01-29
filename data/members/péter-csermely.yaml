@@ -5,5 +5,8 @@ affiliation:
   - Semmelweis University
 email: csermely.peter@med.semmelweis-univ.hu
 link: http://linkgroup.hu/petercsermely.php
-tags: []
-about: ''
+tags:
+  - Protein Structure Networks
+  - Perturbations
+  - Game Theory
+about: As an ordinary biochemist, I have started to recognize the strength of the network approach only in 2002. This was the time, when I became increasingly aware of the need for a novel concept to analyze the massively growing set of genomics and proteomics data, and I recognized the special role of my original subject, molecular chaperones in the organization of the whole cell. Chaperones are typical weak linkers providing a large number of promiscuous contacts to stabilize network structures both at the level of individual proteins and cellular networks. In 2005 and 2006 we recognized that weak links have a vastly different meaning, if they are intra-modular or inter-modular structures. During these studies we were able to identify a special set of network elements, called VIP-elements or creative elements. From 2008 my LINK-Group developed a number of powerful methods to analyze extensively overlapping network modules and complex centrality measures, network perturbations and spatial games. Our major fields are protein-protein interaction networks, protein structure networks, stress, aging and drug design.
