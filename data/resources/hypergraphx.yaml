@@ -1,0 +1,4 @@
+title: HypergraphX
+tag: Software
+link: https://hypergraphx.readthedocs.io/en/latest/
+desc: HypergraphX (HGX) is a Python library for the analysis of real-world complex systems with group interactions. It provides a comprehensive suite of tools to construct, visualize, and analyze hypergraphs with weighted, directed, temporal, and multiplex interactions. HGX aims to provide, as a single source, a wide range of tools for higher‑order data.
