@@ -4,6 +4,9 @@ last_name: Cucuringu
 affiliation:
   - University of California, Los Angeles (UCLA)
 email: mihai@math.ucla.edu
-link: ''
-tags: []
-about: ''
+link: http://www.math.ucla.edu/~mihai/
+tags:
+  - Graph Theory
+  - Dimensionality Reduction
+  - Algorithms
+about: CAM Adjunct Assistant Professor in the Department of Mathematics at UCLA. Algorithms for large graphs and networks. Graph theory, combinatorics, and applications. Distance geometry problems, rigidity theory, with applications to sensor network localization and 3D structuring of molecules. Spectral and SDP-relaxation algorithms and applications. Analysis of complex networks, community and core-periphery detection, role similarity. Dimensionality reduction, analysis of large data sets.
