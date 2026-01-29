@@ -85,15 +85,25 @@
       </div>
 
       <section class="section">
+        
         <div class="container">
           <div class="vertical-wrapper tall">
+            
+              {{/*  <div id="about-popup" class="about-popup" hidden>
+                <div class="about-popup-content">
+                  <button class="about-close caption" aria-label="Close">×</button>
+                  <div id="about-popup-text" class="">
+                    
+                  </div>
+                </div>
+              </div>  */}}
             {{/*  <h2 class="h4">Members</h2>  */}}
             <div class="w-form">
             <form id="email-form" name="email-form" data-name="Email Form" method="get" class="_4-grid"
               onsubmit="return false;" data-wf-page-id="68dd9ee202318045e1ee0168"
               data-wf-element-id="5f75e165-7088-e008-8d86-785d9e4a16cd">
               <div id="w-node-_5f75e165-7088-e008-8d86-785d9e4a16e7-e1ee0168" class="horizontal-wrapper filters">
-                <h2 class="h4">Members</h2>
+                <h2 class="h4">Directory</h2>
                 {{/*  <div class="caption">SEARCH FOR MEMBERS</div>  */}}
               </div><input class="text-field w-node-_5f75e165-7088-e008-8d86-785d9e4a16d2-e1ee0168 w-input"
                 maxlength="256" name="Search" data-name="Search" placeholder="Search" type="text" id="Search">
@@ -107,7 +117,7 @@
               {{ $person := readFile (printf "data/members/%s" $file.Name) | transform.Unmarshal }}
               {{ $color := index $colors (mod $index (len $colors)) }}
 
-              <div class="member-wrapper">
+              <div class="member-wrapper can-click has-about">
             <div class="dot big">
               <div class="glyph event-thumbnail" style="background-color: transparent" 
                   data-type="adj" 
@@ -124,27 +134,12 @@
               <div style="white-space: nowrap;" class="text-link caption">
                 <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
               </div>
-            </div>
-
-            {{/*  <div class="vertical-wrapper short">
-              <h2 class="h6">{{ $member_full }}</h2>
-              {{ partial "stacker.html" $person.affiliation }}
-
-              <div class="text-link caption">
-                <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
-              </div>
 
               {{ if $person.about }}
-                <button class="see-more caption" type="button">
-                  See more
-                </button>
-
-                <div class="member-about caption" hidden>
-                  {{ $person.about }}
-                </div>
+                <div class="member-about-data" data-about="{{ $person.about | htmlEscape }}"></div>
               {{ end }}
-            </div>  */}}
 
+            </div>
 
             <div class="tight er" style="text-align: right;">
               {{ range $tag := $person.tags }}
@@ -218,16 +213,16 @@
           </div>
         {{ end }}
       </div>
-            {{/* <h4 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h6" style="text-align: center;">
+            {{/*  <h4 id="w-node-_07a53328-51e4-e71d-8bee-52a54407019c-244b0c19" class="h6" style="text-align: center;">
               <span style="font-size: large;">For all enquiries, get in touch with </span>
               <span class="caption">camnetsnet@cam.ac.uk</span>
-            </h4> */}}
+            </h4>  */}}
           </div>
           
         </div>
         {{ partial "footer.html" . }}
       </section>
-
+      
   <script>
     const list = document.querySelector('#shuffle-list');
     const items = Array.from(list.children);
