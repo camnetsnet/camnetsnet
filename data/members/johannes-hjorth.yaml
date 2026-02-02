@@ -1,0 +1,15 @@
+honorific: Dr.
+first_name: Johannes
+last_name: Hjorth
+affiliation:
+  - University of Cambridge
+email: j.j.j.hjorth@damtp.cam.ac.uk
+link: http://www.johanneshjorth.se/web/Welcome.html
+tags:
+  - Computational Neuroscience
+  - Neurodevelopment
+  - Neural Networks
+about: |-
+  I am interested in neuronal development, and currently working on computer modelling of retinotopic map formation: The different parts of the brain need to be properly wired together to process information efficiently. One model system to study how the connectivity is formed is the retinotopic map formation. This developmental process is guided by chemical gradients of Ephs and ephrins and then refined by correlated activity from retinal waves. I am using computer modelling to investigate these mechanisms with Stephen Eglen.
+
+  Other recent topics of interest include: Neurite growth modelling, Neuronal development in the entorhinal cortex (watch our video in JoVE, the Journal of Visualized Experiments), Neurite and Synapse detection (for which I have written a MATLAB program - called SynD - in collaboration with Sabine Schmitz), The MUSIC Interface, for integrating models of neurons and networks of neurons developed in different programs such as NEURON, GENESIS and NEST, Modelling gap junctions in the striatum.
