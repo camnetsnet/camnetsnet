@@ -4,7 +4,7 @@ draft: false
 pin: false
 cambridge: false
 more_link: https://talks.cam.ac.uk/talk/index/240127
-title: Changing Connectomes
+title: 'Changing Connectomes: Changes during development as well as changes after brain stimulation interventions to improve cognition'
 speaker:
   honorific: Prof.
   first_name: Marcus
