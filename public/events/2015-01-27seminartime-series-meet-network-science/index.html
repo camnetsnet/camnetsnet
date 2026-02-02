@@ -190,8 +190,8 @@
 </section>
 <script>
   const params = new URLSearchParams(window.location.search);
-  const index = params.get('index');
-  const mod = index % 3 + 0
+  const index = Number(params.get('index'));
+  const mod = index % 3;
   const colorMap = ["orange", "purple", "green"];
   const color = colorMap[mod];
 
@@ -209,8 +209,9 @@
     const background_bit = document.getElementById("background");
     glyph.dataset.color = colorValue;
 
-    const button = document.getElementById("w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e");
-    button.className = `text-link button ${color}`;
+    button.classList.remove("orange", "purple", "green");
+    button.classList.add(color);
+
   }
 </script>
 

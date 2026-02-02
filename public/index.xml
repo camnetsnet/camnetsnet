@@ -30,6 +30,34 @@
       <description>&lt;p&gt;How does the brain work as an integrated system? Understanding the organization of brain graphs (networks), their community structure and time-varying topology is key to tackling this challenge. Network Neuroscience is an emerging field dedicated to understanding the structure and function of neural systems across scales, from neurons to circuits and ultimately to the whole brain. In this presentation I will review a few current themes and future directions. These include connectomics, structure/function relationships as disclosed in neuroimaging data, the growing use of computational models to map information flow and communication dynamics, and a novel edge-centric approach to track dynamic functional connectivity. I will try to identify some key issues along three main dimensions: networks, dynamics, and information.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Changing Connectomes: Changes during development as well as changes after brain stimulation interventions to improve cognition</title>
+      <link>http://localhost:1313/camnetsnet/events/2025-11-20seminarchanging-connectomes/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2025-11-20seminarchanging-connectomes/</guid>
+      <description>&lt;p&gt;The complete set of connections in the brain is called our connectome. Over the last 20 years we have found out more about how this network is organised and how it develops. I will outline some characteristic network features and how they could originate during brain network development. In particular, I will highlight the impact of the spatial organisation and embedding of brain networks and the role of delays on brain dynamics and cognition. Moreover, I will outline how interventions based on connectome information and computational models might be able to improve cognitive function for brain and mental health conditions. For this, I will also discuss how network metrics change after stimulation as well as our ongoing work on developing closed-loop neuromodulation for brain and mental health (depression, schizophrenia, Tourette’s). Finally, I will give some information on the launch of our N3 Centre for Neurotechnology, Neuromodulation, and Neurotherapeutics at the University of Nottingham.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Causal Discovery and Network Inference for Biological and Biomedical Data</title>
+      <link>http://localhost:1313/camnetsnet/events/2025-11-06seminarcausal-discovery-and-network-inference-for-biological-and-biomedical-data/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2025-11-06seminarcausal-discovery-and-network-inference-for-biological-and-biomedical-data/</guid>
+      <description>&lt;p&gt;Discovering causal effects is at the core of scientific investigation but remains challenging when mostly observational data is available. In essence, causal discovery infers cause-effect relations from specific correlation patterns involving at least three variables, which goes beyond the popular notion that pairwise correlation does not imply causation. Yet, in practice, causal representations have been difficult to learn and interpret, in particular, for high dimensional data such as state-of-the-art biological and biomedical data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Divided Mind</title>
+      <link>http://localhost:1313/camnetsnet/events/2025-10-23seminarthe-divided-mind/</link>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2025-10-23seminarthe-divided-mind/</guid>
+      <description>&lt;p&gt;I will talk about this recently published book: why did I write it, what was I trying to say that it would have been difficult to communicate in a peer-reviewed paper, and who was I hoping might read it? I will summarise the content and key themes of the book along the following lines, but I hope to leave a good amount of time for discussion. Briefly, the book tries to tell two occasionally interwoven histories. First, the world history of what we now call schizophrenia, especially the controversy between Freudian (brainless) and Kraepelinian (mindless) tribes, the dark crisis of the Kraepelinian concept of dementia praecox before and during World War 2, and its long-lasting imprint on how we continue to think about schizophrenia to this day. Second, my personal story as I became a psychiatrist and tried to get to grips with scientific questions about the origins of schizophrenia and the prospects for better treatments or preventions in future.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neurotransmitter receptor gradients enable flexible control of cortex-wide network dynamics during cognition</title>
+      <link>http://localhost:1313/camnetsnet/events/2025-06-12seminarneurotransmitter-receptor-gradients-enable-flexible-control-of-cortex-wide-network-dynamics-during-cognition/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2025-06-12seminarneurotransmitter-receptor-gradients-enable-flexible-control-of-cortex-wide-network-dynamics-during-cognition/</guid>
+      <description>&lt;p&gt;Recent advances in neuroanatomy and physiology make it possible to probe whole-brain mechanisms of cognition and behavior. However, as yet, few models in computational neuroscience have tackled the mechanisms underlying highly distributed neural activity during cognitive tasks. In this talk I will describe our anatomy-led approach to developing multiscale connectome-based models of neural dynamics during cognitive tasks and our recent anatomical findings of gradients of neurotransmitter receptors in the cortex.  I will highlight our investigations into how inputs from neuromodulatory systems (e.g. dopamine, serotonin) may dynamically alter the connectome, shifting the cortical dynamical landscape, and how this can confer flexibility on distributed cognitive functions such as conscious perception and working memory.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Cambridge Networks Day 2019</title>
       <link>http://localhost:1313/camnetsnet/events/2019-08-29eventcambridge-networks-day-2019/</link>
       <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>

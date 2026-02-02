@@ -6,6 +6,15 @@
   <script src=http://localhost:1313/camnetsnet/js/load.js></script>
 
   <meta charset="utf-8">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description"
+    content="An interdisciplinary organisation at the University of Cambridge for the frontier of complex networks research.">
+<meta name="keywords"
+    content="University of Cambridge, Complex Networks, Complexity Science, Physics, Engineering, Neuroscience, Statistics, Computer Science, Medicine, Biology, Economics, Research Group, Network Science">
+<meta name="author" content="Joe Bacchus George">
+<meta name="msapplication-TileColor" content="#ff6b35">
+<meta name="theme-color" content="#ff6b35">ƒ
   <title>Cambridge Networks Network</title>
   <meta content="Cambridge Networks Network" property="og:title">
   <meta content="Cambridge Networks Network" property="twitter:title">
@@ -114,7 +123,7 @@
 
         <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd80e-14312913" class="vertical-wrapper tall event"
           style="padding-bottom: 20px">
-          <h1 class="h5 short lined">Understanding Technology Pathway of Society from U.S. Patents</h1>
+          <h1 class="h5 short lined">Changing Connectomes: Changes during development as well as changes after brain stimulation interventions to improve cognition</h1>
 
         </div>
 
@@ -128,7 +137,7 @@
     
     
     
-    <div class="caption">Dr. Hyejin Youn</div>
+    <div class="caption">Prof. Marcus Kaiser</div>
     
     
 </div>
@@ -138,36 +147,16 @@
     
     
     
-    <div class="caption">Oxford Martin School</div>
-    
-    <div class="caption">University of Oxford</div>
-    
-    <div class="caption">Santa Fe Institute</div>
+    <div class="caption">University of Nottingham</div>
     
     
     
 </div>
           
           <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd812-14312913" class="caption small ">Date</div>
-          <div class="caption">17 February 2015</div>
+          <div class="caption">20 November 2025</div>
           <div id="w-node-ba2331a9-90bb-3c45-5bf9-ad6976dfd816-14312913" class="caption small ">Time</div>
-          <div class="caption">16:30 - 18:00</div>
-          
-          <div id="w-node-_55ff8f7a-0f5f-4a9d-d69f-e77abc9df59a-a984b33e" class="caption small">Location</div>
-          <div class="caption">
-    
-    
-    
-    
-    <div class="caption">Keynes Hall</div>
-    
-    <div class="caption">King&#39;s College Cambridge</div>
-    
-    <div class="caption">CB2 1ST</div>
-    
-    
-    
-</div>
+          <div class="caption">15:00 - 16:00</div>
           
           
 
@@ -176,9 +165,12 @@
       <div class="horizontal-line"></div>
       <div class="vertical-wrapper centered">
         <h2 id="w-node-_34c7b209-18b2-8d74-0d67-33f983fb7a4b-14312913" class="h6">Abstract</h2>
-        <p id="w-node-_88a39da7-0b53-44a6-8beb-635bcc5195fa-14312913" class="p-short ish"><p>Technology’s advance is central to our understanding of economic growth and development. Furthermore, solutions for many of the planet’s most pressing challenges – economic recovery, poverty reduction, climate change, sustainability – require significant additions to society’s technological toolkit. Yet, our ability to quantitatively model and forecast technological change has been limited due to difficulties in defining units of analysis and in collecting comparative empirical data. Some inventions, namely patents, however, leave behind a documentary trail, enabling us to study the invention processes in a quantitative way. Here, we propose to develop a formal methodology to construct detailed technology &ldquo;map&rdquo; and its temporal evolution from large-scale U.S. Patent data spanning 220 years. We utilize the classification system consisting of codes as temporally consistent units of analysis (nodes). These technology codes are means to succinctly describe a patent’s technology capabilities. When codes appear together in a patent, therefore, we consider them inter-dependent to make a useable function and represent this inter-dependency by assigning a link to between them. These micro-scale invention activities add up to form networks in time where macro-scale structures emerge through temporal evolution of community structure. We observe and identify episodic change of structure over time corresponding to historic events and major breakthroughs, indicating the technology change is not gradual but serious of punctuated equilibriums.</p>
+        <p id="w-node-_88a39da7-0b53-44a6-8beb-635bcc5195fa-14312913" class="p-short ish"><p>The complete set of connections in the brain is called our connectome. Over the last 20 years we have found out more about how this network is organised and how it develops. I will outline some characteristic network features and how they could originate during brain network development. In particular, I will highlight the impact of the spatial organisation and embedding of brain networks and the role of delays on brain dynamics and cognition. Moreover, I will outline how interventions based on connectome information and computational models might be able to improve cognitive function for brain and mental health conditions. For this, I will also discuss how network metrics change after stimulation as well as our ongoing work on developing closed-loop neuromodulation for brain and mental health (depression, schizophrenia, Tourette’s). Finally, I will give some information on the launch of our N3 Centre for Neurotechnology, Neuromodulation, and Neurotherapeutics at the University of Nottingham.</p>
 </p>
         
+        
+        <a id="w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913" href="https://talks.cam.ac.uk/talk/index/240127"
+          class="text-link button ">MORE INFO →</a>
         
         
 
@@ -207,8 +199,11 @@
     const background_bit = document.getElementById("background");
     glyph.dataset.color = colorValue;
 
-    button.classList.remove("orange", "purple", "green");
-    button.classList.add(color);
+    const button_link = document.getElementById("w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913");
+    button_link.className = `text-link button ${color}`;
+
+    const button_slides = document.getElementById("w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913");
+    button_slides.className = `text-link button ${color}`;
 
   }
 </script>

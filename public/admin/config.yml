@@ -280,6 +280,7 @@ collections:
           - { label: "None", value: "" }
           - { label: "Dr.", value: "Dr." }
           - { label: "Prof.", value: "Prof." }
+        required: false
       - { label: "First Name(s)", name: "first_name", widget: "string" }
       - { label: "Last Name(s)", name: "last_name", widget: "string" }
       - { label: "Main affiliation", name: "affiliation", widget: "list" }

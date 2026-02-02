@@ -52,11 +52,11 @@
         
         {{ if .Params.more_link }}
         <a id="w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913" href="{{ .Params.more_link | absURL }}"
-          class="text-link button purple">MORE INFO →</a>
+          class="text-link button ">MORE INFO →</a>
         {{ end }}
         {{ if .Params.slides }}
         <a id="w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913" href="{{ .Params.slides | absURL }}"
-          class="text-link button purple">SLIDES ↓</a>
+          class="text-link button ">SLIDES ↓</a>
         {{ end }}
 
       </div>
@@ -65,8 +65,8 @@
 </section>
 <script>
   const params = new URLSearchParams(window.location.search);
-  const index = params.get('index');
-  const mod = index % 3 + 0
+  const index = Number(params.get('index'));
+  const mod = index % 3;
   const colorMap = ["orange", "purple", "green"];
   const color = colorMap[mod];
 
@@ -84,7 +84,11 @@
     const background_bit = document.getElementById("background");
     glyph.dataset.color = colorValue;
 
-    const button = document.getElementById("w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e");
-    button.className = `text-link button ${color}`;
+    const button_link = document.getElementById("w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913");
+    button_link.className = `text-link button ${color}`;
+
+    const button_slides = document.getElementById("w-node-a443d757-fe7f-6af9-22c3-4d015f75bf5f-14312913");
+    button_slides.className = `text-link button ${color}`;
+
   }
 </script>
