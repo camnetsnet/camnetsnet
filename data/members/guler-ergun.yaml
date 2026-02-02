@@ -1,0 +1,12 @@
+honorific: Dr.
+first_name: Guler
+last_name: Ergun
+affiliation:
+  - Imperial College London
+email: ge209@imperial.ac.uk
+link: ''
+tags:
+  - Random Matrix Theory
+  - Stochastic Processes
+  - Risk
+about: I am interested in modeling complex systems to understand and quantify the emergent behaviour that such systems display. A complex system is neither chaotic nor regular (integrable), it sits between the two. More often we fully understand the individual constitute of any complex system, and the interaction between them but such understanding does not give us any prediction about the emergent behaviour that we get. For instance, a human brain is a typical example of a complex system, where we can fully study the functions of each neuron and the neuronal connections, but such study does not tell us anything about how consciousness or memory works. The generic trait of a complex system is that it has a large number of components with somewhat trivial interactions between them. Financial markets, resister-capacitor networks, social interactions and even human genome can be studied as complex systems. In general, I use complex network formalism to represent/model such a system and employ Random Matrix Theory, Stochastic Processes methods to study its properties.
