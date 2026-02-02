@@ -1,0 +1,15 @@
+honorific: Dr.
+first_name: Francesco
+last_name: Iorio
+affiliation:
+  - European Molecular Biology Laboratory
+email: iorio@ebi.ac.uk
+link: http://www.ebi.ac.uk/~iorio
+tags:
+  - Network randomisation
+  - Drug discovery
+  - Protein Interaction Networks
+about: |-
+  Senior Bioinformatician at the European Molecular Biology Laboratory - European Bioinformatics Institute.
+
+  I am mainly interested in: Network models to predict drug sensitivity in cancer, Computational drug re-positioning, Calibration of high-troughput data on Gene-regulatory and Protein-Protein-interaction networks to infer primary causes of transcriptional changes, Network randomisation, rewiring and null model simulations.
