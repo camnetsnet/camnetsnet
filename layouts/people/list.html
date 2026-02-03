@@ -88,6 +88,15 @@
       <section class="section">
         
         <div class="container">
+
+          <div class="about-overlay">
+           <div class="about-section">
+            <button class="about-close" aria-label="Close">×</button>
+
+            <div class="about-content"></div>
+          </div>
+          </div>
+
           <div class="vertical-wrapper tall">
             
               {{/*  <div id="about-popup" class="about-popup" hidden>
@@ -118,26 +127,34 @@
               {{ $person := readFile (printf "data/members/%s" $file.Name) | transform.Unmarshal }}
               {{ $color := index $colors (mod $index (len $colors)) }}
 
-              <div class="member-wrapper can-click has-about">
+              <div class="member-wrapper">
             <div class="dot big">
               <div class="glyph event-thumbnail" style="background-color: transparent" 
                   data-type="adj" 
                   data-color="{{ $color.main }}" 
                   data-bg="transparent" 
-                  data-char="{{ $person.first_name }}"></div>
+                  data-char="{{ $person.last_name }}"></div>
             </div>
 
             <div class="vertical-wrapper short">
               {{ $member_full := printf "%s %s %s" $person.honorific $person.first_name $person.last_name }}
               <h2 class="h6">{{ $member_full }}</h2>
-              {{ partial "stacker.html" $person.affiliation }}
+
+              <div id="member-affiliation">
+                {{ partial "stacker.html" $person.affiliation }}
+              </div>
+
+              <div id="member-link" style="display: none;">
+                {{ $person.link }}
+              </div>
 
               <div style="white-space: nowrap;" class="text-link caption">
                 <a href="mailto:{{ $person.email }}">{{ $person.email }}</a>
               </div>
-
+              
               {{ if $person.about }}
-                <div class="member-about-data" data-about="{{ $person.about | htmlEscape }}"></div>
+                <div class="member-about-data" data-about="{{ $person.about | htmlEscape }}">
+                </div>
               {{ end }}
 
             </div>
@@ -223,6 +240,7 @@
         </div>
         {{ partial "footer.html" . }}
       </section>
+
       
   <script>
     const list = document.querySelector('#shuffle-list');
@@ -322,7 +340,6 @@
         const anyVisible = filterMembers(query);
 
         if (!anyVisible) {
-          // Hide all members and pagination if nothing matches
           $allMembers.hide();
           $pagination.hide();
           $noMembers.show();
@@ -341,6 +358,76 @@
       });
     });
   </script>
+<script>
+document.querySelectorAll('#shuffle-list .member-wrapper').forEach(memberWrapper => {
+  // Click to open popup
+  memberWrapper.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    const nameEl = memberWrapper.querySelector('h2.h6');
+    const aboutData = memberWrapper.querySelector('.member-about-data');
+    const affiliationEl = memberWrapper.querySelector('#member-affiliation');
+    const linkEl = memberWrapper.querySelector('#member-link');
+    const emailEl = memberWrapper.querySelector('a[href^="mailto:"]');
+
+    const aboutContent = document.querySelector('.about-section .about-content');
+
+    aboutContent.innerHTML = `
+      <h3 style="margin-bottom: 8px">${nameEl.textContent}</h3>
+
+      <div class="caption small">Affiliation</div>
+      <div class="affiliation">${affiliationEl ? affiliationEl.innerHTML : ''}</div>
+
+      <div class="caption small">About</div>
+      <p class="about-text">
+        ${aboutData ? aboutData.dataset.about : 'No additional details available.'}
+      </p>
+
+      <div class="caption small">Email</div>
+      <div class="email caption text-link">
+        ${emailEl ? emailEl.outerHTML : ''}
+      </div>
+    `;
+
+    document.querySelector('.about-overlay').classList.add('visible');
+    document.querySelector('.about-section').classList.add('visible');
+  });
+});
+
+// Close popup
+const aboutBox = document.querySelector('.about-section');
+const aboutOverlay = document.querySelector('.about-overlay');
+const aboutClose = document.querySelector('.about-close');
+
+aboutClose.addEventListener('click', () => {
+  aboutBox.classList.remove('visible');
+  aboutOverlay.classList.remove('visible');
+});
+
+aboutOverlay.addEventListener('click', () => {
+  aboutBox.classList.remove('visible');
+  aboutOverlay.classList.remove('visible');
+});
+
+// Close popup on scroll or clicking outside
+window.addEventListener('scroll', () => {
+  if (aboutBox.classList.contains('visible')) {
+    aboutBox.classList.remove('visible');
+    aboutOverlay.classList.remove('visible');
+  }
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.member-wrapper') && !e.target.closest('.about-section')) {
+    aboutBox.classList.remove('visible');
+    aboutOverlay.classList.remove('visible');
+  }
+});
+</script>
+
+
+
+
 
 </body>
 
