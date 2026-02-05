@@ -10,8 +10,7 @@ date: 2026-03-04
 start_time: 14:00
 end_time: 16:00
 location:
-  - Trinity College Cambridge
-  - Ordinary Combination Room
+  - To be announced
 sponsors: []
 keynote_speakers: []
 image: /uploads/trinity_alley.png
