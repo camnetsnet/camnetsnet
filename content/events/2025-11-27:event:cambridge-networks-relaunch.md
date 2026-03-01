@@ -6,9 +6,9 @@ cambridge: true
 registration: ''
 title: Cambridge Networks Relaunch
 description: This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.
-date: 2026-03-04
+date: 2026-03-25
 start_time: 14:00
-end_time: 16:00
+end_time: 16:30
 location:
   - To be announced
 sponsors: []
