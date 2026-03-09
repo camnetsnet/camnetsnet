@@ -11,7 +11,7 @@ start_time: 14:00
 end_time: 17:00
 location:
   - Trinity College Cambridge
-  - Ordinary Combination Room (OCR)
+  - Ordinary Combination Room
 sponsors: []
 keynote_speakers: []
 image: /uploads/trinity_alley.png
