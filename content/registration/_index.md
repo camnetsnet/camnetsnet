@@ -1,0 +1,1 @@
+This is a free event open to all, but registration is required. Capacity is limited, and places will be allocated on a first-come, first-served basis. We try our best to accommodate everyone who signs up.

@@ -1,1 +1,1 @@
-Information successfully registered.
+We have received your submission.

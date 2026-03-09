@@ -14,9 +14,9 @@
     content="University of Cambridge, Complex Networks, Complexity Science, Physics, Engineering, Neuroscience, Statistics, Computer Science, Medicine, Biology, Economics, Research Group, Network Science">
 <meta name="author" content="Iona Moncrieff, Jack Apollo George, Joe Bacchus George">
 
-  <title>Contact</title>
-  <meta content="Contact" property="og:title">
-  <meta content="Contact" property="twitter:title">
+  <title>Registration</title>
+  <meta content="Registration" property="og:title">
+  <meta content="Registration" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href=http://localhost:1313/camnetsnet/css/normalize.css rel="stylesheet" type="text/css">
@@ -117,13 +117,16 @@
       <div class="container centered _0" style="max-width: 800px">
 
         <div class="vertical-wrapper tall light-wrapper w-form"
-          style="display: flex; align-items: center; min-height: calc(100vh - 150px); background-color:">
+          style="display: flex; align-items: center; min-height: calc(100vh - 150px);">
           <form id="email-form" name="email-form" data-name="Email Form" class="form"
             data-wf-page-id="68e7f4947a7c0bb541133170" data-wf-element-id="a9db2d30-8998-bdb6-be32-f71b66fd2b08"
             method="POST"
             action="https://script.google.com/macros/s/AKfycbyW9yevSw7dNh3Jv3tyolsnlID5fUKcs-PXG2Kb29S3--hQ_en9KhX8nNz9dAzCQuXPPA/exec">
-            <input type="hidden" name="sheetName" value="Inquiries">
-            <h1 class="h4">Contact</h1>
+            <input type="hidden" name="sheetName" value="Registration">
+            <h1 class="h4">Registration</h1>
+
+            <p class="p-short"><p>This is a free event open to all, but registration is required. Capacity is limited, and places will be allocated on a first-come, first-served basis. We try our best to accommodate everyone who signs up.</p>
+</p>
             <div id="w-node-_31cbbec4-cf2b-bcd5-8592-fcd94372f876-41133170" class="horizontal-line"></div>
             <div class="_5-grid">
               <div id="w-node-c81db3ce-4cbd-dc84-1e2f-0517e9ccff6b-41133170" class="caption">Details</div>
@@ -143,21 +146,17 @@
                 required="">
               <input class="text-field w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b0c-41133170 w-input" maxlength="256"
                 name="Email" data-name="Email" placeholder="Email" type="email" id="Email">
+              <input class="text-field w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b0d-41133170 w-input" maxlength="256"
+                name="Affiliation" data-name="Affiliation" placeholder="Main Affiliation (e.g. University of Cambridge)"
+                type="text" id="Affiliation">
               
             </div>
-
-            <div id="w-node-d320cc39-4c84-40cc-ee8c-4dac6ff9f1c4-41133170" class="horizontal-line"></div>
-            <div id="w-node-_002d8fb7-9de8-0e1a-ee9e-4116a95cad80-41133170" class="vertical-wrapper">
-              <div class="caption">Message</div><textarea placeholder="" maxlength="5000" id="Message" name="Message"
-                data-name="Message"
-                class="text-area w-node-dc21c3df-88b0-d6a6-3021-116a559594b4-41133170 w-input"></textarea>
-            </div>
-            
+  
             <button id="w-node-a9db2d30-8998-bdb6-be32-f71b66fd2b10-41133170" type="submit"
-              class="text-link button neutral w-button">Send →</button>
+              class="text-link button neutral w-button">Register for event →</button>
           </form>
           <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
+            <div>Your registration has been received, we will get in touch shortly with a confirmation!</div>
           </div>
           <div class="w-form-fail">
             <div>Oops! Something went wrong while submitting the form.</div>
@@ -220,14 +219,14 @@
               alert('Oops! Something went wrong while submitting the form.');
               
               submitButton.disabled = false;
-              submitButton.textContent = 'Submit →';
+              submitButton.textContent = 'Join the network →';
             }
           })
           .catch(error => {
             console.error('Form submission error:', error);
             alert('Oops! Something went wrong while submitting the form.');
             submitButton.disabled = false;
-            submitButton.textContent = 'Submit →';
+            submitButton.textContent = 'Join the network →';
           });
       });
     });

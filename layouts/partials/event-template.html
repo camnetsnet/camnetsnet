@@ -33,8 +33,10 @@
         <p class="p-short">{{ .Params.description }}</p>
         {{ if ge .Params.date.Unix now.Unix }}
         {{ if .Params.registration }}
-        <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button">
-          Register →</div>
+        {{/*  <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button">
+          Register →</div>  */}}
+          <a id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" href="{{ .Params.registration | absURL }}"
+          class="text-link button ">Register →</a>
         {{ else }}
 
         {{ end }}
