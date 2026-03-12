@@ -7,6 +7,6 @@ email: jbg39@cam.ac.uk
 link: https://joebacchus.github.io/
 tags:
   - Statistical Physics
-  - Probabilistic Inference
-  - Computational Statistics
-about: ''
+  - Bayesian Inference
+  - Message Passing Algorithms
+about: I work on Statistical Physics and Inference. My interests include Bayesian Inference, Message Passing Algorithms, Spin Glasses, Inverse problems, Combinatorial Optimization, Geometric Deep Learning, Probabilistic Graphical Models, Phase Transitions and Complexity.
