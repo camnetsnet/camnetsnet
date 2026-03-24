@@ -16,7 +16,7 @@ speaker:
 date: 2026-01-08
 start_time: 15:00
 end_time: 16:00
-link: ''
+link: https://www.youtube.com/watch?v=QYkMdxcZsII
 location: []
 slides: ''
 ---
