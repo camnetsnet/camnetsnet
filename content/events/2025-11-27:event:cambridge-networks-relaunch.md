@@ -29,7 +29,7 @@ This event marks a relaunch of the group, with the aim of reconnecting previous 
 - `15:00 – 16:00:`  Short talks from the organizing committee
 - - Dr. George Cantwell: Random Processes on Complex Networks
 - - Prof. Sebastian Ahnert: Tudor Networks of Power
-- - Prof. Petra Vértes: Connecting Structure and Function in Brain Networks.
+- - Prof. Petra Vértes: Connecting Structure and Function in Brain Networks
 - `16:00 – 17:00:`  Tea and informal discussion
 
 _The event is free to attend, but registration is required. Capacity is limited and, if oversubscribed, places will be allocated on a first-come, first-served basis. We will nevertheless do our best to accommodate everyone._
