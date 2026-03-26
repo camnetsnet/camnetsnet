@@ -1,0 +1,10 @@
+honorific: Dr.
+first_name: Haixin
+last_name: Zhong
+affiliation:
+  - University of Cambridge
+email: hz525@cam.ac.uk
+link: ''
+tags:
+  - Computational Neuroscience
+about: I researched how and why the primary visual cortex develops distinct functional organizations across species. Using self-evolving spiking neural networks driven by naturalistic visual input and cross-species constraints, I explored how synaptic plasticity gives rise to emergent map structure and population coding — linking microscale mechanisms to mesoscale circuit organization. Going forward, I aim to extend these mechanistic models to bridge microcircuit excitation–inhibition (E/I) balance with whole-brain dynamics, constrained by multimodal neuroimaging. My goal is to test whether atypical developmental trajectories of E/I-regulated network states relate to psychiatric disorders such as depression and schizophrenia, and to develop interpretable, model-based computational biomarkers.
