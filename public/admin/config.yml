@@ -273,6 +273,7 @@ collections:
     create: true
     slug: "{{fields.first_name}}-{{fields.last_name}}"
     fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - label: "Honorific"
         name: "honorific"
         widget: "select"

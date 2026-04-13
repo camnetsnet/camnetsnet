@@ -6,14 +6,56 @@
     <description>Recent content on Complex Networks at Cambridge</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/camnetsnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intrinsic Neural Timescales - Do they shape the brain&#39;s mind?</title>
+      <link>http://localhost:1313/camnetsnet/events/2026-04-16seminarintrinsic-neural-timescales-do-they-shape-the-brain-s-mind/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2026-04-16seminarintrinsic-neural-timescales-do-they-shape-the-brain-s-mind/</guid>
+      <description>&lt;p&gt;The brain exhibits a variety of different timescales, e.g., duration of its processing, in its neural activity, so-called Intrinsic Neural Timescales (INT). While the INT are known to show an intrinsic network topography, from sensory to higher-order regions, their exact function for cognition remain yet unclear. My talk will demonstrate the topography as well as the role  of the brain&amp;rsquo;s INT in various cognitive functions including consciousness. This is complemented by computational modeling showing the key role of intra-regional recurrent processing in mediating INT.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Cambridge Networks Relaunch</title>
       <link>http://localhost:1313/camnetsnet/events/2025-11-27eventcambridge-networks-relaunch/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/camnetsnet/events/2025-11-27eventcambridge-networks-relaunch/</guid>
-      <description>&lt;h2 id=&#34;about-this-event&#34;&gt;About this event&lt;/h2&gt;&#xA;&lt;p&gt;This is the first academic event of the year, where we welcome back a revitalised cohort across Cambridge working on complex networks.&lt;/p&gt;&#xA;&lt;p&gt;Further details will be announced soon.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;about-this-event&#34;&gt;About this event&lt;/h3&gt;&#xA;&lt;p&gt;In 2011, researchers interested in complexity and networks formed a coalition at the University of Cambridge. Scientists from across departments organized a variety of events and talks to exchange ideas and foster collaborations around these topics. This successful initiative continued for several years, but became difficult to maintain during the pandemic.&lt;/p&gt;&#xA;&lt;p&gt;This event marks a relaunch of the group, with the aim of reconnecting previous participants and welcoming new ones interested in complex networks. The event is open to everyone, whether it relates directly to your research or is simply an area of curiosity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beyond Networks: Functional Connectivity as Eigenmode Resonance</title>
+      <link>http://localhost:1313/camnetsnet/events/2026-03-19seminarbeyond-networks-functional-connectivity-as-eigenmode-resonance/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2026-03-19seminarbeyond-networks-functional-connectivity-as-eigenmode-resonance/</guid>
+      <description>&lt;p&gt;The brain&amp;rsquo;s functional connectivity is typically interpreted through the lens of networks — hubs, modules, and graph-theoretic metrics. But what if these patterns are better understood as the resonant modes of a physical system? In this talk, I will present a wave mechanics framework in which large-scale brain dynamics emerge from the interference of standing waves shaped by the brain&amp;rsquo;s structural geometry. Drawing on whole-brain modelling, the LEiDA methodology, and empirical neuroimaging data, I will show how eigenmode decomposition captures the spatiotemporal organisation of functional connectivity in a way that challenges purely network-based interpretations. I will discuss implications for understanding brain states, consciousness, and the effects of pharmacological and acoustic perturbations — and what this shift in perspective opens up for the field.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hierarchical modular organization in the brain: segregation, integration and their balance underlying cognitive diversity</title>
+      <link>http://localhost:1313/camnetsnet/events/2026-03-05seminarhierarchical-modular-organization-in-the-brain-segregation-integration-and-their-balance-underlying-cognitive-diversity/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2026-03-05seminarhierarchical-modular-organization-in-the-brain-segregation-integration-and-their-balance-underlying-cognitive-diversity/</guid>
+      <description>&lt;p&gt;The brain is a highly nonlinear complex network system supporting diverse cognitive abilities. The locally segregated and globally integrated processing are the two basic foundations to cognition. However, how does the brain organizes the effective processing of neural information in the local and global scales, so as to support diverse cognitive tasks is not well understood. A physical hypothesis is that the brain system is in a dynamic critical state at rest and can support the balance of separation and integration in supporting diverse cognitive abilities. However, there has been no clear evidence on whether the resting brain is in the segregation-integration balance at the whole-brain scale, and how it is associated to diverse cognitive abilities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multiscale Neurodevelopment Across Adolescence: Methods, Principles and Predictions</title>
+      <link>http://localhost:1313/camnetsnet/events/2026-02-19seminarmultiscale-neurodevelopment-across-adolescence-methods-principles-and-predictions/</link>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2026-02-19seminarmultiscale-neurodevelopment-across-adolescence-methods-principles-and-predictions/</guid>
+      <description>&lt;p&gt;Adolescence is a period of rapid neurobiological reorganisation that is central to the maturation of cognition and marks the peak window of vulnerability for psychiatric illness. Yet the fine-grained developmental processes that shape functional organisation of the human brain—and their relevance for mental health—have remained difficult to study in the living human brain.&lt;/p&gt;&#xA;&lt;p&gt;First, I will present recent methodological work introducing neuroanatomically informed, multimodal MRI approaches designed to sensitively probe microscale features of cortical organisation during development. These methods enable in vivo characterisation of intracortical and hierarchical properties that have been historically largely inaccessible to conventional MRI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Large-scale biophysical models of neuronal circuits to study brain function and disease</title>
+      <link>http://localhost:1313/camnetsnet/events/2026-02-05seminarlarge-scale-biophysical-models-of-neuronal-circuits-to-study-brain-function-and-disease/</link>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2026-02-05seminarlarge-scale-biophysical-models-of-neuronal-circuits-to-study-brain-function-and-disease/</guid>
+      <description>&lt;p&gt;Understanding brain function and disease requires studying interactions across multiple scales, from molecular and cellular mechanisms to circuit-wide dynamics and behavior. Biophysically detailed brain circuit models provide a powerful tool to integrate diverse experimental data across these scales, allowing researchers to simulate and analyze brain activity in a mechanistic and predictive manner. Leveraging AI and high-performance computing, we have developed large-scale, biologically realistic models of various thalamocortical circuits, including motor, somatosensory, and auditory regions, each comprising ~15,000 neurons and ~30 million synapses. These models incorporate experimentally derived neuronal morphologies, electrophysiological properties, and connectivity, enabling them to reproduce cell-type and layer-specific electrical activity patterns observed in vivo across scales, from membrane voltages and action potentials to local field potentials and electroencephalogram signals. Our models have been instrumental in elucidating the cellular and circuit mechanisms underlying neurological disease and psychiatric disorders such as schizophrenia, epilepsy, dystonia, Alzheimer&amp;rsquo;s and Parkinson’s disease. They also offer insights into therapeutic targets to restore healthy neural dynamics through novel pharmacological and neurostimulation treatments, such as transcranial magnetic stimulation (TMS). These mechanistic models provide the foundation for constructing AI-driven Brain Digital Twins, virtual replicas of an individual’s brain state that integrate multimodal patient data to simulate brain function, predict disease progression, and optimize personalized treatment strategies. By bridging mechanistic modeling of brain circuits and AI, Brain Digital Twins have the potential to transform diagnosis, prevention and treatment of neurological and psychiatric conditions, addressing key challenges in brain research and clinical care.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From physical networks to the structure of the connectome</title>
+      <link>http://localhost:1313/camnetsnet/events/2026-01-16seminarfrom-physical-networks-to-the-structure-of-the-connectome/</link>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/camnetsnet/events/2026-01-16seminarfrom-physical-networks-to-the-structure-of-the-connectome/</guid>
+      <description>&lt;p&gt;Physical networks describe interconnected systems whose links are physical entities that cannot cross each other, describing many real systems, from the brain to metamaterials. I will explore how link physicality affects both the evolution and the structure of a network, in a way that is not captured by current graph-based approaches. I will then apply these concepts to the structure of the connectome: from branching optimization to the expected architecture of the network. Indeed, attempts to describe the brain using models well established in network science have yielded conflicting outcomes. By analyzing eight experimentally mapped connectomes, we also find that the degree and the strength distribution cannot be described by the established random or scale-free family of models. Rather, the brain’s architecture is driven by the physical nature of its neurons, which in turn allows us to analytically derive the multiplicative process responsible for the neuron length distributions, offering empirically falsifiable predictions on the degree and the strength distributions. Finally, I show that the unique connectome architecture bridges critical gaps between neural structure and function, with potential implications for brain dynamics, robustness, and synchronization.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Krakencoder: a multi-modal connectome fusion tool for brain-behavior mapping</title>

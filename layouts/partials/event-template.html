@@ -33,9 +33,9 @@
         <p class="p-short">{{ .Params.description }}</p>
         {{ if ge .Params.date.Unix now.Unix }}
         {{ if .Params.registration }}
-        {{/*  <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button">
-          Register →</div>  */}}
-          <a id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" href="{{ .Params.registration | absURL }}"
+        {{/* <div id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" class="text-link button">
+          Register →</div> */}}
+        <a id="w-node-_7e404c44-e8f6-9782-33dc-874339618641-a984b33e" href="{{ .Params.registration | absURL }}"
           class="text-link button ">Register →</a>
         {{ else }}
 
@@ -52,8 +52,7 @@
 <section class="section grey">
 
   <div class="container" style="margin-top: -10px; margin-bottom: -10px;">
-    <div class="horizontal-wrapper sponsors"
-      style="justify-content: center;">
+    <div class="horizontal-wrapper sponsors" style="justify-content: center;">
       <p class="caption">Sponsored by:</p>
       {{ range .Params.sponsors }}
       {{ $sponsor := index site.Data.sponsors . }}
@@ -76,51 +75,51 @@
     <div class="vertical-wrapper tall">
       {{ if .Params.keynote_speakers }}
       <h2 class="h3 h4 keynotes">Keynote Speakers</h2>
-      <div class="_4-grid keynotes">
-  {{ range $speaker := .Params.keynote_speakers }}
-    {{/* Generate fallback image name from email */}}
-    {{ $emailUser := index (split $speaker.email "@") 0 }}
-    {{ $picture := printf "%s.jpg" (lower $emailUser) }}
 
-    <div class="event-people-wrapper people">
-      {{/* Show image if available, else fallback glyph */}}
-      {{ if $speaker.image }}
-        <img src="{{ printf "images/keynotes/%s.png" $speaker.image | absURL }}" 
-             loading="lazy" alt="" class="member-image">
-      {{ else }}
-        <div class="keynote_glyphs glyph event-thumbnail" 
-             style="background-color: transparent" 
-             data-type="adj" 
-             data-bg="transparent" 
-             data-char="{{ $speaker.first_name }}"></div>
-      {{ end }}
+      <div class="keynotes">
+        {{ range $speaker := .Params.keynote_speakers }}
+        {{/* Generate fallback image name from email */}}
+        {{ $emailUser := index (split $speaker.email "@") 0 }}
+        {{ $picture := printf "%s.jpg" (lower $emailUser) }}
+        <div class="member-wrapper">
+          {{ if $speaker.image }}
+          <img src="{{ printf " images/keynotes/%s.png" $speaker.image | absURL }}" loading="lazy" alt=""
+            class="member-image">
+          {{ else }}
+          <div class="big dot">
+            <div class="keynote_glyphs glyph event-thumbnail" style="background-color: transparent" data-type="adj"
+              data-bg="transparent" data-char="{{ $speaker.last_name }}"></div>
+          </div>
+          {{ end }}
 
-      <div class="vertical-wrapper padded people">
-        {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
-        <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>
+          <div class="vertical-wrapper short">
 
-        <div class="horizontal-line"></div>
+            {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
+            <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>
 
-        <div class="vertical-wrapper short">
-          <div class="caption small">Affiliation</div>
-          <p>{{ partial "stacker.html" $speaker.affiliation }}</p>
+            <div class="horizontal-line"></div>
+
+            <div class="vertical-wrapper short">
+              <p>{{ partial "stacker.html" $speaker.affiliation }}</p>
+            </div>
+
+            {{ if $speaker.slides }}
+            <div class="vertical-wrapper short" style="display: flex; align-items: center;">
+              <a href="{{ $speaker.slides }}" class="text-link button neutral w-button">SLIDES ↓</a>
+            </div>
+            {{ end }}
+
+            {{ if $speaker.email }}
+            <div class="horizontal-wrapper full">
+              <a href="mailto:{{ $speaker.email }}" class="text-link caption">{{ $speaker.email }}</a>
+            </div>
+            {{ end }}
+
+          </div>
         </div>
-
-        {{ if $speaker.slides }}
-          <div class="vertical-wrapper short" style="display: flex; align-items: center;">
-            <a href="{{ $speaker.slides }}" class="text-link button neutral w-button">SLIDES ↓</a>
-          </div>
-        {{ end }}
-
-        {{ if $speaker.email }}
-          <div class="horizontal-wrapper full">
-            <a href="mailto:{{ $speaker.email }}" class="text-link caption">{{ $speaker.email }}</a>
-          </div>
         {{ end }}
       </div>
-    </div>
-  {{ end }}
-</div>
+
       {{ end }}
       <section class="section">
         <div class="container _0" style="max-width: 1000px;">

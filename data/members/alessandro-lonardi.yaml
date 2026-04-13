@@ -1,0 +1,17 @@
+honorific: Dr.
+first_name: Alessandro
+last_name: Lonardi
+affiliation:
+  - Queen Mary, University of London
+email: a.lonardi@qmul.ac.uk
+link: ''
+tags:
+  - Complex Systems
+  - Statistical Physics
+  - Machine Learning
+about: |-
+  "My research focuses on complex systems. I am particularly passionate about researching society, technological infrastructures, and their interaction. My goal is to produce research that informs policy decisions and contributes to a better world.
+
+  Currently, I am working on power grids and statistical physics for the UKRI project Stability of the South African Power Grid: A data-driven statistical physics approach. In the engineering domain, I have also studied urban mobility. Alongside application-oriented research, I am fond of fundamental research topics related to complex systems, such as Bayesian inference and generative models. In industry, I worked on explainable machine learning for scientific discovery.
+
+  I like technical work involving mathematical modeling, but I believe observations should always fuel research questions. Therefore, I put data first, whether for training algorithms, analyzing and interpreting their hidden patterns, or establishing complex optimization problems that I then enjoy solving. On top of this, I also have a keen interest in clean and efficient code. "
