@@ -13,7 +13,25 @@ location:
   - Trinity College Cambridge
   - Old Combination Room
 sponsors: []
-keynote_speakers: []
+keynote_speakers:
+  - honorific: Prof.
+    first_name: Petra
+    last_name: Vértes
+    affiliation:
+      - University of Cambridge
+    slides: ''
+  - honorific: Prof.
+    first_name: Sebastian
+    last_name: Ahnert
+    affiliation:
+      - University of Cambridge
+    slides: ''
+  - honorific: Dr.
+    first_name: George
+    last_name: Cantwell
+    affiliation:
+      - University of Cambridge
+    slides: ''
 image: /uploads/trinity_alley.png
 ---
 
