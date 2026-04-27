@@ -215,7 +215,9 @@ collections:
           - { label: "First Name(s)", name: "first_name", widget: "string" }
           - { label: "Last Name(s)", name: "last_name", widget: "string" }
           - { label: "Main affiliation", name: "affiliation", widget: "list" }
-
+          - label: "Talk title"
+            name: "talk_title"
+            widget: "string"
           - label: "Slides"
             name: "slides"
             widget: "file"

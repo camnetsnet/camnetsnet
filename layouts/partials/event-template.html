@@ -73,8 +73,14 @@
 <section class="section">
   <div class="container">
     <div class="vertical-wrapper tall">
+      <section class="section">
+        <div class="container _0" style="max-width: 1000px;">
+          {{ .Content }}
+        </div>
+        <div class="horizontal-line"></div>
+      </section>
+      <h2 class="h7 keynotes">Talks</h2>
       {{ if .Params.keynote_speakers }}
-      <h2 class="h3 h4 keynotes">Keynote Speakers</h2>
 
       <div class="keynotes">
         {{ range $speaker := .Params.keynote_speakers }}
@@ -95,13 +101,18 @@
           <div class="vertical-wrapper short">
 
             {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
-            <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>
+            {{/*  <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>  */}}
+
+            <h2 class="h6" style="padding-top: 20px">{{ $speaker.talk_title }}</h2>
 
             <div class="horizontal-line"></div>
 
+            
             <div class="vertical-wrapper short">
-              <p>{{ partial "stacker.html" $speaker.affiliation }}</p>
+              <p>{{ $speaker_full }}
+              {{ partial "stacker.html" $speaker.affiliation }}</p>
             </div>
+     
 
             {{ if $speaker.slides }}
             <div class="vertical-wrapper short" style="display: flex; align-items: center;">
@@ -121,11 +132,7 @@
       </div>
 
       {{ end }}
-      <section class="section">
-        <div class="container _0" style="max-width: 1000px;">
-          {{ .Content }}
-        </div>
-      </section>
+      
     </div>
   </div>
 </section>

@@ -3,13 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/camnetsnet/</loc>
-    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/camnetsnet/events/</loc>
-    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/camnetsnet/events/2026-04-16seminarintrinsic-neural-timescales-do-they-shape-the-brain-s-mind/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/camnetsnet/events/2025-11-27eventcambridge-networks-relaunch/</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/camnetsnet/events/2026-03-19seminarbeyond-networks-functional-connectivity-as-eigenmode-resonance/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/camnetsnet/events/2026-03-05seminarhierarchical-modular-organization-in-the-brain-segregation-integration-and-their-balance-underlying-cognitive-diversity/</loc>
+    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/camnetsnet/events/2026-02-19seminarmultiscale-neurodevelopment-across-adolescence-methods-principles-and-predictions/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/camnetsnet/events/2026-02-05seminarlarge-scale-biophysical-models-of-neuronal-circuits-to-study-brain-function-and-disease/</loc>
+    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/camnetsnet/events/2026-01-16seminarfrom-physical-networks-to-the-structure-of-the-connectome/</loc>
+    <lastmod>2026-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/camnetsnet/events/2026-01-08seminarthe-krakencoder-a-multi-modal-connectome-fusion-tool-for-brain-behavior-mapping/</loc>
     <lastmod>2026-01-08T00:00:00+00:00</lastmod>
