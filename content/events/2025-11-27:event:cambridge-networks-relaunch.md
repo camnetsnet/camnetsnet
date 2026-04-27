@@ -19,18 +19,21 @@ keynote_speakers:
     last_name: Vértes
     affiliation:
       - University of Cambridge
+    talk_title: Connectring Structure and Function in Brain Networks
     slides: ''
   - honorific: Prof.
     first_name: Sebastian
     last_name: Ahnert
     affiliation:
       - University of Cambridge
+    talk_title: Tudor Networks of Power
     slides: ''
   - honorific: Dr.
     first_name: George
     last_name: Cantwell
     affiliation:
       - University of Cambridge
+    talk_title: Random Processes on Complex Networks
     slides: ''
 image: /uploads/trinity_alley.png
 ---
