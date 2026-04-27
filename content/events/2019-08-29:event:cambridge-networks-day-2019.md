@@ -20,17 +20,33 @@ sponsors:
   - cambridge-centre-for-data-driven-discovery
 keynote_speakers:
   - honorific: Prof.
-    first_name: Danielle
-    last_name: Bassett
+    first_name: Charlotte
+    last_name: Deane
     affiliation:
-      - University of Pennsylvania
+      - University of Oxford
+      - Alan Turing Institute
+    talk_title: Measuring Rank Robustness in Scored Protein Interaction Networks
+    slides: ''
+  - honorific: Prof.
+    first_name: Roberta
+    last_name: Sinatra
+    affiliation:
+      - IT University Copenhagen
+    talk_title: Physics, Interdisciplinarity and the Chaperone Effect
     slides: ''
   - honorific: Dr.
     first_name: Edoardo
     last_name: Gallo
     affiliation:
       - University of Cambridge
-      - Queens' College
+    talk_title: Cooperation in Networks
+    slides: ''
+  - honorific: Prof.
+    first_name: Danielle
+    last_name: Bassett
+    affiliation:
+      - University of Pennsylvania
+    talk_title: Networks Thinking Themselves
     slides: ''
   - honorific: Dr.
     first_name: Ginestra
@@ -38,34 +54,18 @@ keynote_speakers:
     affiliation:
       - Queen Mary University of London
       - Alan Turing Institute
-    slides: ''
-  - honorific: Prof.
-    first_name: Charlotte
-    last_name: Deane
-    affiliation:
-      - University of Oxford
-      - Alan Turing Institute
-    slides: ''
-  - honorific: Prof.
-    first_name: Roberta
-    last_name: Sinatra
-    affiliation:
-      - IT University Copenhagen
+    talk_title: 'Multilayer Networks: Structure and Function'
     slides: ''
   - honorific: Prof.
     first_name: Ronaldo
     last_name: Menezes
     affiliation:
       - University of Exeter
-    slides: ''
-  - honorific: Dr.
-    first_name: Luca
-    last_name: Aiello
-    affiliation:
-      - Nokia Bell Labs
+    talk_title: On the Scale, Concentration and Dynamics of Crime
     slides: ''
 image: ''
 ---
+
 ## About this event
 
 Cambridge Networks Day 2019 is the sixth of our annual meetings on the topic of complex networks. It
