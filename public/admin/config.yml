@@ -208,6 +208,7 @@ collections:
           - label: "Honorific"
             name: "honorific"
             widget: "select"
+            required: false
             options:
               - { label: "None", value: "" }
               - { label: "Dr.", value: "Dr." }

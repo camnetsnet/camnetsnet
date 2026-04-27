@@ -32,6 +32,7 @@ collections:
           - { label: "Content", name: "body", widget: "markdown", modes: ["raw"]}
           - label: "Sponsors"
             name: "sponsors"
+            required: false
             widget: "relation"
             multiple: true
             collection: "sponsors"
@@ -208,6 +209,7 @@ collections:
           - label: "Honorific"
             name: "honorific"
             widget: "select"
+            required: false
             options:
               - { label: "None", value: "" }
               - { label: "Dr.", value: "Dr." }

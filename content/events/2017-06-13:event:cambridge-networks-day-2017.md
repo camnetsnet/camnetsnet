@@ -57,7 +57,7 @@ keynote_speakers:
     first_name: Alain
     last_name: Barrat
     affiliation:
-      - Centre de Physique Th ́eorique, Marseille
+      - Centre de Physique Théorique, Marseille
     talk_title: Epidemic Risk Evaluation from (Incomplete) Proxies of Contact Network Data
     slides: ''
   - honorific: Prof.
