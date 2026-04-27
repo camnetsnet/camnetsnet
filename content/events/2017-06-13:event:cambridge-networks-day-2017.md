@@ -70,6 +70,6 @@ keynote_speakers:
 image: ''
 ---
 
-#### About the event
+## About this event
 
 Cambridge Networks Day 2017 is the fifth of our annual meetings on the topic of complex networks. It is an occasion for the research community to exchange ideas and expertise, intended to spark interdisciplinary collaborations. The day will include a diverse set of talks by invited speakers highlighting interesting new directions in the field of complex networks, as well as a poster session. We hope the day’s events will strengthen the interdisciplinary links between researchers and promote communication within the community
