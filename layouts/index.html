@@ -182,6 +182,7 @@
 
               <div id="w-node-_40fb2f68-7e6b-6b44-0388-2285743335ae-fe3ea3f3" class="horizontal-wrapper sponsors"
                 style="justify-content: left;">
+                {{ if .Params.sponsors }}
                 <p class="caption">Sponsored by:</p>
                 {{ range .Params.sponsors }}
                 {{ $sponsor := index site.Data.sponsors . }}
@@ -192,6 +193,7 @@
                       class="sponsor-logo">
                   </a>
                 </div>
+                {{ end }}
                 {{ end }}
                 {{ end }}
               </div>
