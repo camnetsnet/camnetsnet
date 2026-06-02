@@ -1,7 +1,7 @@
 ---
 important: false
 draft: false
-pin: false
+pin: true
 cambridge: false
 more_link: https://talks.cam.ac.uk/talk/index/245572/
 title: Harnessing Network Complexity and Local Adaptation for Robust Computation in Reservoir Computers
