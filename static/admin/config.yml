@@ -220,6 +220,7 @@ collections:
           - label: "Talk title"
             name: "talk_title"
             widget: "string"
+            required: false
           - label: "Slides"
             name: "slides"
             widget: "file"
