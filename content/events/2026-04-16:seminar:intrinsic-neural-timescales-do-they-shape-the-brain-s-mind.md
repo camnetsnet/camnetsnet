@@ -1,7 +1,7 @@
 ---
 important: false
 draft: false
-pin: true
+pin: false
 cambridge: false
 more_link: https://cam-ac-uk.zoom.us/meeting/register/qaNMEbWmQkOurNOfEnUnLg#/registration
 title: Intrinsic Neural Timescales - Do they shape the brain's mind?
