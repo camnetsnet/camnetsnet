@@ -1,6 +1,6 @@
 ---
 important: true
-draft: true
+draft: false
 pin: false
 cambridge: false
 registration: https://cambridgeneurotech.org/
@@ -20,43 +20,43 @@ keynote_speakers:
     first_name: Lucy
     last_name: Jung
     affiliation:
-      - Lyeons & Charco Neurotech
-    talk_title: None
+      - Lyeons & Charco Neurotech (Founder)
+    talk_title: ''
     slides: ''
   - honorific: Dr.
     first_name: Chloe
     last_name: Whitehouse
     affiliation:
-      - Advanced Research + Invention Agency (ARIA
-    talk_title: None
+      - Advanced Research + Invention Agency (ARIA)
+    talk_title: ''
     slides: ''
   - honorific: Dr.
     first_name: Emilė
     last_name: Radytė
     affiliation:
-      - Samphire Neuroscience
-    talk_title: None
+      - Samphire Neuroscience (Co-Founder & CEO)
+    talk_title: ''
     slides: ''
   - honorific: Dr.
     first_name: Yaqi
     last_name: Sheng
     affiliation:
-      - Replicam
-    talk_title: None
+      - Replicam (Co-Founder)
+    talk_title: ''
     slides: ''
   - honorific: ''
     first_name: Hildie
     last_name: Leyser
     affiliation:
-      - Netholabs
-    talk_title: None
+      - Netholabs (Head of Research)
+    talk_title: ''
     slides: ''
   - honorific: ''
     first_name: Nick
     last_name: Sviridov
     affiliation:
-      - NeuroDive
-    talk_title: None
+      - NeuroDive (Founder & CEO)
+    talk_title: ''
     slides: ''
 image: ''
 ---
