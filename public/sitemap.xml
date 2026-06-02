@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/camnetsnet/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/camnetsnet/events/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/camnetsnet/events/2026-06-10eventcambridge-neurotech-symposium/</loc>
+    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/camnetsnet/events/2026-04-16seminarintrinsic-neural-timescales-do-they-shape-the-brain-s-mind/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>

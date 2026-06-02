@@ -102,14 +102,21 @@
 
             {{ $speaker_full := printf "%s %s %s" $speaker.honorific $speaker.first_name $speaker.last_name }}
             {{/*  <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>  */}}
-
-            <h2 class="h6" style="padding-top: 20px">{{ $speaker.talk_title }}</h2>
-
+            
+            {{ if $speaker.talk_title }}
+              <h2 class="h6" style="padding-top: 20px">{{ $speaker.talk_title }}</h2>
+            {{ else }}
+              <h2 class="h6" style="padding-top: 20px">{{ $speaker_full }}</h2>
+            {{ end }}
             <div class="horizontal-line"></div>
 
             
             <div class="vertical-wrapper short">
-              <p>{{ $speaker_full }}
+              {{ if $speaker.talk_title }}
+                <p>{{ $speaker_full }}</p>
+              {{else}}
+              
+              {{ end }}
               {{ partial "stacker.html" $speaker.affiliation }}</p>
             </div>
      

@@ -12,7 +12,7 @@ date: 2026-06-10
 start_time: 15:00
 end_time: 18:00
 location:
-  - St Catharine's College,
+  - St Catharine's College
   - Ramsden Room
 sponsors: []
 keynote_speakers:
@@ -65,9 +65,9 @@ image: ''
 Connecting researchers, founders & investors at the frontiers of neuroscience and technology. From brain-computer interfaces to wearable neuromodulation. Speakers will share their journeys from academia to neurotech, career opportunities, and live product demos. Followed by an ask-me-anything panel discussion, careers showcase & networking.
 
 ### Program
-- 15:00: Keynote & welcome reception
-- 15:20: Talks & demos from neurotech innovators
-- 16:45: Ask-me-anything panel discussion
-- 17:00: Careers showcase
-- 17:30: Networking & drinks
-- 18:00: Dinner & social!
+- `15:00`: Keynote & welcome reception
+- `15:20`: Talks & demos from neurotech innovators
+- `16:45`: Ask-me-anything panel discussion
+- `17:00`: Careers showcase
+- `17:30`: Networking & drinks
+- `18:00`: Dinner & social!
