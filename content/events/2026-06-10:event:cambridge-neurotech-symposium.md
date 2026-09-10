@@ -66,9 +66,9 @@ Connecting researchers, founders & investors at the frontiers of neuroscience an
 
 | Time  | Program                              |
 |-------|--------------------------------------|
-| 15:00 | Keynote & welcome reception           |
-| 15:20 | Talks & demos from neurotech innovators |
-| 16:45 | Ask-me-anything panel discussion      |
-| 17:00 | Careers showcase                      |
-| 17:30 | Networking & drinks                   |
-| 18:00 | Dinner & social!                      |
+| 15:00 – 15:20 | Keynote & welcome reception           |
+| 15:20 – 16:45 | Talks & demos from neurotech innovators |
+| 16:45 – 17:00 | Ask-me-anything panel discussion      |
+| 17:00 – 17:30 | Careers showcase                      |
+| 17:30 – 18:00| Networking & drinks                   |
+| 18:00 – 19:00 | Dinner & social!                      |
