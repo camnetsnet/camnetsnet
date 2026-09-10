@@ -71,4 +71,4 @@ Connecting researchers, founders & investors at the frontiers of neuroscience an
 | 16:45 – 17:00 | Ask-me-anything panel discussion      |
 | 17:00 – 17:30 | Careers showcase                      |
 | 17:30 – 18:00| Networking & drinks                   |
-| 18:00 – 19:00 | Dinner & social!                      |
+| 18:00 – 20:00 | Dinner & social!                      |
