@@ -1,7 +1,7 @@
 ---
 important: true
 draft: false
-pin: true
+pin: false
 cambridge: true
 registration: https://camnetsnet.github.io/camnetsnet/registration/
 title: Cambridge Networks Relaunch
