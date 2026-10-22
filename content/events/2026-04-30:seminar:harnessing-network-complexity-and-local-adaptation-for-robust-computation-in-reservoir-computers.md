@@ -1,7 +1,7 @@
 ---
 important: false
 draft: false
-pin: true
+pin: false
 cambridge: false
 more_link: https://talks.cam.ac.uk/talk/index/245572/
 title: Harnessing Network Complexity and Local Adaptation for Robust Computation in Reservoir Computers
@@ -12,8 +12,8 @@ speaker:
   affiliation:
     - University of Maryland
 date: 2026-04-30
-start_time: 15:00
-end_time: 16:00
+start_time: '15:00'
+end_time: '16:00'
 link: https://cam-ac-uk.zoom.us/meeting/register/zWrv83PcT267A-sWjk_CHA
 location: []
 slides: ''
