@@ -16,7 +16,8 @@ start_time: '14:00'
 end_time: '15:00'
 link: ''
 location:
-  - Department of Engineering
+  - Department of Engineering, CB2 1PZ
+  - Lecture Room 5, Baker Building
 slides: ''
 ---
 
