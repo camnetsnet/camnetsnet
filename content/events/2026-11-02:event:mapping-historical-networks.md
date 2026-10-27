@@ -7,8 +7,8 @@ registration: https://www.cdh.cam.ac.uk/events/42052/
 title: Mapping Historical Networks
 description: This hands-on workshop provides a critical introduction to Social Network Analysis (SNA) tailored for researchers in the arts, humanities, and social sciences. It may be especially relevant for those who are working with large historical datasets, or keen to do so in the future.
 date: 2026-11-02
-start_time: 13:00
-end_time: 17:00
+start_time: '13:00'
+end_time: '17:00'
 location:
   - Trumpington Street, Cambridge
   - 1a/1b, CDH2
@@ -21,7 +21,7 @@ keynote_speakers:
       - University of Cambridge
     talk_title: ''
     slides: ''
-image: ''
+image: /uploads/St_John's_College_Old_Library_interior.jpg
 ---
 
 This hands-on workshop provides a critical introduction to Social Network Analysis (SNA) tailored for researchers in the arts, humanities, and social sciences. It may be especially relevant for those who are working with large historical datasets, or keen to do so in the future.
