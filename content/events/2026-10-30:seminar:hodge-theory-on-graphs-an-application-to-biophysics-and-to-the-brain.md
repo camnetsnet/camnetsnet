@@ -1,7 +1,7 @@
 ---
 important: false
 draft: false
-pin: true
+pin: false
 cambridge: true
 more_link: ''
 title: 'Hodge theory on graphs: an application to biophysics and to the brain'
