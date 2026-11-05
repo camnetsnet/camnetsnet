@@ -1,0 +1,12 @@
+draft: false
+honorific: ''
+first_name: Felix
+last_name: Gan
+affiliation:
+  - Tsinghua University
+email: reachfelixgan@gmail.com
+link: ''
+tags:
+  - Mechanistical Controlability
+  - Knowledge Networks
+about: I'm a CS PhD student at Tsinghua University, working on mechanistic interpretability and controllability of large language models. My research focuses on understanding internal representations, identifying causal mechanisms, and developing methods for precise and reliable model control. I have a background in computational mathematics and AI, with broader interests in network science, complex systems, and trustworthy machine learning. I'm keen to connect with researchers working at the intersection of these fields.
