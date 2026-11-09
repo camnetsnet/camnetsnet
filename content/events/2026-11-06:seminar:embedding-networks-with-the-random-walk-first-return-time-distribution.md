@@ -1,7 +1,7 @@
 ---
 important: false
 draft: false
-pin: true
+pin: false
 cambridge: true
 more_link: ''
 title: Embedding networks with the random walk first return time distribution
