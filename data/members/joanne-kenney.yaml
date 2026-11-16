@@ -1,3 +1,4 @@
+draft: false
 honorific: Dr.
 first_name: Joanne
 last_name: Kenney
@@ -7,6 +8,9 @@ email: jkenney@ed.ac.uk
 link: ''
 tags:
   - Computational Neuroscience
-  - Machine learning
-  - Complex datasets
-about: My name is Dr Joanne Kenney. I'm a neuroscientist with the Hub for Metabolic Psychiatry at the University of Edinburgh. My passion lies in the use of modern technologies such as MRI to study the brain and more recently, TB-PET scans to study across brain and body. I work with large-scale complex datasets and engage in computational neuroscience research.
+  - Bayesian Machine learning
+  - Brain and Neural Networks
+about: |-
+  I am a researcher with an interest in mental health, neuroscience and metabolic health, particularly the interactions between biological, psychological and environmental factors in shaping health outcomes. My work involves collaborative, multidisciplinary research, with a focus on improving our understanding of complex health conditions and translating research findings into meaningful benefits for patients and the wider community.
+
+  I am particularly interested in the potential of emerging technologies, including artificial intelligence, multimodal data integration and advanced imaging, to transform health research. I am also keen to develop approaches to data harmonisation and cross-centre collaboration that enable researchers to make better use of complex datasets.
