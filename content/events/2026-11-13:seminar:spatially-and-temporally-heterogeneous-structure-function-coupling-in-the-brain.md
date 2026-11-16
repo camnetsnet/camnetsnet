@@ -1,7 +1,7 @@
 ---
 important: false
 draft: false
-pin: true
+pin: false
 cambridge: true
 more_link: ''
 title: Spatially and temporally heterogeneous structure-function coupling in the brain
